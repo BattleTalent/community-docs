@@ -2,6 +2,7 @@ image: node:10
 
 pages:
   script:
+  - yarn
   - cd website
   - yarn start
   artifacts:
