@@ -1,16 +1,18 @@
-image: node:latest
-# This folder is cached between builds
-# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
-cache:
-  paths:
-    - node_modules/
+image: node:10
+
 pages:
+  cache:
+    paths:
+    - node_modules/
+
   script:
-    - cd website
-    - npm install
-    - ./node_modules/.bin/gatsby build --prefix-paths
+  - cd website
+  - yarn
+  - yarn run build
+  
   artifacts:
     paths:
-      - public
+    - public
+    
   only:
-    - master
+  - master
