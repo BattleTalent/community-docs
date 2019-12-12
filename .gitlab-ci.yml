@@ -6,6 +6,7 @@ pages:
     - node_modules/
 
   script:
+  - cd website
   - yarn install
   - yarn build
 
