@@ -1,0 +1,13 @@
+image: node:10
+
+pages:
+  script:
+  - yarn global add docusaurus-init
+  - docusaurus-init
+  - cd website
+  - yarn start
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
