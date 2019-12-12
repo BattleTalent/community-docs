@@ -8,7 +8,7 @@ pages:
   script:
   - cd website
   - yarn
-  - yarn run build -d public
+  - yarn run build:public
   
   artifacts:
     paths:
