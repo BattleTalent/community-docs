@@ -3,8 +3,10 @@ image: node:9.11.1
 pages:
   script:
   - cd website
+  - mkdir -p ./public
   - yarn install
   - yarn build
+    - cp ./build public
 
   artifacts:
     paths:
