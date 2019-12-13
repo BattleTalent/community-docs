@@ -5,11 +5,10 @@ pages:
   - cd website
   - yarn install
   - yarn build
-  - mv website/build public
 
   artifacts:
     paths:
-    - website/build
+    - public
   
   only:
   - master
