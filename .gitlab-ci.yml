@@ -6,7 +6,7 @@ pages:
   - cd website
   - yarn install
   - yarn build
-  - cp ./build public
+  - cp ./build ./public
 
   artifacts:
     paths:
