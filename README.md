@@ -2,7 +2,7 @@
 
 ---
 
-Example [Docusaurus] website using GitLab Pages.
+Example [Docusaurus](https://docusaurus.io/en/) website using GitLab Pages.
 
 Learn more about GitLab Pages at https://about.gitlab.com/features/pages and the official
 documentation https://docs.gitlab.com/ee/user/project/pages/.
