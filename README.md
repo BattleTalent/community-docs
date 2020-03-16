@@ -77,7 +77,7 @@ served on the root path, you will need to:
 1. Open `website/siteConfig.js` and change:
    1. The `url` to be `https://namespace.gitlab.io` or your
       [custom domain](https://docs.gitlab.com/ee/user/project/pages/custom_domains_ssl_tls_certification/index.html) of choice.
-   1. The `baseUrl` to be an empty string.
+   1. The `baseUrl` to be '/'.
 
 If you have forked this project, and want to use it under a subpath, you will
 need to:
