@@ -1,8 +1,8 @@
-![Build Status](https://gitlab.com/pages/mkdocs/badges/master/pipeline.svg)
+![Build Status](https://gitlab.com/pages/docusaurus/badges/master/pipeline.svg)
 
 ---
 
-Example [Docusaurus](https://docusaurus.io/en/) website using GitLab Pages.
+Example [Docusaurus](https://docusaurus.io/) website using GitLab Pages.
 
 Learn more about GitLab Pages at https://about.gitlab.com/features/pages and the official
 documentation https://docs.gitlab.com/ee/user/project/pages/.
@@ -15,20 +15,31 @@ This project's static Pages are built by [GitLab CI/CD](https://about.gitlab.com
 following the steps defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
 
 ```yaml
-image: node:9.11.1
+image: node:15.12-alpine3.13
+
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  script:
+  - cd website
+  - yarn install
+  - yarn build
+  except:
+    - master
 
 pages:
+  stage: deploy
   script:
-    - cd website
-    - yarn install
-    - yarn build
-    # The build directory is created based on the value set for projectName in
-    # website/siteConfig.js. If you change it there, you need to change it here
-    # as well.
-    - mv ./build/docusaurus ../public
+  - cd website
+  - yarn install
+  - yarn build
+  - mv ./build ../public
   artifacts:
     paths:
-      - public
+    - public
   only:
     - master
 ```
@@ -60,9 +71,7 @@ To work locally with this project, you'll have to follow the steps below:
    yarn build
    ```
 
-   The build directory is created based on the value set for `projectName` in
-   `website/siteConfig.js`. If you didn't change this value, the website will
-   be built under `website/build/docusaurus/`.
+   The website will be built under `website/build/`.
 
 Read more at the [Docusaurus documentation](https://docusaurus.io).
 
@@ -82,7 +91,7 @@ served on the root path, you will need to:
 If you have forked this project, and want to use it under a subpath, you will
 need to:
 
-1. Open `website/siteConfig.js` and change:
+1. Open `website/docusaurus.config.js` and change:
    1. The `url` to be `https://namespace.gitlab.io` or your
       [custom domain](https://docs.gitlab.com/ee/user/project/pages/custom_domains_ssl_tls_certification/index.html) of choice.
    1. The `baseUrl` to be the same as the name of your project.
