@@ -1,13 +1,8 @@
 ---
 title: IncreasedDamageScript
-
 ---
 
 Increased melee damage when holding down the trigger.
-
-## Component
-
-![Component](/img/script-increased-damage1.png)
 
 ## Code
 
@@ -28,3 +23,7 @@ end
 
 return Class(nil,nil,table)
 ```
+
+## Component
+
+![Component](/img/script-increased-damage1.png)

@@ -16,6 +16,8 @@ module.exports = {
         'snippet-update',
         'snippet-ray-casting',
         'snippet-sphere-casting',
+        'snippet-hit-info',
+        'snippet-add-store-item',
       ],
     },
     {
@@ -23,6 +25,11 @@ module.exports = {
       label: 'Complete Scripts',
       items: [
         'script-increased-damage',
+        'script-animate-on-trigger',
+        'script-blink-eyes',
+        'script-spin-object',
+        'script-retractable',
+        'script-light-saber',
       ],
     },
   ],

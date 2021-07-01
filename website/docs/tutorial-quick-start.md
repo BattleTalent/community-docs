@@ -3,7 +3,7 @@ title: Quick Start
 slug: /
 ---
 
-## Setup the mod project
+## Quick Start
 
 1. Download & Install [Unity Hub](https://unity3d.com/get-unity/download).
 2. Download & Install [Unity 2019.4.12](https://unity3d.com/unity/whats-new/2019.4.12).
@@ -17,10 +17,26 @@ slug: /
 
 Done! (if something goes wrong, please open your cheat menu then tell us about your error messages).
 
-## Extensive Tutorial Video
+## Tutorial videos
+
+### Extensive Tutorial Video
 
 One of our finest modders has created an [extensive tutorial video](https://youtu.be/5o_1-wd6MiI) on how to create a mod. You should watch it!
 
-## 10 minutes Tutorial Video
+### 10 minutes Tutorial Video
 
 Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=IqPl5KRgZ8Y) to quickly get going. It's a little harder to follow then the video above but still very handy.
+
+## FAQ
+
+### Does it matter which Unity version I use?
+Yes, you should use version 2019.4.12f
+
+### What can we mod right now?
+Only weapons & props.
+
+### Can we use skills from the original game on modded weapons?
+They are not added to the modding toolkit. So no.
+
+### Any other mod project examples I can use?
+Yes I've cleaned up some projects and added them [here](https://github.com/unbelievableflavour/BattleTalentBaseProjects) to download and checkout for free. 

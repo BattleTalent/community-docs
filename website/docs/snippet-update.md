@@ -43,6 +43,8 @@ end
 return Class(nil,nil,table)
 ```
 
-## Stopping after a certain time
+## FAQ
 
-Just change the `self.timeBeforeStopping = -1;` to `self.timeBeforeStopping = 10;` 
+### Can I stop this after a certain time?
+
+Just change the `self.timeBeforeStopping = -1;` to `self.timeBeforeStopping = 10;`  
