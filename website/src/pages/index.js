@@ -12,8 +12,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        An incredibly easy-to-use doc site to get your mod up and running as quickly as possible.
       </>
     ),
   },
@@ -22,18 +21,16 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Our docs lets you focus on your what's important, and will contain only actual Battle Talent modding related examples.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Community based',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Our docs are completely community based and everyone can help improve them! <a href={"https://gitlab.com/brothersonline/xlua-battletalent-docs"}>Join in!</a>
       </>
     ),
   },
