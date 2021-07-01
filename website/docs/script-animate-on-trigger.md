@@ -20,9 +20,7 @@ function table:UpdateSkill()
 	if ct - st < shootInterval then
 		return
 	end	
-	if (self.dontShootOnInstant == nil) then
-		self:ToggleAnimation()
-	end
+    self:ToggleAnimation()
 end
 
 function table:ToggleAnimation()

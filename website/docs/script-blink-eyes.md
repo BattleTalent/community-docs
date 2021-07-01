@@ -10,7 +10,6 @@ Make a objects disable and enable at random times.
 local table = {}
 
 function table:Awake()
-
     self.eyesAreClosed = false;
     self.scheId = null;
 

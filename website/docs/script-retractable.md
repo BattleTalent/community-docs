@@ -30,12 +30,11 @@ function table:UpdateSkill()
 	if ct - st < shootInterval then
 		return
 	end	
-	if (self.dontShootOnInstant == nil) then
-		self:ToggleSaber()
-	end
+
+    self:ToggleRetractable()
 end
 
-function table:ToggleSaber()
+function table:ToggleRetractable()
     if (self.isOpen) then
         if (lightUp == false) then
             return
