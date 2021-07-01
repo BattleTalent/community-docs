@@ -9,4 +9,4 @@ Some extra tips for scripting in xLua.
 * namespace UnityEngine is `UE` in lua, UE == CS.UnityEngine
 * calling a static function should use `.` instead of `:` in lua
 * recommended IDE to use by Fonzie is [ZeroBrane Studio](https://studio.zerobrane.com/) as lua editor
-* Checkout our [snippets](/snippet-update) for additional information.
+* Checkout our [snippets](snippet-update) for additional information.

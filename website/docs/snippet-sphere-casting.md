@@ -2,7 +2,11 @@
 title: SphereCast
 ---
 
-Documents are pages with a **sidebar**, a **previous/next navigation** and many other useful features.
+Casts a sphere along a ray and returns detailed information on what was hit.
+
+This is useful when a Raycast does not give enough precision, because you want to find out if an object of a specific size, such as a character, will be able to move somewhere without colliding with anything on the way. Think of the sphere cast like a thick raycast. In this case the ray is specified by a start vector and a direction.
+
+**Notes**: SphereCast will not detect colliders for which the sphere overlaps the collider. Passing a zero radius results in undefined output and doesn't always behave the same as [Raycast](snippet-ray-casting).
 
 ## Example
 
