@@ -18,3 +18,11 @@ The way to change product name
 ## Renamed all prefixes
 
 Not written yet. Ask in Discord about it.
+
+## Add an icon
+
+Make sure an icon is added, else the store will crash.
+
+## No errors
+
+Open the cheat menu in-game & make sure no errors are shown when spawning the weapon. It will cause unexpected issues throughout the game.
