@@ -19,13 +19,16 @@ Done! (if something goes wrong, please open your cheat menu then tell us about y
 
 ## Tutorial videos
 
-### Extensive Tutorial Video
-
-One of our finest modders has created an [extensive tutorial video](https://youtu.be/5o_1-wd6MiI) on how to create a mod. You should watch it!
-
 ### 10 minutes Tutorial Video
 
-Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=IqPl5KRgZ8Y) to quickly get going. It's a little harder to follow then the video above but still very handy.
+Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=IqPl5KRgZ8Y) to quickly get going. It's a little hard to follow sometimes but it gets the job done quickly!.
+<iframe src="//www.youtube.com/embed/IqPl5KRgZ8Y" frameborder="0" allowfullscreen></iframe>
+
+### Extensive Tutorial Video
+
+One of our finest modders has created an [extensive tutorial video](https://youtu.be/5o_1-wd6MiI) on how to create a mod. You should watch it! Click on the link or watch it below.
+
+<iframe src="//www.youtube.com/embed/5o_1-wd6MiI" frameborder="0" allowfullscreen></iframe>
 
 ## FAQ
 
