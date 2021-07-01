@@ -31,6 +31,11 @@ module.exports = {
           label: 'Discord',
           position: 'right',
         },
+        {
+          href: 'https://battletalent.mod.io/',
+          label: 'Mod.io',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -66,7 +71,7 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Discord',
+              label: 'Join our Discord',
               href: 'https://discord.gg/YBTDhbzjC5',
             },
             {
