@@ -1,21 +1,24 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'xLua Battletalent Docs',
+  tagline: 'Documentation for battle talent scripting',
   url: 'https://brothersonline.gitlab.io',
   baseUrl: '/xlua-battletalent-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'GitLab', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'BrothersOnline', // Usually your GitHub org/user name.
+  projectName: 'xlua-battletalent-docs', // Usually your repo name.
   themeConfig: {
+    prism: {
+      additionalLanguages: ['lua'],
+    },
     navbar: {
-      title: 'Docusaurus on GitLab Pages',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      title: 'Home',
+      // logo: {
+      //   alt: 'Site Logo',
+      //   src: 'img/logo.svg',
+      // },
       items: [
         {
           to: 'docs/',
@@ -23,10 +26,9 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://gitlab.com/pages/docusaurus',
-          label: 'GitLab',
+          href: 'https://discord.gg/YBTDhbzjC5',
+          label: 'Discord',
           position: 'right',
         },
       ],
@@ -44,19 +46,32 @@ module.exports = {
           ],
         },
         {
+          title: 'BTModToolkit',
+          items: [
+            {
+              href: 'https://docs.google.com/spreadsheets/d/1z3dAbbIpCERFYRC-NOEZxo7R3kv008184Jws9MFz2NI/edit#gid=0',
+              label: 'Mod Toolkit Doc Excel',
+            },
+            {
+              href: 'http://jjyy.guru/BTModToolkit/',
+              label: 'Mod Toolkit Documentation',
+            },
+            {
+              href: 'https://github.com/Tencent/xLua/blob/master/Assets/XLua/Doc/XLua_Tutorial_EN.md',
+              label: 'xLua Tutorial',
+            },
+          ],
+        },
+        {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/YBTDhbzjC5',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Video - How To mod',
+              href: 'https://youtu.be/5o_1-wd6MiI',
             },
           ],
         },
@@ -64,17 +79,13 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+              label: 'Battle Talent Challenges',
+              href: 'https://brothersonline.gitlab.io/battle-talent-challenges/',
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
   },
   presets: [

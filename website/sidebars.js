@@ -2,14 +2,27 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Docusaurus Tutorial',
+      label: 'Getting Started',
       items: [
-        'getting-started',
-        'create-a-page',
-        'create-a-document',
-        'create-a-blog-post',
-        'markdown-features',
-        'thank-you',
+        'tutorials-quick-start',
+        'tutorials-before-releasing',
+        'tutorials-tips',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Snippets',
+      items: [
+        'snippet-update',
+        'snippet-ray-casting',
+        'snippet-sphere-casting',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Complete Scripts',
+      items: [
+        'script-increased-damage',
       ],
     },
   ],
