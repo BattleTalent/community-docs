@@ -2,8 +2,8 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://pages.gitlab.io',
-  baseUrl: '/docusaurus/',
+  url: 'https://brothersonline.gitlab.io',
+  baseUrl: '/xlua-battletalent-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
