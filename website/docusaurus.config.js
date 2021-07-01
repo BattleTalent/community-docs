@@ -14,7 +14,7 @@ module.exports = {
       additionalLanguages: ['lua'],
     },
     navbar: {
-      title: 'Home',
+      title: 'xLua Battletalent Docs',
       logo: {
         alt: 'Site Logo',
         src: 'img/logo.png',
