@@ -4,9 +4,9 @@ module.exports = {
       type: 'category',
       label: 'Getting Started',
       items: [
-        'tutorials-quick-start',
-        'tutorials-before-releasing',
-        'tutorials-tips',
+        'tutorial-quick-start',
+        'tutorial-before-releasing',
+        'tutorial-tips',
       ],
     },
     {
