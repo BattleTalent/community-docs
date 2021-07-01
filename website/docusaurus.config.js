@@ -15,10 +15,10 @@ module.exports = {
     },
     navbar: {
       title: 'Home',
-      // logo: {
-      //   alt: 'Site Logo',
-      //   src: 'img/logo.svg',
-      // },
+      logo: {
+        alt: 'Site Logo',
+        src: 'img/logo.png',
+      },
       items: [
         {
           to: 'docs/',
