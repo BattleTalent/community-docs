@@ -79,7 +79,11 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Battle Talent Challenges',
+              label: 'Mod.io',
+              href: 'https://battletalent.mod.io/',
+            },
+            {
+              label: 'BT Challenges',
               href: 'https://brothersonline.gitlab.io/battle-talent-challenges/',
             }
           ],
