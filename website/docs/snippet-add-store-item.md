@@ -16,6 +16,10 @@ storeItem.unlockRequireCoinNum = 1
 CL.UnlockContentConfig.AddItem(storeItem)
 ```
 
+## User Variables
+
+No user variables.
+
 ## FAQ
 
 ### Where do I add this script?

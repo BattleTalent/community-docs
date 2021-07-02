@@ -43,6 +43,10 @@ end
 return Class(nil,nil,table)
 ```
 
+## User Variables
+
+No user variables.
+
 ## FAQ
 
 ### Can I stop this after a certain time?

@@ -4,7 +4,7 @@ title: Change weapon stats
 
 Change the stats on a weapon. In this case `damageMlp`.
 
-## Code
+## Example
 
 ```lua
 self.ragdollHitInfo.hitInfo.damageMlp = 300;

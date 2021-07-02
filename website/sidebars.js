@@ -15,11 +15,13 @@ module.exports = {
       items: [
         'snippet-changing-parents',
         'snippet-update',
+        'snippet-create-new-vector-3',
         'snippet-ray-casting',
         'snippet-sphere-casting',
         'snippet-hit-info',
         'snippet-add-store-item',
         'snippet-change-weapon-stats',
+        'snippet-rotate-transform',
       ],
     },
     {

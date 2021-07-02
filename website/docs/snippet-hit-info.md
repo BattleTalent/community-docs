@@ -26,6 +26,10 @@ customHitInfo.StiffValue = 2.5
 HitInfoConfig:AddData(customHitInfo)
 ```
 
+## User Variables
+
+No user variables.
+
 ## FAQ
 
 ### Where do I add this script?

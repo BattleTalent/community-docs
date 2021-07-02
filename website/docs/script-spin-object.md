@@ -41,4 +41,3 @@ return Class(nil,nil,table)
 ## Component
 
 ![Component](/img/script-spin-object1.png)
-
