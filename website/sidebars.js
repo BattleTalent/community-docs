@@ -13,6 +13,7 @@ module.exports = {
       type: 'category',
       label: 'Snippets',
       items: [
+        'snippet-changing-parents',
         'snippet-update',
         'snippet-ray-casting',
         'snippet-sphere-casting',

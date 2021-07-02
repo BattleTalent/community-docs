@@ -14,10 +14,7 @@ This is useful when a Raycast does not give enough precision, because you want t
 local forward = self.transformThatYouAreRaycastingFrom:TransformDirection(UE.Vector3.forward);
 local ret, hitInfo = UE.Physics.SphereCast(self.transformThatYouAreRaycastingFrom.position, 0.02, forward, 50, CL.LayerDefine.EnvLayerMask.value)
 
- if ret then
-     print("im here!");
-     print(hitInfo.collider)
-     print(hitInfo.collider.name)
-     print("ive made it!");
- end
+if ret then
+    print(hitInfo.collider.name)
+end
 ```
