@@ -19,6 +19,7 @@ module.exports = {
         'snippet-sphere-casting',
         'snippet-hit-info',
         'snippet-add-store-item',
+        'snippet-change-weapon-stats',
       ],
     },
     {

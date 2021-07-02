@@ -20,4 +20,4 @@ CL.UnlockContentConfig.AddItem(storeItem)
 
 ### Where do I add this script?
 
-In `WMD_WeaponModDemo.txt`
+This script is already included by default in `WMD_WeaponModDemo.txt`.

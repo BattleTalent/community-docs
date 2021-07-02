@@ -18,3 +18,10 @@ if ret then
     print(hitInfo.collider.name)
 end
 ```
+
+## User Variables
+
+| Component   | variable    |
+| ----------- | ----------- |
+| Transform   | `self.transformThatYouAreRaycastingFrom` |
+

@@ -10,6 +10,13 @@ Just an example how you would move an object under a different transform.
 self.ourObject.tranform.parent = self.newParent.transform;
 ```
 
+## User Variables
+
+| Component   | variable    |
+| ----------- | ----------- |
+| GameObject   | `self.ourObject` |
+| GameObject   | `self.newParent` |
+
 ## FAQ
 
 ### Can I detach from the parent?
