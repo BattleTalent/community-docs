@@ -23,6 +23,7 @@ The following stats:
 
 | Options |
 | ------- |
+| templateName |
 | weightAmongMultiple |
 | velocityMlp |
 | damageMlp |
@@ -37,3 +38,11 @@ The following stats:
 | knockoutFactor |
 | dizzyFactor |
 | stiffValue |
+
+### Any way I can revert back to the hitInfo template?
+Use the `ResetTemplate` function:
+
+```lua
+self.ragdollHitInfo.hitInfo:ResetTemplate();
+```
+
