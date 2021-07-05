@@ -22,6 +22,9 @@ module.exports = {
         'snippet-add-store-item',
         'snippet-change-weapon-stats',
         'snippet-rotate-transform',
+        'snippet-list-all-weapons',
+        'snippet-list-all-unlocked-weapons',
+        'snippet-instantiate-weapon'
       ],
     },
     {
