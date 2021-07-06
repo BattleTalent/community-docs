@@ -9,6 +9,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'BrothersOnline', // Usually your GitHub org/user name.
   projectName: 'xlua-battletalent-docs', // Usually your repo name.
+  plugins: ['@docusaurus/plugin-google-gtag'],
   themeConfig: {
     prism: {
       additionalLanguages: ['lua'],
@@ -95,6 +96,9 @@ module.exports = {
         },
       ],
       // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+    },
+    gtag: {
+      trackingID: 'G-NCNBRXYW4S',
     },
   },
   presets: [

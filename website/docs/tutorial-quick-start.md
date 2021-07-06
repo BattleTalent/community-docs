@@ -24,12 +24,12 @@ If you dont like reading a lot there is also some tutorial videos out there that
 ### 10 minutes Tutorial Video
 
 Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=IqPl5KRgZ8Y) to quickly get going. It can be a little hard to follow sometimes but it gets the job done quickly.
-<iframe src="//www.youtube.com/embed/IqPl5KRgZ8Y" frameborder="0" allowfullscreen></iframe>
+<iframe src="//www.youtube.com/embed/IqPl5KRgZ8Y" frameBorder="0" allowFullScreen></iframe>
 
 ### Extensive Tutorial Video
 
 One of our finest modders has created an [extensive tutorial video](https://youtu.be/5o_1-wd6MiI) on how to create a mod. Completely voiced and all. I personally recommend watching this video.
-<iframe src="//www.youtube.com/embed/5o_1-wd6MiI" frameborder="0" allowfullscreen></iframe>
+<iframe src="//www.youtube.com/embed/5o_1-wd6MiI" frameBorder="0" allowFullScreen></iframe>
 
 ## FAQ
 
