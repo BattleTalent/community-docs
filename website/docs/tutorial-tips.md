@@ -45,11 +45,3 @@ Fonzie was kind enough to give us some explanation on when slicing will be trigg
 Since the PC version doesn't have a log in-game there is another way to find out what's wrong with your mod. All notices and errors will be saved instantly to this file.
 
 `C:\Users\<YOUR_USER>\AppData\LocalLow\CrossLink\BattleTalent\Player.log`
-
-## Upgrade and vulnerability colors
-
-Upgrade and vulnerability colors will be set by the "skill change colors" property of the "interact trigger" component. But there are some important things to watchout for.
-
-* The added meshes should have a material where emmision is turned on.
-* The added meshes should have a material where emmision does not have an emmision map texture.
-* The added meshes should have a material where emmision map texture color is set to 1,1,1,0.

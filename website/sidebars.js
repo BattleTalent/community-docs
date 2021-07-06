@@ -7,6 +7,7 @@ module.exports = {
         'tutorial-quick-start',
         'tutorial-before-releasing',
         'tutorial-tips',
+        'tutorial-common-issues',
       ],
     },
     {
