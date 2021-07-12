@@ -25,7 +25,8 @@ module.exports = {
         'snippet-rotate-transform',
         'snippet-list-all-weapons',
         'snippet-list-all-unlocked-weapons',
-        'snippet-instantiate-weapon'
+        'snippet-instantiate-weapon',
+        'snippet-on-grab'
       ],
     },
     {
