@@ -6,15 +6,15 @@ Base projects are very simple straightforward completed mods of a specific type.
 
 #### Downloads
 
-* [Sword  - Default](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Sword.zip)
+* [Sword](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Sword.zip)
 * [Sword - Increased damage on trigger](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_SwordWithIncreasedDamageOnTrigger.zip)
-* [Sword  - Shoots projectile on trigger](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_SwordWithProjectile.zip)
-* [Greatsword - Default](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Greatsword.zip)
+* [Sword - Shoots projectile on trigger](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_SwordWithProjectile.zip)
+* [Greatsword](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Greatsword.zip)
 * [Shield - Not-hand-specific](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Shield.zip)
 * Shield - Hand-specific (Soon)
-* [Blunt - Default](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Blunt.zip)
+* [Blunt](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Blunt.zip)
 * [Blunt - Animation On Trigger](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_AnimationOnTrigger.zip)
-* [Katana - Default](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Katana.zip)
+* [Katana](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Katana.zip)
 * [Gun - One-handed](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Gun.zip)
 * Gun - Two-handed (Soon)
 
