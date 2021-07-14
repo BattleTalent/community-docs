@@ -8,6 +8,7 @@ module.exports = {
         'tutorial-before-releasing',
         'tutorial-tips',
         'tutorial-common-issues',
+        'tutorial-base-projects',
       ],
     },
     {

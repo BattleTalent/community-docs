@@ -43,4 +43,4 @@ Only weapons & props.
 They are not added to the modding toolkit. So no.
 
 ### Any other mod project examples I can use?
-Yes I've cleaned up some projects and added them [here](https://github.com/unbelievableflavour/BattleTalentBaseProjects) to download and checkout for free. 
+Yes we've cleaned up some projects and added them to the [base projects](/docs/tutorial-base-projects) page.
