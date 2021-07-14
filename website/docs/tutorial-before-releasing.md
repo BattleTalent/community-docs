@@ -7,7 +7,7 @@ Before you release your own mod there are a couple of things you should do.
 
 Two ways to clear the project of examples
 
-* Remove the pre-added addressables `window -> asset management -> addressables -> group`
+* Remove the pre-added addressables `window -> asset management -> addressables -> groups`
 * Delete the Examples folder `Assets/Examples`
 
 ## Renamed the product
