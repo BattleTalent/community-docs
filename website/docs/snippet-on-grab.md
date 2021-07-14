@@ -29,3 +29,9 @@ No user variables.
 ### Where do I add this script?
 
 OnGrab is a function that can be called when adding a luascript to the `InteractTriggerX` component.
+
+### Any way to see which hand grabbed the item?
+
+Yes, you can call `a.attachedHand:GetHandIndex()` to get the hand index of the item.
+`0` = right
+`1` = left
