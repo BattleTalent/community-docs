@@ -16,6 +16,9 @@ module.exports = {
       label: 'Snippets',
       items: [
         'snippet-changing-parents',
+        'snippet-skill-instant',
+        'snippet-skill-charge',
+        'snippet-skill-holdable',
         'snippet-update',
         'snippet-create-new-vector-3',
         'snippet-ray-casting',
