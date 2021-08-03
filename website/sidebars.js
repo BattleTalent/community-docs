@@ -19,6 +19,7 @@ module.exports = {
         'snippet-skill-instant',
         'snippet-skill-charge',
         'snippet-skill-holdable',
+        'snippet-skill-toggle',
         'snippet-update',
         'snippet-create-new-vector-3',
         'snippet-ray-casting',

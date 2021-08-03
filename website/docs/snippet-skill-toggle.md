@@ -1,15 +1,19 @@
 ---
-title: Skill - Instant
+title: Skill - Toggle
 ---
 
-A skill that will activate when pushing down the trigger button.
+A skill that will activate when pushing down the trigger button & deactivate when doing it again.
 
-**Remember:** `Instant skill` should be checked in the `InteractTriggerX` component for a skill to be instant.
+**Remember:** `Instant skill` should be checked in the `InteractTriggerX` component for a skill to be toggleable.
 
 ## Example
 
 ```lua
 local table = {}
+
+function table:Awake()
+    self.isOpen = false
+end
 
 function table:UpdateSkill()
 	local shootInterval = self.shootInterval or 0.1
@@ -23,7 +27,16 @@ function table:UpdateSkill()
 end
 
 function table:PullTrigger()
-	print("Instant skill triggered!")
+    if (self.isOpen) then
+        self.isOpen = self.isOpen == false;
+
+        print("Toggle skill deactivated!")
+        return
+    end
+    
+    self.isOpen = self.isOpen == false;
+
+	print("Toggle skill activated!")
 end
 
 return Class(nil,nil,table)
