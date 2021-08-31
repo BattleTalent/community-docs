@@ -39,6 +39,6 @@ In the projects you will find a lot of `YOURPREFIX_` in names. You should change
 ### Code changes
 Only actual CODE changes that are needed per project are the following:
 
-Step 1 - Entry.txt In `Setup\Scripts\Entry.txt` edit `print("Loading YOURPREFIX_PROJECTNAME")`
+Step 1 - In `Setup\Scripts\Entry.txt` edit `print("Loading YOURPREFIX_PROJECTNAME")`
 
-Step 2 - Entry.txt In `Setup\Scripts\WeaponModDemo.txt` edit `AddStoreItemTemplate("YOURPREFIX_PROJECTNAME", nil, "Weapon name", "A description about the weapon.")`
+Step 2 - In `Setup\Scripts\WeaponModDemo.txt` edit `AddStoreItemTemplate("YOURPREFIX_PROJECTNAME", nil, "Weapon name", "A description about the weapon.")`
