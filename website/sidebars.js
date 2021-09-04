@@ -39,6 +39,7 @@ module.exports = {
       label: 'Complete Scripts',
       items: [
         'script-increased-damage',
+        'script-particles-on-trigger',
         'script-animate-on-trigger',
         'script-blink-eyes',
         'script-spin-object',
