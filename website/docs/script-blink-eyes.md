@@ -59,4 +59,4 @@ return Class(nil,nil,table)
 
 ## Component
 
-![Component](/img/script-increased-damage1.png)
+![Component](/img/script-blink-eyes1.png)
