@@ -4,26 +4,19 @@ title: Skill - Holdable
 
 A skill that will stay activated while holding down the trigger button.
 
-**Remember:** `Instant skill` should not be checked in the `InteractTriggerX` component for a skill to be holdable.
+**Remember:** `Instant skill` should be checked in the `InteractTriggerX` component for a skill to be holdable.
 
 ## Example
 
 ```lua
 local table = {}
 
-function table:UpdateSkill()
-	local shootInterval = self.shootInterval or 0.1
-	local st = self.shootTime or 0
-	local ct = UE.Time.time
-	if ct - st < shootInterval then
-		return
-	end
-
-	self:PullTrigger()
+function table:OpenSkill(attach)
+	print("Start skill triggered!")
 end
 
-function table:PullTrigger()
-	print("Holdable skill triggered!")
+function table:CloseSkill()
+	print("End skill triggered!")
 end
 
 return Class(nil,nil,table)
@@ -31,17 +24,15 @@ return Class(nil,nil,table)
 
 ## User Variables
 
-| Component   | variable    | optional    |
-| ----------- | ----------- | ----------- |
-| int   | `self.shootInterval` | yes |
-| int   | `self.shootTime` | yes |
+No user variables
 
 ## FAQ
 
 ### Where do I add this script?
 
-`UpdateSkill` is a function that can be called when adding a luascript to the `InteractTriggerX` component.
+`OpenSkill` is a function that can be called when adding a luascript to the `InteractTriggerX` component.
+`CloseSkill` is a function that can be called when adding a luascript to the `InteractTriggerX` component.
 
 ### Why is the function not called multiple times when I hold down the trigger?
 
-Make sure `Instant skill` is **NOT CHECKED** in the `InteractTriggerX` component. 
+Make sure `Instant skill` is **CHECKED** in the `InteractTriggerX` component. 
