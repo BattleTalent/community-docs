@@ -43,6 +43,7 @@ module.exports = {
         'script-particles-on-trigger',
         'script-animate-on-trigger',
         'script-slow-time-on-trigger',
+        'script-dash-on-trigger',
         'script-blink-eyes',
         'script-spin-object',
         'script-retractable',
