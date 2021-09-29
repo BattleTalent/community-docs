@@ -41,6 +41,7 @@ module.exports = {
         'script-increased-damage',
         'script-particles-on-trigger',
         'script-animate-on-trigger',
+        'script-slow-time-on-trigger',
         'script-blink-eyes',
         'script-spin-object',
         'script-retractable',
