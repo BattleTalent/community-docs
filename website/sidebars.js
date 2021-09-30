@@ -21,6 +21,7 @@ module.exports = {
         'snippet-skill-holdable',
         'snippet-skill-toggle',
         'snippet-input-detection',
+        'snippet-add-hp',
         'snippet-update',
         'snippet-create-new-vector-3',
         'snippet-ray-casting',
