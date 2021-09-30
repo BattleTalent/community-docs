@@ -18,6 +18,8 @@ Base projects are very simple straightforward completed mods of a specific type.
 * [Gun - One-handed](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_GunOneHanded.zip)
 * [Gun - Two-handed](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_GunTwoHanded.zip)
 * [Prop](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Prop.zip)
+* [Skill Orb](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_OrbWithSkill.zip)
+
 
 ## How to use
 
