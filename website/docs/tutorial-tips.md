@@ -10,6 +10,15 @@ Some extra tips for creating BT mods.
 * namespace CrossLink is `CL` in lua, CL == CS.CrossLink
 * namespace UnityEngine is `UE` in lua, UE == CS.UnityEngine
 
+## Addressable shortcuts
+
+Shortcuts to be used in the addressable list for adding files to the mod build.
+
+* Weapons use `Weapon/`
+* Icons use `ICon/`
+* Sounds use  `Audio/Sound/`
+* Scripts use `LuaScript/`
+
 ## Static functions
 
 Calling a static function should use `.` instead of `:` in lua.

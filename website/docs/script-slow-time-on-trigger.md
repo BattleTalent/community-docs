@@ -10,7 +10,7 @@ Slows time on pressing the trigger button.
 local table = {}
 
 function table:Awake()
-    self.slowMoLength = 4f
+    self.slowMoLength = 4
 end
 
 function table:UpdateSkill()
