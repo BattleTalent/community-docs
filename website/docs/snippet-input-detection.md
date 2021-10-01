@@ -7,6 +7,11 @@ Checks if a button is pressed
 ## Example
 
 ```lua
+local player = CL.InteractCharacter.PlayerInstance
+if player == nil then
+    return
+end
+
 local leftHand = player.hands[1]
 local rightHand = player.hands[0]
 
