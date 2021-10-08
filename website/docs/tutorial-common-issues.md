@@ -38,6 +38,22 @@ Some issues are more common then others. Below are some easy fixes for these isu
 1. Check if errors occured.
 1. Fix all errors.
 
+## Weapon glowing on sheathing
+
+![Component](/img/tutorial-common-issues-sheathing.jpeg)
+
+### Steps to reproduce
+
+1. Spawn your weapon.
+1. Sheath it.
+1. Regrab it again. See that its glowing!
+
+### Fix
+
+1. Open InteractTrigger component.
+1. Open "Skill Change Colors".
+1. Make sure all mesh renderers there have material with emmision map color set to 1,1,0.
+
 ## Upgrade & vulnerability colors are not showing
 
 Upgrade and vulnerability colors will be set by the "skill change colors" property of the "interact trigger" component. But there are some important things to watchout for.
