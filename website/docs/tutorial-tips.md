@@ -35,7 +35,8 @@ You can hold objects in different ways by changing the "Hand Pose" parameter on 
 | ---|---|
 | DefaultPose | This is the default pose. It is also used when NOT holding anything.|
 | HoldPose | This pose is for swords, axes, etc.|
-|GunPose | This pose is for holding guns.|
+| GunPose | This pose is for holding guns.|
+| GlovePose | This pose is for spells.| 
 
 ## When is slicing triggered
 
