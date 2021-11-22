@@ -46,8 +46,6 @@ Some important things you might need to know while creating mods through base mo
 In the projects you will find a lot of `YOURPREFIX_` in names. You should change those to your own cool modder tag so your mods will not conflict with others.
 
 ### Code changes
-Only actual CODE changes that are needed per project are the following:
+Only actual CODE change that's needed per project is the following:
 
-Step 1 - In `Setup\Scripts\Entry.txt` edit `print("Loading YOURPREFIX_PROJECTNAME")`
-
-Step 2 - In `Setup\Scripts\WeaponModDemo.txt` edit `AddStoreItemTemplate("YOURPREFIX_YourModName_Your_Weapon_Name", nil, "Weapon name", "A description about the weapon.")`
+In `Assets\Build\Entry.txt` edit `AddStoreItemTemplate("YOURPREFIX_YourModName_Your_Weapon_Name", nil, "Weapon name", "A description about the weapon.")` at the bottom of the script.
