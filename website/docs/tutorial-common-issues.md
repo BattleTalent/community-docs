@@ -17,7 +17,7 @@ Some issues are more common then others. Below are some easy fixes for these isu
 
 1. Delete your icon if there is one.
 1. Create a new icon.
-1. Add your new icon to the addressable list as `ICON/YOUR_WEAPON_ID`.
+1. Recreate addressable list from `Assets -> Resources -> AddressableConfig -> Create And Refresh Addressable Name`
 
 ## Dungeon bug
 
