@@ -10,6 +10,7 @@ There have been some cool updates since the latest update!
 * Spell crystal modding! We can now create spells.
 * Hand grip previews. You can now preview the hand position in the editor.
 * New spell holding pose called `GlovePose`!
+* Scabbard! Yes they are actually working now.
 * Skill charge color. You can now change the glowing color the weapon skill in InteractTriggerX.
 * Skill charge sound. You can now add sounds straight from InteractTriggerX.
 * Automatic addressable namespacing. Change it once in `Assets/Resources/AddressableConfig`, edit it in your prefabs and your done!
