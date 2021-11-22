@@ -18,6 +18,7 @@ Shortcuts to be used in the addressable list for adding files to the mod build.
 * Icons use `ICon/`
 * Sounds use  `Audio/Sound/`
 * Scripts use `LuaScript/`
+* Effects use `Effect/`
 
 ## Static functions
 
@@ -25,7 +26,7 @@ Calling a static function should use `.` instead of `:` in lua.
 
 ## Recommended IDE
 
-* recommended IDE to use by Fonzie is [ZeroBrane Studio](https://studio.zerobrane.com/) as lua editor
+* Recommended IDE to use by Fonzie is [ZeroBrane Studio](https://studio.zerobrane.com/) as lua editor
 
 ## Different AttachLine holdPoses
 
