@@ -4,7 +4,13 @@ title: Base Projects
 
 Base projects are very simple straightforward completed mods of a specific type. They are great starting points for creating your own mods and can be used freely.
 
-#### Downloads
+#### Downloads (New)
+These are projects based on the new toolkit. They are the prefered projects.
+
+(Coming soon)
+
+#### Downloads (Old)
+These are projects based on the previous toolkit. They work just fine, but some the documentation may differ a from these.
 
 * [Sword](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Sword.zip)
 * [Sword - Increased damage on trigger](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_SwordWithIncreasedDamageOnTrigger.zip)
