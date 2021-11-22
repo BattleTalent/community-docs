@@ -50,4 +50,4 @@ Only actual CODE changes that are needed per project are the following:
 
 Step 1 - In `Setup\Scripts\Entry.txt` edit `print("Loading YOURPREFIX_PROJECTNAME")`
 
-Step 2 - In `Setup\Scripts\WeaponModDemo.txt` edit `AddStoreItemTemplate("YOURPREFIX_PROJECTNAME", nil, "Weapon name", "A description about the weapon.")`
+Step 2 - In `Setup\Scripts\WeaponModDemo.txt` edit `AddStoreItemTemplate("YOURPREFIX_YourModName_Your_Weapon_Name", nil, "Weapon name", "A description about the weapon.")`
