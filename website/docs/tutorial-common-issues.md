@@ -70,3 +70,7 @@ Upgrade and vulnerability colors will be set by the "skill change colors" proper
 * The added meshes should have a material where emmision is turned on.
 * The added meshes should have a material where emmision does not have an emmision map texture.
 * The added meshes should have a material where emmision map texture color is set to 1,1,1,0.
+
+## Gaze info not showing
+
+DONT use the "Pull Gaze Name From GameObject" anymore. Weapon prefabs are no longer named with prefix due to the new prefixing system. The value's of Gaze obj should be set manually.
