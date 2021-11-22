@@ -12,9 +12,15 @@ The way to change product name
 ## Prefix your new mod
 
 1. Open `Assets -> Resources -> AddressableConfig.asset`
-2. Modify field `Prefix` to your new prefix name. Use the format: YOURPREFIX_MyModName_. (Example: UF_ChevalierSword_)
-3. Press the button "Create And Refresh Addressable Name to automatically create (or update) all addressables with the correct prefix"
-4. Manually check if all your addressables are now prefixed correctly under `window -> asset management -> addressables -> groups`
+1. Modify field `Prefix` to your new prefix name. Use the format: YOURPREFIX_MyModName_. (Example: UF_ChevalierSword_)
+1. Press the button "Create And Refresh Addressable Name to automatically create (or update) all addressables with the correct prefix"
+1. Manually check if all your addressables are now prefixed correctly under `window -> asset management -> addressables -> groups`
+
+## Add the appropriate weapons of your mod to store
+
+1. Open `Assets -> Build -> Entry.txt`
+1. Scroll to the bottom and add `AddStoreItemTemplate("YOURPREFIX_MyModName_My_Weapon_Name", nil, "Weapon Name", "Weapon Description")`
+1. Edit the line to suit your weapon.
 
 ## Add an icon
 
