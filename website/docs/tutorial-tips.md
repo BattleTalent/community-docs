@@ -13,6 +13,7 @@ There have been some cool updates since the latest update!
 * Scabbard! Yes they are actually working now.
 * Skill charge color. You can now change the glowing color the weapon skill in InteractTriggerX.
 * Skill charge sound. You can now add sounds straight from InteractTriggerX.
+* Lua scripts can now receive String values!
 * Automatic addressable namespacing. Change it once in `Assets/Resources/AddressableConfig`, edit it in your prefabs and your done!
 
 ## Namespaces
