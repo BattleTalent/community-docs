@@ -5,6 +5,8 @@ title: Whats new
 
 There have been some cool updates since the latest update!
 
+## 11/20/2021
+
 * Spell crystal modding! We can now create spells.
 * Trap modding. We can now officialy mod placeable objects.
 * Sheaths/Scabbards modding! Yes they are actually working now.
