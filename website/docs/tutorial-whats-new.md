@@ -3,6 +3,14 @@ title: Whats new
 ---
 
 There have been some cool updates since the latest update!
+
+## Soon
+
+* More hierarchy cleanup.
+* Moved unused resources to a separate folder.
+* Fixed scabbard texture.
+* Fixed ak47 & lightsaber audio. 
+
 ## 11/23/2021
 
 * Removed workflow conflicting button (weapons are no longer named with prefix so gaze update button is now removed. update through AddressableConfig)
