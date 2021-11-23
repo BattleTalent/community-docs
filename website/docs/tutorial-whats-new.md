@@ -1,6 +1,6 @@
 
 ---
-title: What's new!
+title: Whats new
 ---
 
 There have been some cool updates since the latest update!
