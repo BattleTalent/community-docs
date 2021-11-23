@@ -36,11 +36,11 @@ One of our finest modders has created an [extensive tutorial video](https://yout
 ### Does it matter which Unity version I use?
 Yes, you should use version 2019.4.12f
 
-### What can we mod right now?
-Only weapons & props.
+### What can we officialy mod right now?
+Only weapons, spells, traps.
 
 ### Can we use skills from the original game on modded weapons?
-They are not added to the modding toolkit. So no.
+They are not added to the modding toolkit. So no. But if you are skilled enough you can recreate them :)
 
 ### Any other mod project examples I can use?
 Yes we've cleaned up some projects and added them to the [base projects](/docs/tutorial-base-projects) page.
