@@ -1,9 +1,16 @@
-
 ---
 title: Whats new
 ---
 
 There have been some cool updates since the latest update!
+## 11/23/2021
+
+* Removed workflow conflicting button (weapons are no longer named with prefix so gaze update button is now removed. update through AddressableConfig)
+* Spells & crossbow get slotted.
+* Hierarchy should be cleaner now (not finished yet). 
+* Deleted duplicate code. 
+* Tower_Turrent icon fixed.
+* Gaze info now gets updated when prefixing
 
 ## 11/20/2021
 
