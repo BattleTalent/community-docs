@@ -4,12 +4,13 @@ title: Whats new
 
 There have been some cool updates since the latest update!
 
-## Soon
+## Soon (Ready but not yet in master)
 
 * More hierarchy cleanup.
 * Moved unused resources to a separate folder.
 * Fixed scabbard texture.
-* Fixed ak47 & lightsaber audio. 
+* Fixed ak47 & lightsaber audio.
+* Fixed Tower_Turret materials.
 
 ## 11/23/2021
 
@@ -17,7 +18,7 @@ There have been some cool updates since the latest update!
 * Spells & crossbow get slotted.
 * Hierarchy should be cleaner now (not finished yet). 
 * Deleted duplicate code. 
-* Tower_Turrent icon fixed.
+* Tower_Turret icon fixed.
 * Gaze info now gets updated when prefixing
 
 ## 11/20/2021
