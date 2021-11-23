@@ -31,6 +31,9 @@ Shortcuts to be used in the addressable list for adding files to the mod build.
 * Sounds use  `Audio/Sound/`
 * Scripts use `LuaScript/`
 * Effects use `Effect/`
+* FlyObj use `FlyObj/`
+
+Any resource's addressable name in the path above, can be loaded by the system without path included. for example, if an effect's addressable name is Effect/explosion, it can be created by EffectMgr.Instance:PlayEffect("explosion")
 
 ## Static functions
 
