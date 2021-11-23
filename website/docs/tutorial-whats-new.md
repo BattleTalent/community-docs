@@ -6,9 +6,10 @@ title: What's new!
 There have been some cool updates since the latest update!
 
 * Spell crystal modding! We can now create spells.
+* Trap modding. We can now officialy mod placeable objects.
+* Sheaths/Scabbards modding! Yes they are actually working now.
 * Hand grip previews. You can now preview the hand position in the editor.
-* New spell holding pose called `GlovePose`!
-* Scabbard! Yes they are actually working now.
+* New holding pose (for spells) called `GlovePose`!
 * Skill charge color. You can now change the glowing color the weapon skill in InteractTriggerX.
 * Skill charge sound. You can now add sounds straight from InteractTriggerX.
 * Lua scripts can now receive String values!
