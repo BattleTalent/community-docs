@@ -4,13 +4,14 @@ title: Whats new
 
 There have been some cool updates since the latest update!
 
-## Soon (Ready but not yet in master)
+## 11/24/2021
 
 * More hierarchy cleanup.
 * Moved unused resources to a separate folder.
 * Fixed scabbard texture.
 * Fixed ak47 & lightsaber audio.
 * Fixed Tower_Turret materials.
+* Fixed Tower_Turret scripts.
 
 ## 11/23/2021
 
