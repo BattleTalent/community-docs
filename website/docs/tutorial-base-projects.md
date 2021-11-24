@@ -24,7 +24,6 @@ These are projects based on the previous toolkit. They work just fine, but some 
 * [Katana](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Katana.zip)
 * [Gun - One-handed](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_GunOneHanded.zip)
 * [Gun - Two-handed](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_GunTwoHanded.zip)
-* [Skill Orb](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_OrbWithSkill.zip)
 
 #### Experimental
 
