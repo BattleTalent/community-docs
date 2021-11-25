@@ -4,6 +4,13 @@ title: Whats new
 
 There have been some cool updates since the latest update!
 
+## Soon (Waiting for PR approval)
+
+* Moved all weapon folders to "Resources" (WeaponRes is no more)
+* Removed sherbs collection and all dependencies on it.
+* Added SpellCrystal model.
+* Separated FireBall particle dependency from Crossbow.
+
 ## 11/24/2021
 
 * More hierarchy cleanup.
@@ -12,6 +19,7 @@ There have been some cool updates since the latest update!
 * Fixed ak47 & lightsaber audio.
 * Fixed Tower_Turret materials.
 * Fixed Tower_Turret scripts.
+* Moved HandPoseHelper to toolkit.
 
 ## 11/23/2021
 
