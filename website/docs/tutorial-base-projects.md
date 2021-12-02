@@ -7,7 +7,7 @@ Base projects are very simple straightforward completed mods of a specific type.
 #### Downloads (New)
 These are projects based on the new toolkit. They are the prefered projects.
 
-(Coming soon)
+* [Song](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_SongPlayer_SONG_SongName.zip)
 
 #### Downloads (Old)
 These are projects based on the previous toolkit. They work just fine, but some the documentation may differ a from these.
@@ -30,7 +30,6 @@ These are projects based on the previous toolkit. They work just fine, but some 
 These projects are a bit hacky and might not work in next version but bring some cool extra features to the game!
 
 * [Prop](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Prop.zip)
-* [Song](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Song.zip)
 
 
 ## How to use
