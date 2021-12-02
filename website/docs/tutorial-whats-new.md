@@ -5,11 +5,16 @@ title: Whats new
 There have been some cool updates since the latest update!
 
 ## Soon (Waiting for PR approval)
+* Removed random AKshots when grabbing the mod spells
+* Fixed scabbard texture. (was broken due to a fonzie fix for the scabbard script.)
+
+## 11/28/2021
 
 * Moved all weapon folders to "Resources" (WeaponRes is no more)
 * Removed sherbs collection and all dependencies on it.
 * Added SpellCrystal model.
 * Separated FireBall particle dependency from Crossbow.
+* Fixed scabbard crashing script.
 
 ## 11/24/2021
 
