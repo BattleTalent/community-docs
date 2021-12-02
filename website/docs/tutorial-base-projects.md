@@ -7,6 +7,12 @@ Base projects are very simple straightforward completed mods of a specific type.
 #### Downloads (New)
 These are projects based on the new toolkit. They are the prefered projects.
 
+(Coming Soon)
+
+#### Songs
+This is a special project that makes it able to add songs to the Song Spell!
+Make sure to keep the mod/addressable names like `YOURPREFIX_SongPlayer_SONG_SongName`, else the songplayer wont find your song!
+
 * [Song](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_SongPlayer_SONG_SongName.zip)
 
 #### Downloads (Old)
