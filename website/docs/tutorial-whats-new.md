@@ -4,7 +4,8 @@ title: Whats new
 
 There have been some cool updates since the latest update!
 
-## Soon (Waiting for PR approval)
+## 12/15/2021
+* Sheaths (scabbards) are now sticky and sword stays in.
 * Removed random AKshots when grabbing the mod spells
 * Fixed scabbard texture. (was broken due to a fonzie fix for the scabbard script.)
 
