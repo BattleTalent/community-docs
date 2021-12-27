@@ -4,6 +4,9 @@ title: Whats new
 
 There have been some cool updates since the latest update!
 
+More recent changes can be found here!
+[[https://github.com/fonzieyang/BTModToolkit]]
+
 ## 12/15/2021
 * Sheaths (scabbards) are now sticky and sword stays in.
 * Removed random AKshots when grabbing the mod spells
