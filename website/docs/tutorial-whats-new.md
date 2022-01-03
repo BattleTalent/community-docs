@@ -4,8 +4,10 @@ title: Whats new
 
 There have been some cool updates since the latest update!
 
-More recent changes can be found here!
-[[https://github.com/fonzieyang/BTModToolkit]]
+More recent changes can be found here! [BTModToolkit](https://github.com/fonzieyang/BTModToolkit).
+
+## 12/20/2021
+* More examples have been added (bows, original game weapons with skills)
 
 ## 12/15/2021
 * Sheaths (scabbards) are now sticky and sword stays in.
