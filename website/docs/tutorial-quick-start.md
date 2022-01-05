@@ -23,8 +23,8 @@ If you dont like reading a lot there is also some tutorial videos out there that
 
 ### 10 minutes Tutorial Video
 
-Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=IqPl5KRgZ8Y) to quickly get going. It can be a little hard to follow sometimes but it gets the job done quickly.
-<iframe src="//www.youtube.com/embed/IqPl5KRgZ8Y" frameBorder="0" allowFullScreen></iframe>
+Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=alnqZcCeais) to quickly get you going. Click the link or watch it below!
+<iframe src="//www.youtube.com/watch?v=alnqZcCeais" frameBorder="0" allowFullScreen></iframe>
 
 ## FAQ
 
@@ -33,9 +33,6 @@ Yes, you should use version 2019.4.12f
 
 ### What can we officialy mod right now?
 Only weapons, spells, traps.
-
-### Can we use skills from the original game on modded weapons?
-They are not added to the modding toolkit. So no. But if you are skilled enough you can recreate them :)
 
 ### Any other mod project examples I can use?
 Yes we've cleaned up some projects and added them to the [base projects](/docs/tutorial-base-projects) page.
