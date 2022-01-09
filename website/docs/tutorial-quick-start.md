@@ -23,8 +23,7 @@ If you dont like reading a lot there is also some tutorial videos out there that
 
 ### 10 minutes Tutorial Video
 
-Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=alnqZcCeais) to quickly get you going. Click the link or watch it below!
-<iframe src="//www.youtube.com/watch?v=alnqZcCeais" frameBorder="0" allowFullScreen></iframe>
+Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=alnqZcCeais) to quickly get you going. Click the link!
 
 ## FAQ
 
