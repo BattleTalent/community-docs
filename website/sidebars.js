@@ -34,7 +34,8 @@ module.exports = {
         'snippet-list-all-weapons',
         'snippet-list-all-unlocked-weapons',
         'snippet-instantiate-weapon',
-        'snippet-on-grab'
+        'snippet-on-grab',
+        'snippet-explosion-without-damage-to-player'
       ],
     },
     {
