@@ -25,6 +25,11 @@ If you dont like reading a lot there is also some tutorial videos out there that
 
 Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=alnqZcCeais) to quickly get you going. Click the link!
 
+### Dino's extended Tutorial Video
+
+Dino, one of our beloved modders made an extensive tutorial which explains stuff in more details. 
+[Check it out!](https://www.youtube.com/watch?v=YqETFL-rwc4)
+
 ## FAQ
 
 ### Does it matter which Unity version I use?
