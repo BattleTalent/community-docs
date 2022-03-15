@@ -71,6 +71,18 @@ Upgrade and vulnerability colors will be set by the "skill change colors" proper
 * The added meshes should have a material where emmision does not have an emmision map texture.
 * The added meshes should have a material where emmision map texture color is set to 1,1,1,0.
 
+## Weapon not grabbable
+
+### Steps to reproduce
+
+1. Spawn your weapon.
+1. Try to grab it.
+1. Not grabbable.
+
+### Fix
+
+1. Make sure "hand side" in "AttachLine" component is not set to "None".
+
 ## Weapon not sheathing
 
 ### Steps to reproduce
