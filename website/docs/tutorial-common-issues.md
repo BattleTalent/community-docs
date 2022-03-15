@@ -83,6 +83,8 @@ Upgrade and vulnerability colors will be set by the "skill change colors" proper
 
 1. Make sure "hand side" in "AttachLine" component is not set to "None".
 
+![Component](/img/tutorial-common-issues-hand-side-wrong.jpeg)
+
 ## Weapon not sheathing
 
 ### Steps to reproduce
