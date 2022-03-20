@@ -2,7 +2,17 @@
 title: Common Issues
 ---
 
-Some issues are more common then others. Below are some easy fixes for these isues.
+Some issues are more common then others. Below are s- [ ] ome easy fixes for these isues.
+## Invalid path in AssetBundleProvider
+
+### Steps to reproduce
+
+1. Install a mod where the folder name has changed
+1. Get a big error in your console saying "Invalid Path to AssetBundleProvider".
+
+### Fix
+
+Dont rename a mod folder when it's build.
 
 ## White Icon
 
