@@ -2,22 +2,14 @@
 title: Base Projects
 ---
 
-Base projects are very simple straightforward completed mods of a specific type. They are great starting points for creating your own mods and can be used freely.
+**Important: Base Projects are no longer recommended. The modproj has the most up-to-date & straightforward mod examples.** 
 
-#### Downloads (New)
-These are projects based on the new toolkit. They are the prefered projects.
+Base projects **were** very simple straightforward completed mods of a specific types. They **were** great starting points for creating your own mods when the modproj was a little more complicated. The last version of ModProj is easy-to-use and straightforward. So we recommend using the [ModProj](https://github.com/fonzieyang/BTModToolkit) instead now.
+
+## Downloads
+**These are projects based on old version of the toolkit. Don't use unless you know what you are doing**
 
 * [Sword](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Sword.zip)
-
-#### Songs
-This is a special project that makes it able to add songs to the Song Spell!
-Make sure to keep the mod/addressable names like `YOURPREFIX_SongPlayer_SONG_SongName`, else the songplayer wont find your song!
-
-* [Song](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_SongPlayer_SONG_SongName.zip)
-
-#### Downloads (Old)
-These are projects based on the previous toolkit. They work just fine, but some the documentation may differ from these projects.
-
 * [Sword - Increased damage on trigger](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_SwordWithIncreasedDamageOnTrigger.zip)
 * [Sword - Shoots projectile on trigger](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_SwordWithProjectile.zip)
 * [Weapon - Spawn item on trigger](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_WeaponSpawner.zip)
@@ -29,11 +21,6 @@ These are projects based on the previous toolkit. They work just fine, but some 
 * [Katana](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Katana.zip)
 * [Gun - One-handed](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_GunOneHanded.zip)
 * [Gun - Two-handed](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_GunTwoHanded.zip)
-
-#### Experimental
-
-These projects are a bit hacky and might not work in next version but bring some cool extra features to the game!
-
 * [Prop](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Prop.zip)
 
 ## How to use
