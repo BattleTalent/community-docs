@@ -39,4 +39,4 @@ Yes, you should use version 2019.4.12f
 Only weapons, spells, traps.
 
 ### Any other mod project examples I can use?
-Yes we've cleaned up some projects and added them to the [base projects](/docs/tutorial-base-projects) page.
+Yes we've cleaned up some projects and added them to the [base projects](/docs/projects/projects-base-projects) page.
