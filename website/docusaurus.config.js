@@ -78,10 +78,6 @@ module.exports = {
               label: 'Join our Discord',
               href: 'https://discord.gg/YBTDhbzjC5',
             },
-            {
-              label: 'Video - How To mod',
-              href: 'https://youtu.be/5o_1-wd6MiI',
-            },
           ],
         },
         {
