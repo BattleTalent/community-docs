@@ -35,8 +35,9 @@ Dino, one of our beloved modders made an extensive tutorial which explains stuff
 ### Does it matter which Unity version I use?
 Yes, you should use version 2019.4.12f
 
-### What can we officialy mod right now?
-Only weapons, spells, traps.
+### What can we mod right now?
+Officially weapons, spells, traps.
+Unofficially we can also mod songs, and props.
 
 ### Any other mod project examples I can use?
 Yes we've cleaned up some projects and added them to the [base projects](/docs/projects/projects-base-projects) page.
