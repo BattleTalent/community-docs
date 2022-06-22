@@ -7,8 +7,7 @@ Make sure to keep the mod/addressable names like `YOURPREFIX_PropSpawner_PROP_Pr
 
 ## Downloads
 
-* To be released
-<!-- * [Prop](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_Prop.zip) -->
+* [Prop](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_PropSpawner_PROP_YourModName.zip)
 
 ## How to use
 
