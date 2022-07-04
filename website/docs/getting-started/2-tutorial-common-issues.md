@@ -89,11 +89,15 @@ Upgrade and vulnerability colors will be set by the "skill change colors" proper
 1. Try to grab it.
 1. Not grabbable.
 
-### Fix
+### Fix 1
 
 1. Make sure "hand side" in "AttachLine" component is not set to "None".
 
 ![Component](/img/tutorial-common-issues-hand-side-wrong.jpeg)
+
+### Fix 2
+
+1. If you have multiple Attachlines, make sure "Depend Attach Obj" in both "AttachLine"s aren't referring to each other.
 
 ## Weapon not sheathing
 
