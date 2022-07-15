@@ -25,13 +25,13 @@ Right click under `Assets -> Build -> YourWeaponName -> Config`, then create an 
 Create an icon under `Assets -> Build -> YourWeaponName -> ICon -> YourWeaponName.png`
 Make sure an icon is added, else the store will crash.
 
-## Clear the project (only if not using base project)
+## Cleared the project of files you are not using.
 
 Two ways to clear the project of examples
 
-* Delete build/addressables folders that you are not gonna use (under `Assets/Build`
-* Delete resource folders that you are not gonna use (under `Assets/Resources`
+* Delete all weapons under `build` folder that you are not gonna use.
+* Delete all models and other files under `resources` folder that you are not gonna use.
 
 ## No errors
 
-Open the cheat menu in-game & make sure no errors are shown when spawning the weapon. It will cause unexpected issues throughout the game.
+Open the in-game `console` (`cheat menu must be unlocked`) and make sure no errors are shown when you've spawned and tested a weapon. It will cause unexpected issues throughout the game so **DONT RELEASE MODS WITH ERRORS**.
