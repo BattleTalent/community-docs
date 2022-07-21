@@ -36,12 +36,12 @@ Use this script with `LuaBehaviour`.
 
 ## User Variables
 
-| Component | Variable             | Explanation                                                                                   |
-|-----------|----------------------|-----------------------------------------------------------------------------------------------|
-| String    | `self.name`          | The name of the enemy to spawn                                                                |
-| String    | `self.relationship`  | The relation to the enemy to spawn. If friend; set to `Good`                                  |
-| String    | `self.shouldStay`    | The reaction of the enemy. If enemy should not move towards player, Set `shouldStay` to `Yes` |
-| Transform | `self.spawnPosition` | The position of the enemy to spawn                                                            |
+| Component | Variable             | Explanation                                                             | Default     |
+|-----------|----------------------|-------------------------------------------------------------------------|-------------|
+| String    | `self.name`          | The name of the enemy to spawn.                                         | `Goblin_L2` |
+| String    | `self.relationship`  | If `Bad`, AI will spawn as enemy. If `Good`, AI will spawn as a friend. | `Bad`       |
+| String    | `self.shouldStay`    | If `Yes`, then AI will now move to player until being hit.              | `No`        |
+| Transform | `self.spawnPosition` | The position of the enemy to spawn.                                     | no default  |
 
 ## FAQ
 
