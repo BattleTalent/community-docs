@@ -29,13 +29,10 @@ But you don't need to remember this at all. In Battle Talent, we predefined some
 To access these mask in code, please check this: http://jjyy.guru/BTModToolkit/class_cross_link_1_1_layer_define.html
 
 
-
-
-
-
-
-### Unity doesn't support convex collider
+### Convexing colliders
 
 If you want convex collider, please divide it into multiple small concave colliders.
 
-In Battle Talent, we're using Collider Creator in the unity asset store.
+There is different ways to cut up your models:
+- In Battle Talent, we're using Collider Creator in the unity asset store.
+- It's also possible to manually cut the mesh in small pieces using Blender.
