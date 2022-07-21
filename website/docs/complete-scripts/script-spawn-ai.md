@@ -12,14 +12,19 @@ local table = {}
 function table:Awake()
     local nameOfAI = self.name or "Goblin_L2"
     local relationShipWithAI = self.relationship or "Bad"
+    local shouldStay = self.shouldStay == "Yes"
     
-    local fc = CharacterMgr.Instance:SpawnRole(nameOfAI)
+    local fc = CL.CharacterMgr.Instance:SpawnRole(nameOfAI)
     if fc ~= nil then
         fc.trans.position = self.spawnPosition.position
         fc.trans.rotation = self.spawnPosition.rotation
     end
     
     fc.attr.camp = relationShipWithAI
+
+    if shouldStay then
+        fc.ai:StayCommand()
+    end
 end
 
 return Class(nil,nil,table)
@@ -31,11 +36,12 @@ Use this script with `LuaBehaviour`.
 
 ## User Variables
 
-| Component | Variable             | Explanation                        |
-|-----------|----------------------|------------------------------------|
-| String    | `self.name`          | The name of the enemy to spawn     |
-| String    | `self.relationship`  | The relation to the enemy to spawn |
-| Transform | `self.spawnPosition` | The position of the enemy to spawn |
+| Component | Variable             | Explanation                                                                                   |
+|-----------|----------------------|-----------------------------------------------------------------------------------------------|
+| String    | `self.name`          | The name of the enemy to spawn                                                                |
+| String    | `self.relationship`  | The relation to the enemy to spawn. If friend; set to `Good`                                  |
+| String    | `self.shouldStay`    | The reaction of the enemy. If enemy should not move towards player, Set `shouldStay` to `Yes` |
+| Transform | `self.spawnPosition` | The position of the enemy to spawn                                                            |
 
 ## FAQ
 
