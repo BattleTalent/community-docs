@@ -9,7 +9,7 @@ Adds an **enemy** or **friend** to the battlefield.
 ```lua
 local table = {}
 
-function table:Awake()
+function table:Start()
     local nameOfAI = self.name or "Goblin_L2"
     local relationShipWithAI = self.relationship or "Bad"
     local shouldStay = self.shouldStay == "Yes"
