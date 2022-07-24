@@ -7,7 +7,7 @@ Create a new Vector3.
 ## Example
 
 ```lua
-local newVector = UE.Vector3(0,0,0); 
+local newVector = UE.Vector3(0, 0, 0)
 ```
 
 ## User Variables
