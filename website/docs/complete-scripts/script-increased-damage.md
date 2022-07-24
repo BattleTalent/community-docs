@@ -7,7 +7,9 @@ Increased melee damage when holding down the trigger.
 ## Code
 
 ```lua
-local table = {}
+local table = {
+    damage = 300,
+}
 
 function table:Awake()
     self.fallbackDamage = self.ragdollHitInfo.hitInfo.damageMlp;

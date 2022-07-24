@@ -7,27 +7,27 @@ Adds an **enemy** or **friend** to the battlefield.
 ## Code
 
 ```lua
-local table = {}
+local table = {
+    name = "Goblin_L2",
+    relationship = "Bad",
+    shouldStay = "Yes",
+}
 
 function table:Start()
-    local nameOfAI = self.name or "Goblin_L2"
-    local relationShipWithAI = self.relationship or "Bad"
-    local shouldStay = self.shouldStay == "Yes"
-    
-    local fc = CL.CharacterMgr.Instance:SpawnRole(nameOfAI)
-    if fc ~= nil then
-        fc.trans.position = self.spawnPosition.position
-        fc.trans.rotation = self.spawnPosition.rotation
+    self.fc = CL.CharacterMgr.Instance:SpawnRole(self.name)
+    if self.fc ~= nil then
+        self.fc.trans.position = self.spawnPosition.position
+        self.fc.trans.rotation = self.spawnPosition.rotation
     end
     
-    fc.attr.camp = relationShipWithAI
+    self.fc.attr.camp = self.relationship
 
-    if shouldStay then
-        fc.ai:StayCommand()
+    if self.shouldStay == "Yes" then
+        self.fc.ai:StayCommand()
     end
 end
 
-return Class(nil,nil,table)
+return Class(nil, nil, table)
 ```
 
 ## Component

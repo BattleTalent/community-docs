@@ -7,17 +7,18 @@ Dash on pressing the trigger button.
 ## Code
 
 ```lua
-local table = {}
+local table = {
+    shootInterval = 0.1,
+}
 
 function table:Awake()
     self.ignoreCooldown = true
 end
 
 function table:UpdateSkill()
-    local shootInterval = self.shootInterval or 0.1
     local st = self.shootTime or 0
     local ct = UE.Time.time
-    if ct - st < shootInterval then
+    if ct - st < self.shootInterval then
         return
     end
 

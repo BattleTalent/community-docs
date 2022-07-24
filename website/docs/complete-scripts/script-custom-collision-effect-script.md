@@ -7,7 +7,9 @@ CollisionEffect, but with custom sounds & effects!
 ## Code
 
 ```lua
-local table = {}
+local table = {
+    sqrSpeed = 2,
+}
 
 function table:OnColliderEnter(collision)
     -- return when collision was with self
