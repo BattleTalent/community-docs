@@ -2,7 +2,7 @@
 title: Common Issues
 ---
 
-Some issues are more common then others. Below are s- [ ] ome easy fixes for these isues.
+Some issues are more common then others. Below are some easy fixes for these isues.
 ## Invalid path in AssetBundleProvider
 
 ### Steps to reproduce
