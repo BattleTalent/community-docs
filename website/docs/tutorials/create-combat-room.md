@@ -16,17 +16,7 @@ Here is an example of creating a battle room in a scene.
 
 
 
-#### 3.Create the WaveGroup file
-
-<img src="E:\xlua-battletalent-docs\website\docs\tutorials\6.create-a-combat-room\wavegroup.png" style="zoom:80%;" />
-
-Fill in the enemy type
-
-<img src="E:\xlua-battletalent-docs\website\docs\tutorials\6.create-a-combat-room\fillwavegroup.png" style="zoom:67%;" />
-
-
-
-#### 4.Create the WaveGenerator file
+#### 3.Create the WaveGenerator file
 
 ![](E:\xlua-battletalent-docs\website\docs\tutorials\6.create-a-combat-room\wavegenerator.png)
 
