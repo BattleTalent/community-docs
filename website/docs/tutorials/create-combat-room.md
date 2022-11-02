@@ -20,7 +20,7 @@ Here is an example of creating a battle room in a scene.
 
 ![](6.create-a-combat-room\wavegenerator.png)
 
-Fill in the number of enemies generated per wave "SpawnNum", fill in the WaveGroup name to "Pool", specify the WaveGroup file.
+Fill in the number of enemies generated at the same time in the "SpawnNum" field, the number will go up in the array as you kill more enemies. Fill in the enemy name in the "Pool" field.
 
 ![](6.create-a-combat-room\fillwavegenerator.png)
 
@@ -30,16 +30,12 @@ Specify WaveGenerator to ConfigCombat under StoneGateWithCombat.
 
 
 
-#### 5.Adjust the position of the generation points of EventToConfigCombat, you can increase or decrease the generation points as needed.
+#### 5.Adjust the position of the spawn points of EventToConfigCombat, you can increase or decrease the generation points as needed.
 
 ![](6.create-a-combat-room\pointlist.png)
 
 
 
-#### 6.Set the SpawnPointMgr under the SceneScriptNode node to the SpawnPoint of the TriggerBySpawnPoint node.
-
-![](6.create-a-combat-room\triggerbyspawnpoint.png)
 
 
-
-#### 7.Done!
+#### 6.Done!
