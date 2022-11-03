@@ -2,12 +2,13 @@
 
 
 
-#### Below are the characters and weapons available for use in the game.
+#### Below are the characters and weapons available for use in the game(demo version).
 
-| Role     | name                     |
-| -------- | ------------------------ |
-| Goblin   | Goblin_Axe、Goblin_Rogue |
-| Skeleton | Skel_L1_Melee            |
+![image-20221103092644955](role-and-weapon/image-20221103092644955.png)
+
+
+
+
 
 
 
