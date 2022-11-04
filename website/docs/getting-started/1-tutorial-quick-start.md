@@ -10,7 +10,7 @@ slug: /
 3. Download [ModProj](https://github.com/fonzieyang/BTModToolkit/tree/master/ModProj).
 4. Open the ModProj project in Unity Hub. 
 5. Click `BuildTools -> BuildAllBundles` in the toolbar of Unity.
-6. When the mod has been built it can be found in the ModProj project location at `ModProj\Assets\Mods`
+6. When the mod has been built it can be found in the ModProj project location at `ModProj/Assets/Mods`
 7. Copy the mod files(mod files are located ) to the corresponding path:
    * To run on Windows: `C:\Users[username]\AppData\LocalLow\CrossLink\BattleTalent\Mods`
    * To run on Quest: `/sdcard/Android/data/com.CrossLink.SAO/files/Mods/`
