@@ -32,7 +32,7 @@ Dino, one of our beloved modders made an extensive tutorial which explains stuff
 
 ### Prop Tutorial Video
 
-Silver Echo Games Developer, made a tutorial on how to create props (and maps).
+Silver Echo Games Developer, made a tutorial on how to create props.
 [Check it out!](https://www.youtube.com/watch?v=sS1CKmxCxcI)
 
 ## FAQ
@@ -41,7 +41,7 @@ Silver Echo Games Developer, made a tutorial on how to create props (and maps).
 Yes, you should use version 2019.4.12f
 
 ### What can we mod right now?
-Officially weapons, spells, traps.
+Officially weapons, spells, maps, skins, enemies, friends, traps.
 Unofficially we can also mod songs, and props.
 
 ### Any other mod project examples I can use?
