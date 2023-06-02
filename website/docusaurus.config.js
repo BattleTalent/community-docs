@@ -62,10 +62,6 @@ module.exports = {
               label: 'Mod Toolkit Doc Excel',
             },
             {
-              href: 'http://jjyy.guru/BTModToolkit/',
-              label: 'Mod Toolkit Documentation',
-            },
-            {
               href: 'https://github.com/Tencent/xLua/blob/master/Assets/XLua/Doc/XLua_Tutorial_EN.md',
               label: 'xLua Tutorial',
             },
@@ -94,7 +90,6 @@ module.exports = {
           ],
         },
       ],
-      // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     gtag: {
       trackingID: 'G-NCNBRXYW4S',
@@ -106,13 +101,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://gitlab.com/brothersonline/xlua-battletalent-docs/-/edit/master/website/'
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
