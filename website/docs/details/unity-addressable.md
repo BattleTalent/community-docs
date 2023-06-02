@@ -36,4 +36,6 @@ EffectMgr. PlayEffect("effect-name", position, rotation)
 | Effect      | Effect/    | EffectMgr              |
 | Audio       | Audio/     | AudioMgr               |
 | FlyObj      | FlyObj/    | FlyObject.CreateFlyObj |
+| Skin        | Skin/      | ???                    |
+| Role        | Role/      | ???                    |
 
