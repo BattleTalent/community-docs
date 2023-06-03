@@ -7,8 +7,6 @@ import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-crea
 
 Here is a step to make a simple **song** mod.
 
-**IMPORTANT:** Always remember to keep the `SongPlayer_SONG_` in song files, else the songplayer wont find your song!
-
 ## Phase 1: Define your mod
 
 <ModTutorialFragmentStepOpenUnity />
@@ -35,10 +33,10 @@ Drag your mp3 file under /Audio and name it correctly.
 
 #### ItemInfoConfig
 
-Create an ItemInfoConfig file in the Config folder, name it with your mod name + "_Info”
+Create an ItemInfoConfig file in the Config folder, name it with "YourModName"
 
 * set StoreItemInfo: 1
-* set AddStoreItemName: WMD_SongPlayer_SONG_YourModName
+* set AddStoreItemName: WMD_YourModName
 * set Name: Your mod name
 * set Description: Your mod's Description
 * set Item Type: Music
