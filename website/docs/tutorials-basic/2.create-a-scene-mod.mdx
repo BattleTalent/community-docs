@@ -1,8 +1,18 @@
+import ModTutorialFragmentPhaseBuild from '../_fragments/_fragment-phase-build.mdx';
+import ModTutorialFragmentPhaseTest from '../_fragments/_fragment-phase-test.mdx';
+import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-create-icon.mdx';
+
 # Create a scene mod
 
-#### 1.Open the Modproj by Unity2019.4.12f1
+Here is a step by step tutorial for making a **scene** mod.
 
-Please check the  [Mod Toolkit Overview](1.modtoolkit-overview.md) 
+## Phase 1: Define your mod
+
+<ModTutorialFragmentStepOpenUnity />
+
+#### Create Config, ICon, Scene folders
+
+![](2.create-a-scene-mod/createFolder.png)
 
 #### 2.Create a new scene
 
@@ -12,7 +22,7 @@ Please check the  [Mod Toolkit Overview](1.modtoolkit-overview.md)
 
 ![placeItem](2.create-a-scene-mod/placeItem.png)
 
-To know how to make a **Combat Room**, please read [Create Combat Room](../tutorials/create-combat-room.md).
+To know how to make a **Combat Room**, please read [Create Combat Room](../tutorials-advanced/2.create-combat-room.md).
 
 #### 4.Place the SceneScriptNode, set the CharacterPos under the SceneScriptNode to adjust the character generation position
 
@@ -26,14 +36,15 @@ To know how to make a **Combat Room**, please read [Create Combat Room](../tutor
 
 #### 7.Using [occlusion culling](https://docs.unity3d.com/2019.4/Documentation/Manual/occlusion-culling-getting-started.html), follow the tutorial steps until the baking is complete and delete the camera when finished
 
-
 #### 8.Save the scene
 
-Create a folder under the Build folder with the name of the scene
+Create a folder under the Build folder and save the scene in `scene` (for example: `Build > SimpleScene > Scene`).
 
-Create Config, ICon, Scene folders
+## Phase 2: Prepare to export your mod
 
-![](2.create-a-scene-mod/createFolder.png)
+<ModTutorialFragmentStepCreateIcon />
+
+#### ItemInfoConfig
 
 Generate ItemInfoConfig in the Config folder, named after the scene name
 
@@ -43,16 +54,10 @@ Fill in Scene information
 
 ![](2.create-a-scene-mod/fillItemInfoConfig.png)
 
-#### 9.Take a screenshot, name the image after the scene name and save it in the ICon folder, set the Max Size to 128 and Apply
+## Phase 3: Build the mod
 
-![](2.create-a-scene-mod/screenshot.png)
+<ModTutorialFragmentPhaseBuild />
 
-#### 10.Select the file AddressbleConfig (Assets - Resources - AddressableConfig), fill in the prefix and the path to the scene folder, also fill in "Assets/Build/CommonScene", click on "Clear Addressables" and "Create And Refresh Addressable Name"
+## Phase 4: Test & publish the mod
 
-![](2.create-a-scene-mod/AddressableConfig.png)
-
-#### 11.Fill in the ProductName name
-
-![](2.create-a-scene-mod/productName.png)
-
-#### 12.Click on BuildTools - BuildAllBundles to generate!
+<ModTutorialFragmentPhaseTest />

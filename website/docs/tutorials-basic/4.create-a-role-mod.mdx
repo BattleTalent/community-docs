@@ -1,18 +1,19 @@
+import ModTutorialFragmentPhaseBuild from '../_fragments/_fragment-phase-build.mdx';
+import ModTutorialFragmentPhaseTest from '../_fragments/_fragment-phase-test.mdx';
+import ModTutorialFragmentStepOpenUnity from '../_fragments/_fragment-step-open-unity.mdx';
+import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-create-icon.mdx';
+
 # Create a role mod
 
+Here is a step to make a simple **role(NPC)** mod.
 
+## Phase 1: Define your mod
 
-here is a step to make a simple role mod .
-
-#### 1.Open the ModProj by Unity2019.4.12f1
-
-
+<ModTutorialFragmentStepOpenUnity />
 
 #### 2.Set the Animation Type to humanoid and Avatar Definition to Create From This Model
 
 ![](4.create-a-role-mod/model.png)
-
-
 
 #### 3.Placement of the model into the scene
 
@@ -32,10 +33,6 @@ Apply.
 
 ![](4.create-a-role-mod/Apply.png)
 
-
-
-
-
 #### 3.Save Model
 
 Create these folder under Build folder.
@@ -46,19 +43,11 @@ Drag the character of the scene to the role folder.
 
 ![](4.create-a-role-mod/perfab.png)
 
+## Phase 2: Prepare to export your mod
 
+<ModTutorialFragmentStepCreateIcon />
 
-#### 4.Take a screenshot
-
-Select the Prefab and take a screenshot. Save the screenshot to ICon folder.
-
-Set the Max size to 128 and click “Apply” to save.
-
-![](4.create-a-role-mod/screenshot.png)
-
-
-
-#### 5.Use ItemInfoConfig
+#### ItemInfoConfig
 
 1.Create an ItemInfoConfig file in the Config folder, name it with your mod name + "_Info”
 
@@ -74,8 +63,6 @@ Fill in the RoleModInfo
 
 To know more about **ReplaceRole** and **Weapon**, please read [Role and Weapon](../details/role-and-weapon.md).
 
-
-
 **attr**: character's attribute, read only the first data of this array, Use default data when array length is 0.
 
 If you want to modify the sound effects of your character, you will need to place the sound files in the Audio folder.
@@ -86,18 +73,10 @@ Fill in the sound file name in the config under SoundNames, and don't forget to 
 
 ![](4.create-a-role-mod/soundinfo.png)
 
-### 6.Build
+## Phase 3: Build the mod
 
-Select the **AddressbleConfig**(Assets - Resources - AddressableConfig), fill in the “Prefix” and “Addressable Paths”，Click ”**Clear Addressables**“ and “**Create And Refresh Addressable Name**”
+<ModTutorialFragmentPhaseBuild />
 
-![](4.create-a-role-mod/addressable.png)
+## Phase 4: Test & publish the mod
 
-Fill in the ProductName
-
-![](4.create-a-role-mod/productname.png)
-
-Click BuildTools - **BuildAllBundles** to Build.
-
-![](4.create-a-role-mod/buildTool.png)
-
-Done!
+<ModTutorialFragmentPhaseTest />

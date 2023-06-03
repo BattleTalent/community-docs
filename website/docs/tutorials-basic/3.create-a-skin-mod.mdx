@@ -1,18 +1,18 @@
+import ModTutorialFragmentPhaseBuild from '../_fragments/_fragment-phase-build.mdx';
+import ModTutorialFragmentPhaseTest from '../_fragments/_fragment-phase-test.mdx';
+import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-create-icon.mdx';
+
 # Create a skin mod
 
+Here is a step to make a simple **player's skin** mod .
 
+## Phase 1: Define your mod
 
-here is a step to make a simple **player's skin** mod .
-
-#### 1.Open the ModProj by Unity2019.4.12f1
-
-
+<ModTutorialFragmentStepOpenUnity />
 
 #### 2.Use the model in ToolKit as a template to bind your model
 
 ![](3.create-a-skin-mod/model.png)
-
-
 
 #### 3.Save Model
 
@@ -21,8 +21,6 @@ Save your model.
 Create these folder under the "Build" folder.
 
 ![](3.create-a-skin-mod/folder.png)
-
-
 
 #### 4.Hide the head of the model
 
@@ -50,19 +48,11 @@ Drag the model into the Skin folder to save and name it
 
 ![](3.create-a-skin-mod/saveprefab.png)
 
+## Phase 2: Prepare to export your mod
 
+<ModTutorialFragmentStepCreateIcon />
 
-#### 6.Take a screenshot
-
-Select the Prefab and take a screenshot. Save the screenshot to ICon folder, make sure the image name and the prefab name are the same.
-
-Set the Max size to 128 and click “Apply” to save.
-
-![](3.create-a-skin-mod/setimage.png)
-
-
-
-#### 6.Use ItemInfoConfig
+#### ItemInfoConfig
 
 1.Create an ItemInfoConfig file in the Config folder, name it with your mod name + "_Info”
 
@@ -84,19 +74,11 @@ Fill in the SkinInfo，
 
 ![](3.create-a-skin-mod/filliteminfoconfig.png)
 
-### 7.Build
+## Phase 3: Build the mod
 
-Select the **AddressbleConfig**(Assets - Resources - AddressableConfig), fill in the “Prefix” and “Addressable Paths”，Click ”**Clear Addressables**“ and “**Create And Refresh Addressable Name**”
+<ModTutorialFragmentPhaseBuild />
 
-![](3.create-a-skin-mod/addressableconfig.png)
+## Phase 4: Test & publish the mod
 
-Fill in the ProductName
-
-![](3.create-a-skin-mod/prodoctname.png)
-
-Click BuildTools - **BuildAllBundles** to Build.
-
-![](3.create-a-skin-mod/buildTool.png)
-
-Done!
+<ModTutorialFragmentPhaseTest />
 
