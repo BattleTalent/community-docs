@@ -1,0 +1,52 @@
+import ModTutorialFragmentPhaseBuild from '../_fragments/_fragment-phase-build.mdx';
+import ModTutorialFragmentPhaseTest from '../_fragments/_fragment-phase-test.mdx';
+import ModTutorialFragmentStepOpenUnity from '../_fragments/_fragment-step-open-unity.mdx';
+import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-create-icon.mdx';
+
+# Create a song mod
+
+Here is a step to make a simple **song** mod.
+
+**IMPORTANT:** Always remember to keep the `SongPlayer_SONG_` in song files, else the songplayer wont find your song!
+
+## Phase 1: Define your mod
+
+<ModTutorialFragmentStepOpenUnity />
+
+#### Create folders.
+
+Under `Build`, create A mod folder 
+
+#### 2.Create mod folder structure
+
+Create these folder under the "Build" folder.
+
+* ICon
+* Audio
+* Config
+
+#### 3.Place the song
+
+Drag your mp3 file under /Audio and name it correctly.
+
+## Phase 2: Prepare to export your mod
+
+<ModTutorialFragmentStepCreateIcon />
+
+#### ItemInfoConfig
+
+Create an ItemInfoConfig file in the Config folder, name it with your mod name + "_Info”
+
+* set StoreItemInfo: 1
+* set AddStoreItemName: WMD_SongPlayer_SONG_YourModName
+* set Name: Your mod name
+* set Description: Your mod's Description
+* set Item Type: Music
+
+## Phase 3: Build the mod
+
+<ModTutorialFragmentPhaseBuild />
+
+## Phase 4: Test & publish the mod
+
+<ModTutorialFragmentPhaseTest />
