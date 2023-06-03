@@ -58,8 +58,8 @@ module.exports = {
           title: 'BTModToolkit',
           items: [
             {
-              href: 'https://docs.google.com/spreadsheets/d/1z3dAbbIpCERFYRC-NOEZxo7R3kv008184Jws9MFz2NI/edit#gid=0',
-              label: 'Mod Toolkit Doc Excel',
+              href: 'https://fonzieyang.github.io/BTModToolkit',
+              label: 'Official Docs',
             },
             {
               href: 'https://github.com/Tencent/xLua/blob/master/Assets/XLua/Doc/XLua_Tutorial_EN.md',

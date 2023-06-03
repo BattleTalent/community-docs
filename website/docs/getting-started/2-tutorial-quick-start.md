@@ -7,7 +7,7 @@ slug: /
 
 1. Download & Install [Unity Hub](https://unity3d.com/get-unity/download).
 2. Download & Install [Unity 2019.4.12](https://unity3d.com/unity/whats-new/2019.4.12).
-3. Download [ModProj](https://github.com/fonzieyang/BTModToolkit/tree/master/ModProj).
+3. Download [ModProj](https://github.com/fonzieyang/BTModToolkit). (If you don't have git, just click `clone > download ZIP`.)
 4. Open the ModProj project in Unity Hub. 
 5. Click `BuildTools -> BuildAllBundles` in the toolbar of Unity.
 6. When the mod has been built it can be found in the ModProj project location at `ModProj/Assets/Mods`
@@ -43,6 +43,3 @@ Yes, you should use version 2019.4.12f
 ### What can we mod right now?
 Officially weapons, spells, maps, skins, enemies, friends, traps.
 Unofficially we can also mod songs, and props.
-
-### Any other mod project examples I can use?
-Yes we've cleaned up some projects and added them to the [base projects](/docs/projects/projects-base-projects) page.

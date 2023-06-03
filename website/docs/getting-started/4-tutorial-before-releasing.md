@@ -25,12 +25,17 @@ Right click under `Assets -> Build -> YourWeaponName -> Config`, then create an 
 Create an icon under `Assets -> Build -> YourWeaponName -> ICon -> YourWeaponName.png`
 Make sure an icon is added, else the store will crash.
 
+
+## Added addressables
+
+Go to `Resources/AaddressablesConfig` and click `Create and Refresh Addresable Name`.
+
 ## Cleared the project of files you are not using.
 
 Two ways to clear the project of examples
 
-* Delete all weapons under `build` folder that you are not gonna use.
-* Delete all models and other files under `resources` folder that you are not gonna use.
+* Delete all weapons under `Build` folder that you are not gonna use.
+* Delete all models and other files under `Resources` folder that you are not gonna use.
 
 ## No errors
 
