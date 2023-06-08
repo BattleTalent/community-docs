@@ -1,14 +1,14 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'xLua Battletalent Docs',
-  tagline: 'Documentation for battle talent scripting',
+  title: 'Battle Talent Docs',
+  tagline: 'The documentation website for creating your own Battle Talent mods.',
   url: 'https://brothersonline.gitlab.io',
   baseUrl: '/xlua-battletalent-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'BrothersOnline', // Usually your GitHub org/user name.
-  projectName: 'xlua-battletalent-docs', // Usually your repo name.
+  organizationName: 'BrothersOnline',
+  projectName: 'xlua-battletalent-docs',
   plugins: [
     [require.resolve('@cmfcmf/docusaurus-search-local'), {
     }]
@@ -18,7 +18,7 @@ module.exports = {
       additionalLanguages: ['lua'],
     },
     navbar: {
-      title: 'xLua Battletalent Docs',
+      title: 'BT Modding Docs',
       logo: {
         alt: 'Site Logo',
         src: 'img/logo.png',
