@@ -25,10 +25,11 @@ If you dont like reading a lot there is also some tutorial videos out there that
 
 Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=alnqZcCeais) to quickly get you going. Click the link!
 
-### Dino's Extended Tutorial Video
+### Aura's Extended Tutorial Video
 
-Dino, one of our beloved modders made an extensive tutorial which explains stuff in more details. 
-[Check it out!](https://www.youtube.com/watch?v=YqETFL-rwc4)
+Aura, one of our beloved modders has made a couple of video's which are also a great starting point. Check them out! 
+* [Basic Weapon](https://youtu.be/FRej6r_C4Rg)
+* [Weapon with skill](https://youtu.be/XGBDLP502dg)
 
 ### Prop Tutorial Video
 
