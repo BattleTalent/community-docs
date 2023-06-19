@@ -43,4 +43,4 @@ Yes, you should use version 2019.4.12f
 
 ### What can we mod right now?
 Officially weapons, spells, maps, skins, enemies, friends, traps, songs.
-Unofficially we can also mod props for a prop gun spell.
+Unofficially we can also mod props for the [prop spell](https://mod.io/g/battletalent/m/prop-spell).
