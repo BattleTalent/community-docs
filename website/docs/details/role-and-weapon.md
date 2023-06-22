@@ -1,4 +1,4 @@
-# Role and Weapon code names
+# Role, Waves and Weapon code names
 
 ## Roles
 
@@ -96,6 +96,38 @@
 
 - Orc_Sword
 - Orc_GreatSword
+
+## Waves
+
+- Levels\WaveDefine\Arena_1101
+- Levels\WaveDefine\Arena_1102
+- Levels\WaveDefine\Arena_1201
+- Levels\WaveDefine\Arena_1202
+- Levels\WaveDefine\Arena_2101
+- Levels\WaveDefine\Arena_2102
+- Levels\WaveDefine\Arena_2104
+- Levels\WaveDefine\Arena_2105
+- Levels\WaveDefine\Arena_2201
+- Levels\WaveDefine\Arena_2202
+- Levels\WaveDefine\Arena_2203
+- Levels\WaveDefine\Arena_2204
+- Levels\WaveDefine\Arena_2301
+- Levels\WaveDefine\Arena_2302
+- Levels\WaveDefine\Arena_3101
+- Levels\WaveDefine\Arena_3102
+- Levels\WaveDefine\Arena_3103
+- Levels\WaveDefine\Arena_3104
+
+- Levels\WaveDefine\Solo_1101
+- Levels\WaveDefine\Solo_1201
+- Levels\WaveDefine\Solo_2101
+- Levels\WaveDefine\Solo_2102
+- Levels\WaveDefine\Solo_2103
+- Levels\WaveDefine\Solo_2201
+- Levels\WaveDefine\Solo_2202
+- Levels\WaveDefine\Solo_2301
+- Levels\WaveDefine\Solo_2302
+- Levels\WaveDefine\Solo_2303 
 
 ## Weapons (not complete)
 
