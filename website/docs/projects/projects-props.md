@@ -3,7 +3,7 @@ title: Props
 ---
 
 This is a special project that makes it able to add props to the Prop Spawner Spell!
-Make sure to keep the mod/addressable names like `YOURPREFIX_PropSpawner_PROP_PropName`, else the prop spawner wont find your prop!
+Make sure to keep `_PropSpawner_PROP_`, inside your prop addressables. Or the prop spawner wont find your prop!
 
 ## Downloads
 
@@ -39,13 +39,8 @@ To update the prefixes automatically for scripts, prefabs & paths:
 1. Change New Prefix to your desired prefix. (keeping the mod name in the prefix is recommended to reduce conflicting mods).
 1. Press the `Invoke` button.
 
-### Code changes
-Only actual CODE change that's needed per project is the following:
-
-In `Assets/Build/Entry.txt` edit `AddStoreItemTemplate("YOURPREFIX_YourModName_Your_Prop_Name", nil, "Prop name", "A description about the prop.")` at the bottom of the script.
-
-### Product name
-The product name should be changed manually so that the mod will have it's own name.
+### Project name
+The project name should be changed manually so that the mod will have it's own name.
 1. Go to `Edit/Project Settings/Player/Product Name`.
 1. Change `YOURPREFIX_ModName` to your prefix + modname. (No _ at the end)
 
