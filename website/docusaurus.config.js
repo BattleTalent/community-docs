@@ -1,17 +1,16 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
+  trailingSlash: false,
   title: 'Battle Talent Docs',
   tagline: 'The documentation website for creating your own Battle Talent mods.',
-  url: 'https://brothersonline.gitlab.io',
-  baseUrl: '/xlua-battletalent-docs/',
+  url: 'https://unbelievableflavour.github.io',
+  baseUrl: '/battle-talent-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'BrothersOnline',
-  projectName: 'xlua-battletalent-docs',
+  organizationName: 'UnbelievableFlavour',
+  projectName: 'battle-talent-docs',
   plugins: [
-    [require.resolve('@cmfcmf/docusaurus-search-local'), {
-    }]
   ],
   themeConfig: {
     prism: {
