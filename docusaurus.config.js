@@ -3,13 +3,13 @@ module.exports = {
   trailingSlash: false,
   title: 'Battle Talent Docs',
   tagline: 'The documentation website for creating your own Battle Talent mods.',
-  url: 'https://unbelievableflavour.github.io',
-  baseUrl: '/battle-talent-docs/',
+  url: 'https://BattleTalent.github.io',
+  baseUrl: '/community-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'unbelievableflavour',
-  projectName: 'battle-talent-docs',
+  organizationName: 'BattleTalent',
+  projectName: 'community-docs',
   plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
   themeConfig: {
     prism: {
