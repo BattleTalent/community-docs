@@ -8,7 +8,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'UnbelievableFlavour',
+  organizationName: 'unbelievableflavour',
   projectName: 'battle-talent-docs',
   plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
   themeConfig: {

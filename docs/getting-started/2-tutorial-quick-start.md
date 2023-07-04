@@ -15,7 +15,7 @@ slug: /
    * To run on Windows: `C:\Users[username]\AppData\LocalLow\CyDream\BattleTalent\Mods`
    * To run on Quest: `/sdcard/Android/data/com.CyDream.BattleTalent/files/Mods/`
 
-Done! (if something goes wrong, please open your cheat menu then tell us about your error messages).
+Done! You now have a successfully running mod. (if something goes wrong, please open your cheat menu then tell us about your error messages).
 
 ## Tutorial videos
 
