@@ -7,7 +7,7 @@ slug: /
 
 1. Download & Install [Unity Hub](https://unity3d.com/get-unity/download).
 2. Download & Install [Unity 2019.4.12](https://unity3d.com/unity/whats-new/2019.4.12).
-3. Download the [Battle Talent ModToolkit](https://github.com/fonzieyang/BTModToolkit/archive/refs/heads/master.zip). (Wanna use git? [Check out the repo!](https://github.com/fonzieyang/BTModToolkit))
+3. Download the [Battle Talent ModToolkit](https://github.com/BattleTalent/BTModToolkit/archive/refs/heads/master.zip). (Wanna use git? [Check out the repo!](https://github.com/BattleTalent/BTModToolkit))
 4. Open the ModProj project in Unity Hub. 
 5. Click `BuildTools -> BuildAllBundles` in the toolbar of Unity.
 6. When the mod has been built it can be found in the ModProj project location at `ModProj/Assets/Mods`

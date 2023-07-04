@@ -4,7 +4,7 @@ title: Base Projects
 
 **Important: Base Projects are no longer recommended. The modproj has the most up-to-date & straightforward mod examples.** 
 
-Base projects **were** very simple straightforward completed mods of a specific types. They **were** great starting points for creating your own mods when the modproj was a little more complicated. The last version of ModProj is easy-to-use and straightforward. So we recommend using the [ModProj](https://github.com/fonzieyang/BTModToolkit) instead now.
+Base projects **were** very simple straightforward completed mods of a specific types. They **were** great starting points for creating your own mods when the modproj was a little more complicated. The last version of ModProj is easy-to-use and straightforward. So we recommend using the [ModProj](https://github.com/BattleTalent/BTModToolkit) instead now.
 
 ## Downloads
 **These are projects based on old version of the toolkit. Don't use unless you know what you are doing**
