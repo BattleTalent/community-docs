@@ -10,8 +10,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'UnbelievableFlavour',
   projectName: 'battle-talent-docs',
-  plugins: [
-  ],
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
   themeConfig: {
     prism: {
       additionalLanguages: ['lua'],
