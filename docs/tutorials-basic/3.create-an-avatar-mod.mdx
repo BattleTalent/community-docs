@@ -1,0 +1,78 @@
+import ModTutorialFragmentPhaseBuild from '../_fragments/_fragment-phase-build.mdx';
+import ModTutorialFragmentPhaseTest from '../_fragments/_fragment-phase-test.mdx';
+import ModTutorialFragmentStepOpenUnity from '../_fragments/_fragment-step-open-unity.mdx';
+import ModTutorialFragmentStepTemplateWizard from '../_fragments/_fragment-step-template-wizard.mdx';
+import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-create-icon.mdx';
+
+# Create an avatar mod
+
+Here is a step to make a simple **avatar** mod.
+
+## Phase 1: Define your mod
+
+<ModTutorialFragmentStepOpenUnity />
+
+#### 5.Set the Animation Type to humanoid and Avatar Definition to Create From This Model
+
+* Add your custom model to your `Resources` folder in Unity.
+* Change the following settings on the model like the image **and click apply**.
+
+![](4.create-a-role-mod/model.png)
+
+#### 6.Generate folder structure using the template wizard.
+
+<ModTutorialFragmentStepTemplateWizard modType="Avatar" />
+
+#### 7.Configure the model into the prefab
+
+* Open the newly created prefab in the `Avatar` folder.
+* Drag your model into it.
+* Disable the animator on the ** model you just added**.
+* On the **prefabs parent object**, Make sure the `animator` component has the armature selected of the newly added model.
+
+#### 5.Hand transform configuration
+
+* Open the newly created prefab in the `Avatar` folder.
+* Navigate to the highest object (should be the same as the name of your mod) so that you see component `RuntimeAvatarBuilder`.
+
+![](create-an-avatar-mod/runtime-avatar-builder.png)
+
+* Click `Auto Get Hand Transform` button.
+
+![](create-an-avatar-mod/auto-get-hand-transform.png)
+
+#### 6.Finger configuration
+
+* Open the `Avatar` prefab.
+* Navigate to the highest object (should be the same as the name of your mod) so that you see component `RuntimeAvatarBuilder`.
+
+![](create-an-avatar-mod/runtime-avatar-builder-2.png)
+
+* Click `HandPose Control Left` to the left handpose component.
+
+For avatar, you will manually need to set the hand poses. Do that like so:
+
+* Click `Auto Config Fingers`.
+* Manually close the fingers in the hands. (if they aren't already closed).
+* Click `Save Fingers Close Pose`.
+* Manually open the fingers in the hands.
+* Click `Save Fingers Open Pose`.
+* Test if grips are ok by clicking `View Fingers Close Pose`  &  `View fingers Open Pose`.
+
+Great, you just did the left hand.
+
+* Go back to the `RuntimeAvatarBuilder` component and do the same for the right hand.
+
+* **Save the prefab**.
+
+## Phase 2: Prepare to export your mod
+
+<ModTutorialFragmentStepCreateIcon />
+
+## Phase 3: Build the mod
+
+<ModTutorialFragmentPhaseBuild />
+
+## Phase 4: Test & publish the mod
+
+<ModTutorialFragmentPhaseTest />

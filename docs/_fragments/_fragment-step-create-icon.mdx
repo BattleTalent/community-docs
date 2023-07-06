@@ -1,11 +1,15 @@
-#### 1.Take a screenshot
+** Note, you cannot generate an icon for every mod type. Skip this step if you are creating a mod without a model (scene or song) and add one manually.**
 
-Select the Prefab, model, or scene (depending on what you are creating) and take a screenshot from the Inspector window.
+#### 1.Generate the icon
 
-![](./images/create-icon/screenshot.png)
+* In the **Unity Toolbar**: Go to `Tools -> Icon Generator`.
 
-* Save the screenshot to **ICon** folder. (tips: or you can create you own one)
-* make sure the image name is the same as folder above ICon. (example: WeaponName > ICon > WeaponName.png)
-* Set the Max size to 128 or 256 and click “Apply” to save.
+![](./images/create-icon/icon-generator.png)
+
+* Drag the `Prefab` of your mod (the weapon, avatar, scene) into the field: `Game Object To Render`.
+* Adjust the settings of the icon to your liking.
+* Click the `Save PNG...` button.
+* **Overwrite** the dummy icon in folder `ICon` of your mod that has been created for you previously. (** keep the name as is**. Don't change this).
+* Set the Max size to `256` and click `Apply` to save (yes screenshot shows 128, my bad).
 
 ![](./images/create-icon/set-max-size.png)
