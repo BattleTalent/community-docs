@@ -56,7 +56,7 @@ module.exports = {
           title: 'BTModToolkit',
           items: [
             {
-              href: 'https://fonzieyang.github.io/BTModToolkit',
+              href: 'https://battletalent.github.io/BTModToolkit',
               label: 'Official Docs',
             },
             {
