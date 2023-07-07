@@ -26,7 +26,7 @@ But you don't need to remember this at all. In Battle Talent, we predefined some
 | EnvLayerMask      | Environment                    | CharacterObstacle |
 | InteractLayerMask | Weapon, Item, Part of BodyPart | Interact          |
 
-To access these mask in code, please check this: http://jjyy.guru/BTModToolkit/class_cross_link_1_1_layer_define.html
+To access these mask in code, please check this: https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_layer_define.html
 
 
 ### Convexing colliders

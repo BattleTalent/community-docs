@@ -61,4 +61,4 @@ return Class(nil,nil,table)
 
 ### Any other cool functions I can use from PlayerInstance?
 
-Yes! There is a whole bunch of things you can do! Check [this page](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_interact_character.html) for the complete documentation.
+Yes! There is a whole bunch of things you can do! Check [this page](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_interact_character.html) for the complete documentation.

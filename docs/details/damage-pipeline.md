@@ -32,14 +32,14 @@ OnInteractRoleHitPhase2Event // you can modify the damage effect here
 OnInteractRoleHitPhase3Event // we can do extra stuff, such as recover hp from attack
 ```
 
-[DamageBasicData](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_damage_basic_data.html)
+[DamageBasicData](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_damage_basic_data.html)
 
 Basic collision data, such as collider, point, normal, rigidbody, impact... You can read the data from here to know what's going on in this hit.
 
-[DamageHitData](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_damage_hit_data.html)
+[DamageHitData](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_damage_hit_data.html)
 
 Determines the damage calculation, such as you can set the damage larger or smaller.
 
-[DamageEffectData](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_damage_effect_data.html)
+[DamageEffectData](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_damage_effect_data.html)
 
 Behaviour by this damage, such as knockdown, dizzy, floating... You can set this data to apply different hit effect.

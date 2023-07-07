@@ -40,9 +40,9 @@ end
 
 | enum name      | class name                                                   |
 | :------------- | :----------------------------------------------------------- |
-| FlyObject      | [FlyObject](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_fly_object.html) |
-| SceneObject    | [SceneObject](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_scene_object.html) |
-| InteractRole   | [FullCharacterControl](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_full_character_control.html) |
-| InteractWeapon | [InteractWeapon](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_interact_weapon.html) |
-| PlayerRole     | [PlayerUnit](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_player_unit.html) |
-| PlayerHand     | [PhysicsHand](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_physics_hand.html) |
+| FlyObject      | [FlyObject](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_fly_object.html) |
+| SceneObject    | [SceneObject](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_scene_object.html) |
+| InteractRole   | [FullCharacterControl](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_full_character_control.html) |
+| InteractWeapon | [InteractWeapon](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_interact_weapon.html) |
+| PlayerRole     | [PlayerUnit](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_player_unit.html) |
+| PlayerHand     | [PhysicsHand](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_physics_hand.html) |

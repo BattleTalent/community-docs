@@ -6,32 +6,32 @@
 
 #### Basic Classes
 
-- [Scheduler](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_scheduler.html)
-- [LanguageMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_language_mgr.html)
-- [EffectMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_language_mgr.html)
-- [AudioMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_audio_mgr.html)
-- [ResourceMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_resource_mgr.html)
-- [GameDataMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_game_data_mgr.html)
-- [XLuaMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_x_lua_mgr.html)
+- [Scheduler](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_scheduler.html)
+- [LanguageMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_language_mgr.html)
+- [EffectMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_language_mgr.html)
+- [AudioMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_audio_mgr.html)
+- [ResourceMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_resource_mgr.html)
+- [GameDataMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_game_data_mgr.html)
+- [XLuaMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_x_lua_mgr.html)
 
 #### GamePlay Related Classes
 
-- [HitInfoConfig](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_hit_info_config.html)
-- [UnlockContentConfig](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_unlock_content_config.html)
-- [AIProxy](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_a_i_proxy.html)
-- [CharacterCombatAttr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_character_combat_attr.html)
-- [FullBodyMuscleState](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_full_body_muscle_state.html)
-- [BuffMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_buffer_mgr.html)
-- [InteractBase](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_interact_base.html)
-- [HUDMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_hud_mgr.html)
-- [PlayerDataMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_player_data_mgr.html)
-- [LevelDataMgr](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_level_data_mgr.html)
+- [HitInfoConfig](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_hit_info_config.html)
+- [UnlockContentConfig](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_unlock_content_config.html)
+- [AIProxy](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_a_i_proxy.html)
+- [CharacterCombatAttr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_character_combat_attr.html)
+- [FullBodyMuscleState](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_full_body_muscle_state.html)
+- [BuffMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_buffer_mgr.html)
+- [InteractBase](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_interact_base.html)
+- [HUDMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_hud_mgr.html)
+- [PlayerDataMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_player_data_mgr.html)
+- [LevelDataMgr](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_level_data_mgr.html)
 
 #### Lua Host Classes
 
-- [LuaBehaviour](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_lua_behaviour.html)
-- [InteractTriggerX](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_interact_trigger_x.html)
-- [FlyObjectX](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_fly_object_x.html)
+- [LuaBehaviour](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_lua_behaviour.html)
+- [InteractTriggerX](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_interact_trigger_x.html)
+- [FlyObjectX](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_fly_object_x.html)
 
 For lua host script, check the LuaFunction in each class, that's the event they will receive.
 
@@ -66,7 +66,7 @@ For example, InteractTriggerX has luaAwakeInit, but it'll receive Awake Event in
 #### Tips for scripting in lua:
 
 - namespace of CShape code is CS in lua
-- namespace [CrossLink](http://jjyy.guru/BTModToolkit/namespace_cross_link.html) is CL in lua, CL == CS.CrossLink
+- namespace [CrossLink](https://battletalent.github.io/BTModToolkit/namespace_cross_link.html) is CL in lua, CL == CS.CrossLink
 - namespace UnityEngine is UE in lua, UE == CS.UnityEngine
 - calling a static function should use '.' instead of ':' in lua
 - recommend using [ZeroBrane Studio](https://studio.zerobrane.com/) as lua editor

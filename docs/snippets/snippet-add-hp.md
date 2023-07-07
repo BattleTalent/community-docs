@@ -23,4 +23,4 @@ No user variables.
 
 ### Can I also do this for mana?
 
-Yes you can! use `AddMp()` to add mana. More information can be found [here](http://jjyy.guru/BTModToolkit/class_cross_link_1_1_player_combat_attr.html).
+Yes you can! use `AddMp()` to add mana. More information can be found [here](https://battletalent.github.io/BTModToolkit/class_cross_link_1_1_player_combat_attr.html).
