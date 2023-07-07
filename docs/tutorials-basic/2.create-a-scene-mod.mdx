@@ -2,60 +2,39 @@ import ModTutorialFragmentPhaseBuild from '../_fragments/_fragment-phase-build.m
 import ModTutorialFragmentPhaseTest from '../_fragments/_fragment-phase-test.mdx';
 import ModTutorialFragmentStepOpenUnity from '../_fragments/_fragment-step-open-unity.mdx';
 import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-create-icon.mdx';
+import ModTutorialFragmentStepTemplateWizard from '../_fragments/_fragment-step-template-wizard.mdx';
 
 # Create a scene mod
 
 Here is a step by step tutorial for making a **scene** mod.
 
-## Phase 0: Prepare your mod
+## Phase 1: Define your mod
 
 <ModTutorialFragmentStepOpenUnity />
 
-## Phase 1: Define your mod
+#### 5.Generate folder structure using the template wizard.
 
-#### Create Config, ICon, Scene folders
+<ModTutorialFragmentStepTemplateWizard modType="Scene" />
 
-![](2.create-a-scene-mod/createFolder.png)
+#### 6.Edit the scene
 
-#### 2.Create a new scene
-
-![](2.create-a-scene-mod/createscene.png)
-
-#### 3.Place items, place DirectionalLight and adjust it, place HookRoot, SlideWall, StoneGate, etc.
-
+* Open the newly created `scene` file in the `Scene` folder. (for example: `Build > YourNewModFolder > Scene`)
+* Place items, place DirectionalLight and adjust it, place HookRoot, SlideWall, StoneGate, etc.
 ![placeItem](2.create-a-scene-mod/placeItem.png)
-
-To know how to make a **Combat Room**, please read [Create Combat Room](../tutorials-advanced/2.create-combat-room.md).
-
-#### 4.Place the SceneScriptNode, set the CharacterPos under the SceneScriptNode to adjust the character generation position
-
+* Want to know how to create a **Combat Room**? Please read [Create Combat Room](../tutorials-advanced/2.create-combat-room.md).
+* Place the SceneScriptNode, set the CharacterPos under the SceneScriptNode to adjust the character generation position.
 ![](2.create-a-scene-mod/sceneScriptNode.png)
-
-#### 5.Set the height of the [DeadZone](../details/deadzone-respawntrigger.md) under the SceneScriptNode and place the  [RespawnTrigger](../details/deadzone-respawntrigger.md)  respawn point
-
-#### 6.Set the BoxCollider of the PathFinder under the SceneScriptNode to enclose the whole scene
-
+* Set the height of the [DeadZone](../details/deadzone-respawntrigger.md) under the `SceneScriptNode` and place the  [RespawnTrigger](../details/deadzone-respawntrigger.md)  respawn point
 ![](2.create-a-scene-mod/pathfinder.png)
+* Set the BoxCollider of the PathFinder under the SceneScriptNode to enclose the whole scene
+* Save the scene.
 
-#### 7.Using [occlusion culling](https://docs.unity3d.com/2019.4/Documentation/Manual/occlusion-culling-getting-started.html), follow the tutorial steps until the baking is complete and delete the camera when finished
-
-#### 8.Save the scene
-
-Create a folder under the Build folder and save the scene in `scene` (for example: `Build > SimpleScene > Scene`).
+#### 7. Bake the scene (not required but good for performance)
+* Using [occlusion culling](https://docs.unity3d.com/2019.4/Documentation/Manual/occlusion-culling-getting-started.html), follow the tutorial steps until the baking is complete.
 
 ## Phase 2: Prepare to export your mod
 
 <ModTutorialFragmentStepCreateIcon modType={"Scene"} />
-
-#### ItemInfoConfig
-
-Create an ItemInfoConfig file in the Config folder, name it with "YourModName"
-
-![](2.create-a-scene-mod/itemInfoConfig.png)
-
-Fill in Scene information
-
-![](2.create-a-scene-mod/fillItemInfoConfig.png)
 
 ## Phase 3: Build the mod
 
