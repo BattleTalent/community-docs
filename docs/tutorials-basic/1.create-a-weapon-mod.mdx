@@ -19,11 +19,14 @@ Here is a step by step tutorial for making a **weapon** mod.
 #### 6.Place the model
 
 * Open the newly created prefab in the `Weapon` folder.
+* Under `InteractWeapon`, click `show example weapon` to show an example weapon for positioning and resizing your own weapon.
+![image](create-a-weapon-mod/toggle-example-weapon.png)
 * Drag your model of the sword into the prefab hierarchy under the <b>parent object</b>.
   <br/>(Explanation: <b>Parent object is the top object of the prefab</b>. It will be called the same as the name of your prefab.
   <br/>(Example: Prefab file is called<code>NewModFolderName.prefab</code>. parent object will be called <code>NewModFolderName</code>).
-* Rotate the model towards the **Z axis** of **parent object **.
+* Rotate the model and resize the weapon until it feels ok in comparison to the **dummy weapon**.
 ![image](create-a-weapon-mod/set-axis.png)
+* Under `InteractWeapon`, click `show example weapon` again to disable it.
 * Reference the **MeshRenderer** from the model to **Skill Change Colors**. (quick tips: if you want to place multiple renderer at the same time, you can click the lock button to lock the inspector, then drag them all at once) (the **Skill Change Colors** will be used for change weapon color when it's needed, such as damaged).
 
 ![image](create-a-weapon-mod/change-mesh-renderer.png)
