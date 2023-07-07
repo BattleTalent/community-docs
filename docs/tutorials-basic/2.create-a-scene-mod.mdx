@@ -22,11 +22,11 @@ Here is a step by step tutorial for making a **scene** mod.
 * Place items, place DirectionalLight and adjust it, place HookRoot, SlideWall, StoneGate, etc.
 ![placeItem](2.create-a-scene-mod/placeItem.png)
 * Want to know how to create a **Combat Room**? Please read [Create Combat Room](../tutorials-advanced/2.create-combat-room.md).
-* Place the SceneScriptNode, set the CharacterPos under the SceneScriptNode to adjust the character generation position.
+* Adjust the `CharacterPos` (under `SceneScriptNode`) to adjust the character spawning position.
 ![](2.create-a-scene-mod/sceneScriptNode.png)
-* Set the height of the [DeadZone](../details/deadzone-respawntrigger.md) under the `SceneScriptNode` and place the  [RespawnTrigger](../details/deadzone-respawntrigger.md)  respawn point
+* Adjust the height of the [DeadZone](../details/deadzone-respawntrigger.md) (under `SceneScriptNode`) and place the  [RespawnTrigger](../details/deadzone-respawntrigger.md)  respawn point
 ![](2.create-a-scene-mod/pathfinder.png)
-* Set the BoxCollider of the PathFinder under the SceneScriptNode to enclose the whole scene
+* Adjust `BoxCollider` of the `PathFinder` (under `SceneScriptNode`) to enclose the whole scene.
 * Save the scene.
 
 #### 7. Bake the scene (not required but good for performance)
@@ -34,7 +34,7 @@ Here is a step by step tutorial for making a **scene** mod.
 
 ## Phase 2: Prepare to export your mod
 
-<ModTutorialFragmentStepCreateIcon modType={"Scene"} />
+<ModTutorialFragmentStepCreateIcon modType="Scene" />
 
 ## Phase 3: Build the mod
 

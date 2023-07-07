@@ -2,80 +2,53 @@ import ModTutorialFragmentPhaseBuild from '../_fragments/_fragment-phase-build.m
 import ModTutorialFragmentPhaseTest from '../_fragments/_fragment-phase-test.mdx';
 import ModTutorialFragmentStepOpenUnity from '../_fragments/_fragment-step-open-unity.mdx';
 import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-create-icon.mdx';
+import ModTutorialFragmentStepTemplateWizard from '../_fragments/_fragment-step-template-wizard.mdx';
 
 # Create a skin mod
 
-Here is a step to make a simple **player's skin** mod .
+Here is a step to make a simple **player's skin** mod.
 
-## Phase 0: Prepare your mod
-
-<ModTutorialFragmentStepOpenUnity />
+** Note, this method is the old method of creating playable skins. It is now recommended to use the Avatar mods.**
+* Pro: those are way easier.
+* Con: only skins are compatible with the demo.
 
 ## Phase 1: Define your mod
 
-#### 2.Use the model in ToolKit as a template to bind your model
+<ModTutorialFragmentStepOpenUnity />
 
+#### 5.Generate folder structure using the template wizard.
+
+<ModTutorialFragmentStepTemplateWizard modType="Skin" />
+
+#### 6.Binding the model
+
+* Navigate to `Toolkit > Prefabs > Skin > Skin_player`.
 ![](3.create-a-skin-mod/model.png)
-
-#### 3.Save Model
-
-Save your model.
-
-Create these folder under the "Build" folder.
-
-![](3.create-a-skin-mod/folder.png)
+* Use the model in ToolKit as a template to bind your model.
+* Save your model.
 
 #### 4.Hide the head of the model
 
-Place the model into the scene.
+* Drag the model into a scene.
 
 To prevent the head from blocking the view, we need to set the head.
 
-First we select and copy the head node
-
+* First we select and copy the head node.
 ![](3.create-a-skin-mod/copyhead.png)
-
-Set the original node CastShadows to "ShadowsOnly".
-
+* Set the original node CastShadows to "ShadowsOnly". <br/>
 ![](3.create-a-skin-mod/sethead.png)
-
-Set the copied node layer to InvisibleFPS and set CastShadows to "Off"
-
+* Set the copied node layer to InvisibleFPS and set CastShadows to "Off"
 ![](3.create-a-skin-mod/headlayer.png)
 
+#### 5.Save the mode
 
-
-#### 5.Save Prefab
-
-Drag the model into the Skin folder to save and name it
-
+* Drag the model into the `Skin` folder to save.
+* Name it the same as your mod folder. <br/>(Example: `Build > SimpleCharacterSkinNew > Skin > SimpleCharacterSkinNew.prefab`)
 ![](3.create-a-skin-mod/saveprefab.png)
 
 ## Phase 2: Prepare to export your mod
 
-<ModTutorialFragmentStepCreateIcon />
-
-#### ItemInfoConfig
-
-Create an ItemInfoConfig file in the Config folder, name it with "YourModName"
-
-<img src="3.create-a-skin-mod/iteminfoconfig.png"/>
-
-![](3.create-a-skin-mod/iteminfoconfig2.png)
-
-Fill in the SkinInfo，
-
-**skinName**: The name of the model in the Skin folder you created，**Needs to be prefixed with your prefix**.
-
-**Name**: The name displayed in the store.
-
-**Desc**:The **description** of the item displayed in the store.
-
-**MeshRoot**:Name of the root node of all meshes in the prefab.
-
-<img src="3.create-a-skin-mod/rootofmesh.png"/>
-
-![](3.create-a-skin-mod/filliteminfoconfig.png)
+<ModTutorialFragmentStepCreateIcon modType="Skin" />
 
 ## Phase 3: Build the mod
 

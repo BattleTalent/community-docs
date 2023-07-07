@@ -2,127 +2,90 @@ import ModTutorialFragmentPhaseBuild from '../_fragments/_fragment-phase-build.m
 import ModTutorialFragmentPhaseTest from '../_fragments/_fragment-phase-test.mdx';
 import ModTutorialFragmentStepOpenUnity from '../_fragments/_fragment-step-open-unity.mdx';
 import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-create-icon.mdx';
+import ModTutorialFragmentStepTemplateWizard from '../_fragments/_fragment-step-template-wizard.mdx';
 
 # Create a weapon mod
 
 Here is a step by step tutorial for making a **weapon** mod.
 
-## Phase 0: Prepare your mod
+## Phase 1: Define your mod
 
 <ModTutorialFragmentStepOpenUnity />
 
-## Phase 1: Define your mod
+#### 5.Generate folder structure using the template wizard.
 
-#### 1.Place the model
+<ModTutorialFragmentStepTemplateWizard modType="Weapon" />
 
-Drag the **RootWeaponNode**(under Assets/Toolkit/Prefabs/) to the scene.
+#### 6.Place the model
 
-![Untitled](1.create-a-weapon-mod/0.png)
+* Open the newly created prefab in the `Weapon` folder.
+* Drag your model of the sword into the prefab hierarchy under the <b>parent object</b>.
+  <br/>(Explanation: <b>Parent object is the top object of the prefab</b>. It will be called the same as the name of your prefab.
+  <br/>(Example: Prefab file is called<code>NewModFolderName.prefab</code>. parent object will be called <code>NewModFolderName</code>).
+* Rotate the model towards the **Z axis** of **parent object **.
+![image](create-a-weapon-mod/set-axis.png)
+* Reference the **MeshRenderer** from the model to **Skill Change Colors**. (quick tips: if you want to place multiple renderer at the same time, you can click the lock button to lock the inspector, then drag them all at once) (the **Skill Change Colors** will be used for change weapon color when it's needed, such as damaged).
 
-Place the model of the sword under the **RootWeaponNode**.
+![image](create-a-weapon-mod/change-mesh-renderer.png)
 
-![Untitled](1.create-a-weapon-mod/1.png)
+#### 7.Add Collider for colliding
 
-Rotate the model towards the **Z axis** of **RootWeaponNode**.
+* Click **Add Component** to add **Mesh Collider**.
+* select **Convex** and change default layer to **Interact layer**.
+(quick tips: if you want accurate collision, we recommend Collider Creator in the unity asset store, but it's not free.)
+![image](create-a-weapon-mod/add-collider.png)
 
-![Untitled](1.create-a-weapon-mod/2.png)
+#### 8. Define HitInfo and CollisionEffect
 
-Reference the **MeshRenderer** from the model to **Skill Change Colors**.(quick tips: if you want to place multiple renderer at the same time, you can click the lock button to lock the inspector, then drag them all at once) (the **Skill Change Colors** will be used for change weapon color when it's needed, such as damaged)
+In short, **RagdollHitInfoObj** defines how a collider deals damage and **CollisionEffect** defines what's the collision physics material is.
 
-![Untitled](1.create-a-weapon-mod/3.png)
+* Change the values in `RagdollHitInfoObj` and `CollisionEffect` as (shown in screenshot) on the **Parent Object**.
+  (Possible options to enter here are can be found on this page: [HitInfo and CollisionEffect](../details/hitinfo-and-collisioneffect.md).)
+![image](create-a-weapon-mod/ragdoll-hit-info-collision-effect.png)
+* Then add these components(`RagdollHitInfoObj` and `CollisionEffect`) to the handle as well to distinguish hits between blade and handle.
+![image](create-a-weapon-mod/ragdoll-hit-info-collision-effect-handle.png)
+(**Explanation**: To learn more about `RagdollHitInfoObj` and `CollisionEffect`, please read [HitInfo and CollisionEffect](../details/hitinfo-and-collisioneffect.md).)
 
-#### 3.Add Collider for colliding
+#### 9.Add AttachLine for grabbing
 
-Click **Add Component** to add **Mesh Collider**, select **Convex** and change default layer to **Interact layer**. (quick tips: if you want accurate collision, we recommend Collider Creator in the unity asset store, but it's not free.)
+* Drag `AttachLine` from the path **Asset/Prefabs** to the **Parent Object**.
+ <br/> Explanation: <code>AttachLine</code> describes how your hand grabbing it. If you toggle <b>Gizmos</b> in the scene editor, then you will see a blue line where your hand will attach to.
+* Adjust the size of the **Line Start Point** and the **Line End Point** to modify the grab area.
 
-![Untitled](1.create-a-weapon-mod/4.png)
+Since this is a two-handed weapon, so we add another one:
 
-#### 4. Define HitInfo and CollisionEffect
+* Add another `AttachLine`, and this one should depend on the previous one.
+* Set **DependAttachObj** to the other.
+* Set **Index Limit** to **Both**, so that this attach will limit to player's hand in two direction of your index finger.
+![image](create-a-weapon-mod/attach-line-create.png)
+* At last, reference these `AttachLine`s to the **InteractWeapon** component from the **Parent Object**.
+![image](create-a-weapon-mod/attach-line-connect.png)
 
-Change the value as screenshot in the **RootWeaponNode**
+#### 10.Add MountPoint for backpack
 
-![image-20220714192958763](1.create-a-weapon-mod/image-20220714192958763.png)
+* Create Empty object under **Parent Object**.
+* Name it **MountPoint**.
+* Add **AttachPoint** Component to it.
+* Move it to the relative position where they should attach to backpack.
+![image](create-a-weapon-mod/mount-point.png)
+* Reference the **MountPoint** to the **InteractWeapon** from the **Parent Object** like before.
+![image](create-a-weapon-mod/mount-point-connect.png)
 
-Then add these component to the handle as screenshot below, to distinguish between the whole and the handle.
+#### 11.Add StabObject for stabbing
 
-![image-20220714193232169](1.create-a-weapon-mod/image-20220714193232169.png)
+* Add `StabObject` to **Parent Object**.
+* Define the **StabArea** to surround the blade. (Tips: you can hover the mouse over the parameter to view the tips.)
+![image](create-a-weapon-mod/stabobj-area.png)
 
-To know more about HitInfo and CollisionEffect, please read [HitInfo and CollisionEffect](../details/hitinfo-and-collisioneffect.md).
+#### 12.Change weapon handing
 
-In short, **HitInfo** defines how a collider deal damage and **CollisionEffect** defines what's the collision physics material is.
-
-
-
-#### 5.Add AttachLine for grabbing
-
-Drag **AttachLine** from the path **Asset/Prefabs** to the **RootWeaponNode**. **AttachLine** describes how your hand grabbing it, If you toggle **Gizmos** in the scene editor, then you will see a blue line where your hand will attach to. Adjust the size of the **Line Start Point** and the **Line End Point** to modify the grab area.
-
-Because this is a two handed weapon, so we add another **AttachLine**. Then one of them needs to set **DependAttachObj** to the other. 
-
-Set **Index Limit** to **Both**, so that this attach will limit to player's hand in two direction of your index finger.
-
-![image-20220713170236266](1.create-a-weapon-mod/image-20220713170236266.png)
-
-
-
-At last, reference these **AttachLine**s to the **InteractWeapon** component from the **RootWeaponNode**.
-
-![Untitled](1.create-a-weapon-mod/6.png)
-
-#### 6.Add MountPoint for backpack
-
-Create Empty node name **MountPoint** and add **AttachPoint** Component. Then move it to the relative position where they should attach to backpack.
-
-![Untitle](1.create-a-weapon-mod/7.png)
-
-
-
-
-
-
-Reference the **MountPoint** to the **InteractWeapon** from the **RootWeaponNode** like before.
-
-![Untitled](1.create-a-weapon-mod/8.png)
-
-#### 7.Add StabObject for stabbing
-
-Add **StabObject** to **RootWeaponNode**.
-
-Define the StabArea to surround the blade. (Tips: you can hover the mouse over the parameter to view the tips.)
-
-![Untitled](1.create-a-weapon-mod/9.png)
-
-
-
-#### 8.Select the how your weapon feels like when swinging
-
-We click "Swing Like Hammer" here. (it'll modify the grab force and hand speed)
-
-![image-20220714195217482](1.create-a-weapon-mod/image-20220714195217482.png)
-
-#### 9.Save Prefab and done
-
-Create these folder under Build folder. 
-
-Drag the **RootWeaponNode** you created from the scene to the Weapon folder and rename it to GiantSword.
-
-![Untitled](1.create-a-weapon-mod/10.png)
+* Click the `Swing Like Hammer` button. (it'll modify the grab force and hand speed)
+![image](create-a-weapon-mod/weapon-handling.png)
+* Save the prefab.
 
 ## Phase 2: Prepare to export your mod
 
-<ModTutorialFragmentStepCreateIcon />
-
-#### ItemInfoConfig
-
-Right click under your mod's **Config** folder, then create an **ItemInfoConfig**, then rename it as you need.(**ItemInfoConfig** is one of our entry point of your mod. Battle Talent will load all the **ItemInfoConfig** files in your mod, and add them into the game. Another entry point of mod, is entry script. Battle Talent will always load this script if your mod have it with addressable path "Entry"(we'll cover this later))
-
-![image-20220713164730607](1.create-a-weapon-mod/image-20220713164730607.png)
-
-**ItemInfoConfig** is the way the game knows your mod, so please make sure you have addressable associate with it before building mod (we will cover this part later on)
-
-![image-20220713164756624](1.create-a-weapon-mod/image-20220713164756624.png)
-
-![Untitled](1.create-a-weapon-mod/14.png)
+<ModTutorialFragmentStepCreateIcon modType="Weapon" />
 
 ## Phase 3: Build the mod
 
