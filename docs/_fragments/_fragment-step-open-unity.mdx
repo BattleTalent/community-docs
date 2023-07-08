@@ -19,7 +19,8 @@ Make sure to remove the demo content so that we have a clean project to start wi
 Change the product name so that the **mod folder name** will not conflict with other mods.
 
 * In the **Unity Toolbar**: Go to `Edit -> Project Settings -> Player`.
-* Modify field `Product Name` to your new mod name.
+* Modify field `Product Name` to your new mod name. Use the format: `YOURPREFIX_MyModName`.
+<br/>**Example:** `UF_ChevalierWeapons`
 
 ![](./images/build/productname.png)
 
@@ -27,7 +28,10 @@ Change the product name so that the **mod folder name** will not conflict with o
 Change the project prefix so that the **mod files** will not conflict with other mods.
 
 * In the **Unity file browser**: Open `Assets -> Resources -> AddressableConfig.asset`
-* Modify field `Prefix` to your new prefix name. Use the format: `YOURPREFIX_`.
-**Note:** The prefix used in the tutorial is "WMD\_". You will need to fill in your new prefix instead of every "WMD\_" in the tutorial. 
+
+* Modify field `Prefix` to your new prefix name. Use the format: `YOURPREFIX_MyModName_`.
+  <br/>**Example:** `UF_ChevalierWeapons_`
+
+  **Note:** The prefix used in the tutorial is "WMD\_". You will need to fill in your new prefix instead of every "WMD\_" in the tutorial. 
 
 ![](./images/build/addressable.png)
