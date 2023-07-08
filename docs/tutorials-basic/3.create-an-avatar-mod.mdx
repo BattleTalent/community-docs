@@ -36,7 +36,7 @@ Here is a step to make a simple **avatar** mod.
 
 ![](create-an-avatar-mod/auto-get-hand-transform.png)
 
-#### 6.Finger configuration
+#### 8.Finger configuration
 
 * Open the `Avatar` prefab.
 * Navigate to the highest object (should be the same as the name of your mod) so that you see component `RuntimeAvatarBuilder`.
@@ -52,11 +52,24 @@ For avatar, you will manually need to set the hand poses. Do that like so:
 * Click `Save Fingers Open Pose`.
 * Test if grips are ok by clicking `View Fingers Close Pose`  &  `View fingers Open Pose`.
 
-Great, you just did the left hand.
+- Great, you just did the left hand. Go back to the `RuntimeAvatarBuilder` component and do the same for the right hand.
 
-* Go back to the `RuntimeAvatarBuilder` component and do the same for the right hand.
 
-* **Save the prefab**.
+- **Save the prefab**.
+
+#### 9.Handpose configuration
+
+If you find that some of the hand poses are **offset** after packing and using them in the game, you can set the avatar's exclusive **HandPose** by following these steps.
+
+- Open the config file in `Assets > build > YourModName > Config`. Under the **SetDefaultPoseValueToAvatar** field, fill in the **AvatarName** and the name of the **HandPose** you want to override.
+
+  ![](create-an-avatar-mod/FillHandPose.png)
+
+- Click on **Invoke**. The corresponding HandPose data will be filled in **automatically**.
+
+  ![](create-an-avatar-mod/AutoFillHandPose.png)
+
+- Adjust the data to suit your needs, the adjustment will only affect the hand pose of this avatar in the game. Please check [Modify Avatar HandPose](../tutorials-advanced/10.modify-avatar-hand-pose.md)
 
 ## Phase 2: Prepare to export your mod
 
