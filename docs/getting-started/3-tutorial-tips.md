@@ -33,17 +33,6 @@ Calling a static function should use `.` instead of `:` in lua.
 
 * Recommended IDE to use by Fonzie is [ZeroBrane Studio](https://studio.zerobrane.com/) as lua editor
 
-## Different AttachLine holdPoses
-
-You can hold objects in different ways by changing the "Hand Pose" parameter on the "AttachLine" prefab. Since the current documentation does not mention all different holdPoses, here is a list of all options.
-
-| Pose	| Description |
-| ---|---|
-| DefaultPose | This is the default pose. It is also used when NOT holding anything.|
-| HoldPose | This pose is for swords, axes, etc.|
-| GunPose | This pose is for holding guns.|
-| GlovePose | This pose is for spells.| 
-
 ## When is slicing triggered
 
 Fonzie was kind enough to give us some explanation on when slicing will be triggered.

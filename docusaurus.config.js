@@ -100,7 +100,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://gitlab.com/brothersonline/xlua-battletalent-docs/-/edit/master/website/'
+            'https://github.com/BattleTalent/community-docs'
         },
         blog: {
           showReadingTime: true,
