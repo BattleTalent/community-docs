@@ -28,15 +28,54 @@ Here is a step to make a simple **avatar** mod.
 * Open the newly created prefab in the `Avatar` folder.
 * Drag your model into it the hierarchy.
 * Navigate to the highest object (should be the same as the name of your mod) so that you see component `RuntimeAvatarBuilder`.
+
+![](create-an-avatar-mod/runtime-avatar-builder.png)
+
 * Drag your model object into the `fbx prefab` variable.
 
-![](create-an-avatar-mod/runtime-avatar-builder-2.png)
+![](create-an-avatar-mod/fbx-prefab.png)
 
-* Click `Auto Get Hand Transform` button.
+* Click `Auto Config Builder` button.
 
-![](create-an-avatar-mod/auto-get-hand-transform.png)
+![](create-an-avatar-mod/auto-config-builder.png)
 
-#### 8.Finger configuration
+#### 8.Slots configuration
+
+* Click `Add Slot Tool` button. This will add a couple of position tools that help you position your slots.
+
+![](create-an-avatar-mod/add-slot-tool.png)
+
+* Click the `Hand Slot Left` field to navigate to that transform.
+
+![](create-an-avatar-mod/click-left-hand-slot.png)
+
+* Reposition the hand slot transform to be on top of your hand.
+
+![](create-an-avatar-mod/position-left-hand-slot.png)
+
+* Click the `Hand Slot Right` field to navigate to that transform.
+
+![](create-an-avatar-mod/click-right-hand-slot.png)
+
+* Reposition the hand slot transform to be on top of your hand.
+
+![](create-an-avatar-mod/position-right-hand-slot.png)
+
+* Click the `Back Slots` field to navigate to that transform.
+
+![](create-an-avatar-mod/click-back-slot.png)
+
+* Reposition the hand slot transform to be on top of your hand.
+
+![](create-an-avatar-mod/apply-slot-tool.png)
+
+* Click `apply slot tool data`.
+
+![](create-an-avatar-mod/remove-slot-tool.png)
+
+* And finally click `remove slot tool` to remove the position tools.
+
+#### 9.Finger configuration
 
 * Open the `Avatar` prefab.
 * Navigate to the highest object (should be the same as the name of your mod) so that you see component `RuntimeAvatarBuilder`.
@@ -57,7 +96,7 @@ Great, you just did the left hand.
 * Go back to the `RuntimeAvatarBuilder` component and do the same for the right hand.
 * **Save the prefab**.
 
-#### 9.Handpose configuration
+#### 10.Handpose configuration
 
 If you find that some of the hand poses are **offset** after packing and using them in the game, you can set the avatar's exclusive **HandPose** by following these steps.
 
