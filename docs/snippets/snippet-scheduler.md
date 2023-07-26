@@ -11,7 +11,7 @@ xLua doesn't have an update function by itself, but we can fake it. The followin
 self.schedulerId = nil
 
 self.schedulerInterval = 0.3   --Runs every 0.3 seconds.
-self.timeBeforeStarting = 0.2  --Starts after 0.2 seconds
+self.timeBeforeStarting = 0.2  --Starts after 0.2 seconds.
 self.timeBeforeStopping = -1   --Never stops and will run endlessly.
 self.ignoreSlowMotion = false  --Will not slow down when slow motion is activated.
 ```
@@ -19,7 +19,7 @@ self.ignoreSlowMotion = false  --Will not slow down when slow motion is activate
 2. Then create functions to schedule:
 ```lua
 self.callOnSchedulerInterval = function(sche, t, s)
-    print("Im updating!"); 
+    print("Im updating!") 
 end
 
 self.callOnSchedulerStop = function(sche)
@@ -50,6 +50,7 @@ function table:OnDestroy()
     if self.schedulerId ~= nil then
         CL.Scheduler.RemoveSchedule(self.schedulerId)
     end
+end
 ```
 
 ## User Variables
@@ -73,3 +74,37 @@ Change the `self.timeBeforeStopping` to `10` to stop it after 10 seconds.
 ### Can I stop the scheduler from slowing down during slow motion?
 
 Change the `self.ignoreSlowMotion` to `true`.
+
+## Tricks
+
+### Call a function on the next frame
+
+```lua
+local callOnSchedulerInterval = function(sche, t, s)
+    print("im executing next frame!") 
+end
+
+CL.Scheduler.Create({}, callOnSchedulerInterval)
+```
+
+### Lerp a value (you can even use this with Curve)
+
+```lua
+local callOnSchedulerInterval = function(sche, t, s)
+	local progress = t/s
+    local lerpedVec = UE.Vector3.Lerp(fromVector, toVector, progress)
+    print(lerpedVec)
+end
+
+CL.Scheduler.Create({}, callOnSchedulerInterval, 0, 1)
+```
+
+### Stop inside scheduler function
+
+```lua
+local callOnSchedulerInterval = function(sche, t, s)
+    sche:Stop()
+end
+
+CL.Scheduler.Create({}, callOnSchedulerInterval, 0, 1)
+```
