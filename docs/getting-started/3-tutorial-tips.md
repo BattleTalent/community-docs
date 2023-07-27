@@ -21,13 +21,18 @@ Shortcuts to be used in the addressable list for adding files to the mod build.
 * Effects use `Effect/`
 * FlyObj use `FlyObj/`
 * Roles use `Role/`
-* Skins use `Skin/`
+* Avatars(1.0) (also known as skins) use `Skin/`
+* Avatars(2.0) use `Avatar/`
+* Maps use `Scene/`
 
 Any resource's addressable name in the path above, can be loaded by the system without path included. for example, if an effect's addressable name is Effect/explosion, it can be created by EffectMgr.Instance:PlayEffect("explosion")
 
 ## Static functions
 
 Calling a static function should use `.` instead of `:` in lua.
+Example:
+* Normal function call: `object:TestFunction()`.
+* Static function call: `object.TestFunction()`.
 
 ## Recommended IDE
 
