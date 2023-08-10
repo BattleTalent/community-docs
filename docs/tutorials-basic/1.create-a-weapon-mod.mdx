@@ -19,7 +19,6 @@ Here is a step by step tutorial for making a **weapon** mod.
 #### 6.Place the model
 
 * Open the newly created prefab in the `Weapon` folder.
-* Under `InteractWeapon`, click `show example weapon` to show an example weapon for positioning and resizing your own weapon.
 ![image](create-a-weapon-mod/toggle-example-weapon.png)
 * Drag your model of the sword into the prefab hierarchy under the <b>parent object</b>.
   <br/>(Explanation: <b>Parent object is the top object of the prefab</b>. It will be called the same as the name of your prefab.
@@ -65,14 +64,11 @@ Since this is a two-handed weapon, so we add another one:
 ![image](create-a-weapon-mod/attach-line-connect.png)
 
 #### 10.Add MountPoint for backpack
+MountPoint will determine where it will mount to your inventory slots like belt or back.
 
-* Create Empty object under **Parent Object**.
-* Name it **MountPoint**.
-* Add **AttachPoint** Component to it.
-* Move it to the relative position where they should attach to backpack.
+* A MountPoint is already added for you by the template wizard (named `MountAttach`).
+* Move it to the relative position where it should attach to the backpack.
 ![image](create-a-weapon-mod/mount-point.png)
-* Reference the **MountPoint** to the **InteractWeapon** from the **Parent Object** like before.
-![image](create-a-weapon-mod/mount-point-connect.png)
 
 #### 11.Add StabObject for stabbing
 
@@ -80,7 +76,7 @@ Since this is a two-handed weapon, so we add another one:
 * Define the **StabArea** to surround the blade. (Tips: you can hover the mouse over the parameter to view the tips.)
 ![image](create-a-weapon-mod/stabobj-area.png)
 
-#### 12.Change weapon handing
+#### 12.Change weapon handling
 
 * Click the `Swing Like Hammer` button. (it'll modify the grab force and hand speed)
 ![image](create-a-weapon-mod/weapon-handling.png)

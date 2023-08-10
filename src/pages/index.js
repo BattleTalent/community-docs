@@ -30,7 +30,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Our docs are completely community based and everyone can help improve them! <a href={"https://gitlab.com/brothersonline/xlua-battletalent-docs"}>Join in!</a>
+        Our docs are completely community based and everyone can help improve them! <a href={"https://github.com/BattleTalent/community-docs"}>Join in!</a>
       </>
     ),
   },

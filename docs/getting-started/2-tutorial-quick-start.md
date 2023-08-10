@@ -6,8 +6,8 @@ slug: /
 ## Quick Start
 
 1. Download & Install [Unity Hub](https://unity3d.com/get-unity/download).
-2. Download & Install [Unity 2019.4.12](https://unity3d.com/unity/whats-new/2019.4.12).
-3. Download the [Battle Talent ModToolkit](https://github.com/BattleTalent/BTModToolkit/archive/refs/heads/master.zip). (Wanna use git? [Check out the repo!](https://github.com/BattleTalent/BTModToolkit))
+2. Download & Install [Unity 2019.4.12f1](https://unity3d.com/unity/whats-new/2019.4.12).
+3. Download the [Battle Talent ModToolkit](https://github.com/BattleTalent/BTModToolkit/archive/refs/heads/master.zip). (Want to use git? [Check out the repo!](https://github.com/BattleTalent/BTModToolkit))
 4. Open the ModProj project in Unity Hub. 
 5. Click `BuildTools -> BuildAllBundles` in the toolbar of Unity.
 6. When the mod has been built it can be found in the ModProj project location at `ModProj/Assets/Mods`
@@ -19,7 +19,7 @@ Done! You now have a successfully running mod. (if something goes wrong, please 
 
 ## Tutorial videos
 
-If you dont like reading a lot there is also some tutorial videos out there that are easy to follow.
+If you don't like reading there is also some tutorial videos out there that are easy to follow.
 
 ### 10 minutes Tutorial Video
 
@@ -28,8 +28,8 @@ Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v
 ### Aura's Extended Tutorial Video
 
 Aura, one of our beloved modders has made a couple of video's which are also a great starting point. Check them out! 
-* [Basic Weapon](https://youtu.be/FRej6r_C4Rg)
-* [Weapon with skill](https://youtu.be/XGBDLP502dg)
+* [Basic Weapon](https://youtu.be/XGBDLP502dg)
+* [Weapon with skill](https://youtu.be/FRej6r_C4Rg)
 
 ### Prop Tutorial Video
 
@@ -39,7 +39,7 @@ Silver Echo Games Developer, made a tutorial on how to create props.
 ## FAQ
 
 ### Does it matter which Unity version I use?
-Yes, you should use version 2019.4.12f
+Yes, you should use version 2019.4.12f1
 
 ### What can we mod right now?
 Officially weapons, spells, maps, skins, enemies, friends, traps, songs.

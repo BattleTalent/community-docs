@@ -18,9 +18,9 @@ function table:Awake()
     self.scheId = null;
 
     self.speed = 1;
-    self.schedulerInterval = 0.3;
-    self.timeBeforeStopping = -1;
-    self.timeBeforeStarting = 0.2;
+    self.schedulerInterval = 0.3
+    self.timeBeforeStopping = -1
+    self.timeBeforeStarting = 0.2
 end
 
 function table:Start()

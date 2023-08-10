@@ -1,5 +1,5 @@
 ---
-title: Rotate Transform
+title: Transform - Rotate
 ---
 
 Make a transform rotate endlessly.

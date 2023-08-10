@@ -12,25 +12,71 @@ Here is a step by step tutorial for making a **scene** mod.
 
 <ModTutorialFragmentStepOpenUnity />
 
-#### 5.Generate folder structure using the template wizard.
+#### 5. Generate folder structure using the template wizard.
 
 <ModTutorialFragmentStepTemplateWizard modType="Scene" />
 
-#### 6.Edit the scene
+#### 6. Place items in the scene
 
 * Open the newly created `scene` file in the `Scene` folder. (for example: `Build > YourNewModFolder > Scene`)
-* Place items, place DirectionalLight and adjust it, place HookRoot, SlideWall, StoneGate, etc.
-![placeItem](2.create-a-scene-mod/placeItem.png)
-* Want to know how to create a **Combat Room**? Please read [Create Combat Room](../tutorials-advanced/2.create-combat-room.md).
+* Add collision to the items by adding `MeshCollider`.
+* Make sure to change the layer of the objects to: `CharacterObstacle` or else they will not collide with the player.
+
+**Extra:** There are a couple of prefabs you can use the place special interactable objects.
+
+| Prefab      | Description                                                         |
+|-------------|---------------------------------------------------------------------|
+| `HookRoot`  | Allows you to add a root that you can swing across gaps.            |
+| `SlideWall` | Allows you to add a wall object that you can run along.             |
+| `StoneGate` | A togglable gate.                                                   |
+| `SkeletonStatue` | A grabbable statue that can start waves.                       |
+| `WeaponPendant` | A grabbable weapon that will float in a location until grabbed. |
+| `RespawnTrigger` | A collider that will set the respawn point to the center of the collider when a player enters it. |
+
+![placeItem](create-a-scene-mod/placeItem.png)
+
+#### 7. CharacterPos
+
 * Adjust the `CharacterPos` (under `SceneScriptNode`) to adjust the character spawning position.
-![](2.create-a-scene-mod/sceneScriptNode.png)
-* Adjust the height of the [DeadZone](../details/deadzone-respawntrigger.md) (under `SceneScriptNode`) and place the  [RespawnTrigger](../details/deadzone-respawntrigger.md)  respawn point
-![](2.create-a-scene-mod/pathfinder.png)
+![](create-a-scene-mod/sceneScriptNode.png)
+
+#### 8. DeadZone
+
+* Adjust the `Transform`'s `Y` value to change the position of the [DeadZone](../details/deadzone-respawntrigger.md) (under `SceneScriptNode`).
+* Place [RespawnTrigger](../details/deadzone-respawntrigger.md)'s to place respawn points.
+
+
+#### 9. PathFinder
+
 * Adjust `BoxCollider` of the `PathFinder` (under `SceneScriptNode`) to enclose the whole scene.
+![](create-a-scene-mod/pathfinder.png)
 * Save the scene.
 
-#### 7. Bake the scene (not required but good for performance)
-* Using [occlusion culling](https://docs.unity3d.com/2019.4/Documentation/Manual/occlusion-culling-getting-started.html), follow the tutorial steps until the baking is complete.
+#### 7. Bake the scene
+This step is not required, but it will increase performance, because it will not render objects that are currently not visible for the player.
+
+* Mark all objects that do not move `Occluder Static`.
+![](create-a-scene-mod/occluderStatic.png)
+
+* Open the `Occlusion` window by going to `Window > Rendering > Occlusion Culling`.
+![](create-a-scene-mod/occlusionCullingWindow.png)
+
+* In the `Occlusion` window, click the `Bake` button.
+![](create-a-scene-mod/occlusionCullingBake.png)
+
+* Save the scene again.
+
+#### Extra - StabableObj
+Want some items to be stabbable (and also climbable)? You can do this as followed:
+
+* Find the object you want to be stabbable/climbable.
+* Give it a `RigidBody` component and mark it `Is Kinematic`.
+![](create-a-scene-mod/kinematicRigidbody.png)
+* Give it a `StabableObj` component.
+![](create-a-scene-mod/stabableObj.png)
+
+#### Extra - Combat Room
+* Want to know how to create a **Combat Room**? Please read [Create Combat Room](../tutorials-advanced/2.create-combat-room.md).
 
 ## Phase 2: Prepare to export your mod
 
