@@ -96,6 +96,10 @@
 
 - Orc_Sword
 - Orc_GreatSword
+  
+- RobotGalaxy_Rifle
+- RobotFire_Fire
+- RobotMissle_Missle
 
 ## Waves
 
