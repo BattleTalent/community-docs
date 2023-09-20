@@ -1,6 +1,10 @@
 # Role, Waves and Weapon code names
 
-## Roles
+## Full game
+
+A list of id's of roles that you can call from script.
+
+### Roles
 
 - Goblin_Axe
 - Goblin_Axe_B
@@ -14,18 +18,15 @@
 - Goblin_Rogue_Dual
 - Goblin_Rogue_DualAxe
 - Goblin_Shaman
-
 - GoblinTall_Arakh
 - GoblinTall_TwinSword
 - GoblinTall_BigSword
-
 - GoblinSmall_ThrowBomb
 - GoblinSmall_ThrowKnife
 - GoblinSmall_Mace
 - GoblinSmall_MaceB
 - GoblinSmall_Elite
 - GoblinSmall_Axe
-
 - SkelSmall_Axe
 - SkelSmall_Axe_B
 - SkelSmall_Mace
@@ -33,7 +34,6 @@
 - SkelSmall_Sword
 - SkelSmall_Sword_B
 - SkelSmall_Dual
-
 - Skeleton_Ball
 - Skeleton_Ball_B
 - Skeleton_Dual_Ball
@@ -47,14 +47,11 @@
 - Skeleton_ShieldSword_B
 - Skeleton_ShieldSpear_B
 - Skeleton_ShieldLance_B
-
 - Elf_Blade
 - Elf_Blade_B
 - Elf_DualSword
 - Elf_DualSword_B
-
 - ElfRogue_Archer
-
 - WarriorMale_Blade
 - WarriorMale_Blade_B
 - WarriorMale_Falchion
@@ -74,13 +71,10 @@
 - WarriorMale_LongSword_B
 - WarriorMale_OrientallsmDual
 - WarriorMale_OrientallsmDual_B
-
 - WarriorFemale_Archer
 - WarriorFemale_Mage
 - WarriorFemale_GrilGreatSword
-
 - DarkLord_Great
-
 - Wraith_Melee
 - Wraith_MeleeMagic
 - Wraith_MeleeMagic_B
@@ -89,19 +83,18 @@
 - Wraith_MeleeDashString
 - Wraith_MeleeDashString_B
 - Wraith_Elite
-
 - Vampire_Axe
 - Vampire_LongSword
 - Vampire_Rapier
-
 - Orc_Sword
 - Orc_GreatSword
-  
 - RobotGalaxy_Rifle
 - RobotFire_Fire
 - RobotMissle_Missle
 
-## Waves
+### Waves
+
+A list of id's of waves that you can call from script.
 
 - Levels\WaveDefine\Arena_1101
 - Levels\WaveDefine\Arena_1102
@@ -121,7 +114,6 @@
 - Levels\WaveDefine\Arena_3102
 - Levels\WaveDefine\Arena_3103
 - Levels\WaveDefine\Arena_3104
-
 - Levels\WaveDefine\Solo_1101
 - Levels\WaveDefine\Solo_1201
 - Levels\WaveDefine\Solo_2101
@@ -133,7 +125,9 @@
 - Levels\WaveDefine\Solo_2302
 - Levels\WaveDefine\Solo_2303 
 
-## Weapons (not complete)
+### Weapons (incomplete)
+
+A list of id's of weapons that you can call from script.
 
 - Arming_Dagger
 - Arming_Sword
@@ -149,13 +143,43 @@
 - Viking_Sword
 - Templar_Sword
 
-# Role and Weapon code names (Demo)
+## Demo
 
-## Roles
+### Roles
 
-![image-20221103092644955](role-and-weapon/image-20221103092644955.png)
+A list of id's of roles that you can call from script.
 
-## Weapons (not complete)
+- Goblin_Axe
+- Goblin_Axe_B
+- Goblin_Rogue
+- Goblin_Rogue_B
+- Goblin_Rogue_Elf
+- Goblin_Rogue_Twin
+- Goblin_Rogue_Dual
+- GoblinTall_TwinSword
+- GoblinSmall_ThrowBomb
+- GoblinSmall_ThrowKnife
+- GoblinSmall_Mace
+- SkelSmall_Axe
+- SkelSmall_Axe_B
+- SkelSmall_Mace
+- SkelSmall_Mace_B
+- SkelSmall_Sword
+- SkelSmall_Sword_B
+- Skeleton_RSword_Shield
+- Elf_Blade
+- Elf_Blade_B
+- Elf_DualSword
+- Elf_DualSword_B
+- ElfRogue_Archer
+
+### Waves
+
+Waves are not available in the demo.
+
+### Weapons (incomplete)
+
+A list of id's of weapons that you can call from script.
 
 - Arming_Dagger
 - Arming_Sword
