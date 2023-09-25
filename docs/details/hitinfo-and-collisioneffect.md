@@ -17,6 +17,9 @@ Here is a table of the built-in material name predefined.
 | Metal                   | Environment                  |
 | Brick                   | Environment                  |
 | Wood                    | Environment or Wooden Weapon |
+| Sand                    | Environment                  |
+| Meat                    | NPC                          |
+| Bone                    | NPC                          |
 
 #### HitInfo component
 
