@@ -1,8 +1,9 @@
 ---
-title: New Vector3
+title: UE - New Vector3
 ---
 
 Create a new Vector3.
+Representation of 3D vectors and points.
 
 ## Example
 
