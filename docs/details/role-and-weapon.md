@@ -142,6 +142,17 @@ A list of id's of weapons that you can call from script.
 - Viking_Battle_Axe
 - Viking_Sword
 - Templar_Sword
+- Spell_FireBall
+- Spell_Telekinetic
+- Spell_Thunder
+- Spell_Earth
+- Spell_Ice
+- Spell_Wind
+- Spell_ForceGrab
+- Spell_Shuriken
+- Spell_MindControl
+- Spell_BloodSacrifice
+- Spell_BlackHole
 
 ## Demo
 
