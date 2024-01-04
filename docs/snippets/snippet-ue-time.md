@@ -23,5 +23,5 @@ Get the time between `otherTime` and `currentTime` simply by doing the following
 local otherTime = UE.Time.time -- somewhere else in the script ofcourse, else it would return the same time as currentTime.
 local currentTime = UE.Time.time
 
-local timeBetween = currenTime - otherTime
+local timeBetween = currentTime - otherTime
 ```
