@@ -6,7 +6,7 @@ slug: /
 ## Quick Start
 
 1. Download & Install [Unity Hub](https://unity3d.com/get-unity/download).
-2. Download & Install [Unity 2019.4.12f1](https://unity3d.com/unity/whats-new/2019.4.12).
+2. Download & Install [Unity 2020.3.48f](https://unity3d.com/unity/whats-new/2020.3.48).
 3. Download the [Battle Talent ModToolkit](https://github.com/BattleTalent/BTModToolkit/archive/refs/heads/master.zip). (Want to use git? [Check out the repo!](https://github.com/BattleTalent/BTModToolkit))
 4. Open the ModProj project in Unity Hub. 
 5. Click `BuildTools -> BuildAllBundles` in the toolbar of Unity.
@@ -39,7 +39,7 @@ Silver Echo Games Developer, made a tutorial on how to create props.
 ## FAQ
 
 ### Does it matter which Unity version I use?
-Yes, you should use version 2019.4.12f1
+Yes, you should use version 2020.3.48f
 
 ### What can we mod right now?
 Officially weapons, spells, maps, skins, enemies, friends, traps, songs.
