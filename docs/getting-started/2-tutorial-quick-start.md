@@ -19,22 +19,12 @@ Done! You now have a successfully running mod. (if something goes wrong, please 
 
 ## Tutorial videos
 
-If you don't like reading there is also some tutorial videos out there that are easy to follow.
-
-### 10 minutes Tutorial Video
-
-Fonzie made an [official modding tutorial video](https://www.youtube.com/watch?v=alnqZcCeais) to quickly get you going. Click the link!
-
-### Aura's Extended Tutorial Video
-
-Aura, one of our beloved modders has made a couple of video's which are also a great starting point. Check them out! 
-* [Basic Weapon](https://youtu.be/XGBDLP502dg)
-* [Weapon with skill](https://youtu.be/FRej6r_C4Rg)
-
-### Prop Tutorial Video
-
-Silver Echo Games Developer, made a tutorial on how to create props.
-[Check it out!](https://www.youtube.com/watch?v=sS1CKmxCxcI)
+If you don't like reading there is also a bunch of tutorial videos out there that are easy to follow:
+* [Fonzie - official modding tutorial video](https://www.youtube.com/watch?v=alnqZcCeais)
+* [UnbelievableFlavour - Basic Weapon](https://www.youtube.com/watch?v=C0zJoelDwhU)
+* [Aura - Basic Weapon](https://youtu.be/XGBDLP502dg)
+* [Aura - Weapon with skill](https://youtu.be/FRej6r_C4Rg)
+* [Silver Echo Games - Prop tutorial](https://www.youtube.com/watch?v=sS1CKmxCxcI)
 
 ## FAQ
 
