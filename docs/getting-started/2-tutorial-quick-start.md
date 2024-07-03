@@ -21,10 +21,10 @@ Done! You now have a successfully running mod. (if something goes wrong, please 
 
 If you don't like reading there is also a bunch of tutorial videos out there that are easy to follow:
 * [Fonzie - official modding tutorial video](https://www.youtube.com/watch?v=alnqZcCeais)
-* [UnbelievableFlavour - Basic Weapon](https://www.youtube.com/watch?v=C0zJoelDwhU)
 * [Aura - Basic Weapon](https://youtu.be/XGBDLP502dg)
 * [Aura - Weapon with skill](https://youtu.be/FRej6r_C4Rg)
 * [Silver Echo Games - Prop tutorial](https://www.youtube.com/watch?v=sS1CKmxCxcI)
+* [UnbelievableFlavour - Faster modding a basic weapon](https://www.youtube.com/watch?v=C0zJoelDwhU)
 
 ## FAQ
 
