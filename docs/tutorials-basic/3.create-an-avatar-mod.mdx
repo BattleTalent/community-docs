@@ -112,6 +112,19 @@ If you find that some of the hand poses are **offset** after packing and using t
 
 * Adjust the data to suit your needs, the adjustment will only affect the hand pose of this avatar in the game. Please check [Modify Avatar HandPose](../tutorials-advanced/10.modify-avatar-hand-pose.md)
 
+#### 11.FAQ
+
+Q: The models face is visible. Anything I could do about that?
+A: Yes! You could give the face the layer: `InvisibleFPS` to fix this problem.
+
+Q: My controllers control the wrong fingers. What's up with that?
+A: Using "auto config" on the fingers requires the fingers to be in a specific order. Use the following to always have correct controls:
+1. thumb
+2. index
+3. middle
+4. pinky
+5. ring
+
 ## Phase 2: Prepare to export your mod
 
 <ModTutorialFragmentStepCreateIcon modType="Avatar" />
