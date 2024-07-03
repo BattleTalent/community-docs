@@ -2,6 +2,14 @@
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
+## Requirements:
+This project runs on an older version of node and is not compatible with versions after 16.
+To easily switch you could use `nvm`.
+```console
+nvm install 16
+nvm use 16
+```
+
 ## Installation
 
 ```console
