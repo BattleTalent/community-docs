@@ -40,11 +40,7 @@ Here is a step to make a simple **avatar** mod.
 ![](create-an-avatar-mod/auto-config-builder.png)
 
 #### 8.Slots configuration
-
-* Click `Add Slot Tool` button. This will add a couple of position tools that help you position your slots.
-
-![](create-an-avatar-mod/add-slot-tool.png)
-
+The weapon and spell slots of an avatar need to be positioned. The positioning tools have been initialized by clicking the `auto config builder` button that help you position your slots on the avatar.
 * Click the `Hand Slot Left` field to navigate to that transform.
 
 ![](create-an-avatar-mod/click-left-hand-slot.png)
@@ -69,13 +65,9 @@ Here is a step to make a simple **avatar** mod.
 
 ![](create-an-avatar-mod/position-back-slots.png)
 
-* Click `apply slot tool data`.
+* Click `Set Slot Tool` button to apply the new positions & rotations.
 
 ![](create-an-avatar-mod/apply-slot-tool.png)
-
-* And finally click `remove slot tool` to remove the position tools.
-
-![](create-an-avatar-mod/remove-slot-tool.png)
 
 #### 9.Finger configuration
 
@@ -86,12 +78,26 @@ Here is a step to make a simple **avatar** mod.
 
 For avatar, you will manually need to set the hand poses. Do that like so:
 
-* Click `Auto Config Fingers`.
-* Manually close the fingers in the hands. (if they aren't already closed).
-* Click `Save Fingers Close Pose`.
-* Manually open the fingers in the hands.
-* Click `Save Fingers Open Pose`.
-* Test if grips are ok by clicking `View Fingers Close Pose`  &  `View fingers Open Pose`.
+* Invoke the `Auto Config Fingers`. with the number of ** gameobjects in a finger** (usually 3 or 4).
+
+![](create-an-avatar-mod/auto-config-fingers.png)
+
+* Go back to the `RuntimeAvatarBuilder` component.
+* Adjust the `Left hand preview` slider to the **left** & click the `Preview hand pose` button.
+
+![](create-an-avatar-mod/adjust-sliders.png)
+
+* The hand should now be closed. Open the `HandPoseControlLeft` component and click `Save - Fingers Close Pose`.
+
+![](create-an-avatar-mod/save-close-pose.png)
+
+* Go back to the `RuntimeAvatarBuilder` component.
+* Adjust the `Left hand preview` slider to the **right** & click the `Preview hand pose` button.
+* The hand should now be closed. Open the `HandPoseControlLeft` component and click `Save - Fingers Open Pose`.
+
+![](create-an-avatar-mod/save-open-pose.png)
+
+* Test if grips are ok by clicking `View - Fingers Close Pose`  &  `View - fingers Open Pose`.
 
 Great, you just did the left hand.
 
@@ -114,16 +120,16 @@ If you find that some of the hand poses are **offset** after packing and using t
 
 #### 11.FAQ
 
-Q: The models face is visible. Anything I could do about that?
-A: Yes! You could give the face the layer: `InvisibleFPS` to fix this problem.
+Q: The model's face is visible in front of the camera. Anything I could do about that?
+A: Yes! You could give the face **mesh** the layer: `InvisibleFPS` to fix this problem. If the model does not have a separate mesh for the head (which is usually the case), then you can follow [this](http://localhost:3000/community-docs/docs/tutorials-advanced/create-near-perfect-convex-colliders) tutorial to cut of the models head in Blender.
 
 Q: My controllers control the wrong fingers. What's up with that?
 A: Using "auto config" on the fingers requires the fingers to be in a specific order. Use the following to always have correct controls:
 1. thumb
 2. index
 3. middle
-4. pinky
-5. ring
+4. ring
+5. pinky
 
 ## Phase 2: Prepare to export your mod
 
