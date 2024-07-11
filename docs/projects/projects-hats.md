@@ -7,7 +7,7 @@ Make sure to keep `_HatSpell_HAT_`, inside your hat addressables. Or the hat spe
 
 ## Downloads
 
-* **Hat project is not yet publicly available. Try again soon.**
+* [Hat Project](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_HatSpell_HAT_YourModName.zip)
 
 ## How to use
 
