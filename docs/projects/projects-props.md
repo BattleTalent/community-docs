@@ -7,7 +7,7 @@ Make sure to keep `_PropSpawner_PROP_`, inside your prop addressables. Or the pr
 
 ## Downloads
 
-* [Prop](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_PropSpawner_PROP_YourModName.zip)
+* [Prop Project](https://github.com/unbelievableflavour/BattleTalentBaseProjects/raw/main/YOURPREFIX_PropSpawner_PROP_YourModName.zip)
 
 ## How to use
 
