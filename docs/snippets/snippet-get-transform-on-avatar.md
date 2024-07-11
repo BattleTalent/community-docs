@@ -10,7 +10,7 @@ Retrieves a transform on the player to mutate stuff like disabling cloaks and su
 local table = {}
 
 function table:FindTransformByNameRecursive(haystack, needle)
-    local children = haystack:GetComponentsInChildren(typeof(UE.Transform))
+    local children = haystack:GetComponentsInChildren(typeof(UE.Transform), true)
     local it = children:GetEnumerator()
 
     local foundTransform = nil
