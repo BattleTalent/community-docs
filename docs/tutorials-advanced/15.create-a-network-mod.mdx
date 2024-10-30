@@ -10,17 +10,34 @@ The only difference between a network mod and a normal mod is the script and con
 
 
 
+#### Introduction:
+
 - RPC: The server uses a Remote Procedure Call (RPC) to run this function on clients
 
 - CMD: Call this from a client to run this function on the server
 
 - netId: The unique network Id of this object
 
-  
+
+
+
+When making a multiplayer mod, we will use `NetworkStateX` to receive data, send data and synchronize data. By injecting Function into NetworkStateX in a lua script, we can use the RPC and CMD interfaces to transfer data, and we can also use the SetState and GetState interfaces provided to synchronize data from the server to all clients.
+
+Different types of NetworkStateX: 
+
+- FlyObject : `NetworkFlyObjectStateX`
+- InteractBase: `NetworkIBStateX`
+- SceneObj: `NetworkSceneObjStateX`
+
+​	You can open the NetworkStateX file in ModToolKit to see more interfaces.
+
+
+
+
 
 #### 1.Script
 
-1. Server to Client
+1. RPC - Server to Client
 
    The server calls the client function using Remote Procedure Call (RPC).
 
@@ -45,7 +62,7 @@ The only difference between a network mod and a normal mod is the script and con
 
    
 
-   The server uses the interface `ServerRpcIntFunc` in networkIBState to call functions in the client. (RpcOnShoot). 
+   The server uses the interface `ServerRpcIntFunc` (Please read `NetworkIBStateX` for more interfaces) in networkIBState to call functions in the client. (RpcOnShoot). 
 
    ​	other interface refer to `NetworkIBStateX`
 
@@ -65,7 +82,7 @@ The only difference between a network mod and a normal mod is the script and con
 
 
 
-2. Client to Server
+2. CMD - Client to Server
 
    The client calls the server function using Command(CMD). In general, there are very few cases where the client calls the server function.
 
@@ -84,25 +101,55 @@ The only difference between a network mod and a normal mod is the script and con
    end
    ```
 
-   The client uses the interface `CommandFunc` in networkIBState to call function (CmdToShoot) in the server.
+   The client uses the interface `CommandFunc` (Please read `NetworkIBStateX` for more interfaces) in networkIBState to call function (CmdToShoot) in the server.
 
-   CommandFunc(funtionName, boolList, floatList, intList, strList)
+   CommandFunc(funtionName)
 
    - functionName: Name of the function to call on the server
-   - boolList:  List<bool> value
-   - floatList: List<float> value
-   - intList：List<int> value
-   - strList: List<string>value
-
+   
    ```
    function WeaponFlyObj:ClientToShoot()
        self.host.interact.networkIB.networkIBState:CommandFunc("CmdToShoot", null, null, null, null)
+end
+   ```
+   
+
+
+
+3. NetworkState - state synchronization
+
+   We can use NetworkState for data synchronization, which currently only supports server synchronization of data to all clients.
+
+   
+
+   Similarly, complete the function and register
+
+   ```
+   function Test:Awake()
+   	
+   	--The client updates the value upon receipt.
+       self.onValueChange = function(value)
+           self.value = value
+       end
+   end
+   
+   function Test:NetworkInject()
+       self.host.interact.networkIB.networkIBState:InjectIntState("value", self.onValueChange)
+       --inject other function
    end
    ```
 
+   The server updates the value using `SetIntStateValue` (Please read `NetworkIBStateX` for more interfaces).
 
+   ```
+   function Test:ServerUpdateValue()
+   	if CL.Network.VRNetworkManager.ServerOnline then
+   		self.host.interact.networkIB.networkIBState:SetVec3StateValue("value", self.value)
+   	end
+   end
+   ```
 
-
+   
 
 #### 2.Config
 
