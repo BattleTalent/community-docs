@@ -1,0 +1,120 @@
+# Create a network mod
+
+Note: The prefixes used in the tutorial are "WMD\_", which can be replaced with your own prefix, and you will need to change the prefix in the AddressableConfig(Assets/Resources/AddressableConfig) file. Once you have changed the prefix, you will need to fill in your new prefix instead of "WMD\_" in the tutorial.
+
+## 
+
+note: The game host is the server, basically all changes are processed on the server and synchronised to the client.
+
+The only difference between a network mod and a normal mod is the script and configuration, so let's use the gun mod as an example of a modification.
+
+
+
+- RPC: The server uses a Remote Procedure Call (RPC) to run this function on clients
+
+- CMD: Call this from a client to run this function on the server
+
+- netId: The unique network Id of this object
+
+  
+
+#### 1.Script
+
+1. Server to Client
+
+   The server calls the client function using Remote Procedure Call (RPC).
+
+   A function that needs to be called on the client:
+
+   ```
+   function WeaponFlyObj:RpcOnShoot(bullet)
+       --client to do
+   end
+   ```
+
+   
+
+   Registering Function in NetworkInject so that the client can find the same function and run it when the server calls it.
+
+   ```
+   function WeaponFlyObj:NetworkInject()
+       self.host.interact.networkIB.networkIBState:InjectFunc("RpcOnShoot", self.RpcOnShoot)
+       --inject other function
+   end
+   ```
+
+   
+
+   The server uses the interface `ServerRpcIntFunc` in networkIBState to call functions in the client. (RpcOnShoot). 
+
+   ​	other interface refer to `NetworkIBStateX`
+
+   ServerRpcIntFunc(funtionName, int, includeServer)
+
+   - functionName: The name of the function to be called on the client
+   - int:  int value
+   - includeServer: run this function on the server as well，In this case, includeServer is false, so it will only run RpcOnShoot on the client side.
+
+   ```
+   function WeaponFlyObj:ServerOnShoot(bullet)
+       self.host.interact.networkIB.networkIBState:ServerRpcIntFunc("RpcOnShoot", bullet.netId, false)
+   end
+   ```
+
+   
+
+
+
+2. Client to Server
+
+   The client calls the server function using Command(CMD). In general, there are very few cases where the client calls the server function.
+
+   ​	
+
+   Similarly, complete the function and register
+
+   ```
+   function WeaponFlyObj:NetworkInject()
+       self.host.interact.networkIB.networkIBState:InjectFunc("CmdToShoot", self.CmdToShoot)
+       --inject other function
+   end
+   
+   function WeaponFlyObj:CmdToShoot()
+       --Server shoot
+   end
+   ```
+
+   The client uses the interface `CommandFunc` in networkIBState to call function (CmdToShoot) in the server.
+
+   CommandFunc(funtionName, boolList, floatList, intList, strList)
+
+   - functionName: Name of the function to call on the server
+   - boolList:  List<bool> value
+   - floatList: List<float> value
+   - intList：List<int> value
+   - strList: List<string>value
+
+   ```
+   function WeaponFlyObj:ClientToShoot()
+       self.host.interact.networkIB.networkIBState:CommandFunc("CmdToShoot", null, null, null, null)
+   end
+   ```
+
+
+
+
+
+#### 2.Config
+
+* Check Supported Multiplayer to display it in multiplayer mode.
+  ![PlaceModel](15.create-a-network-mod/MutiCheckbox.png)
+
+  
+
+* Click AutoRegisterNetworkPrefab, to register the prefabs that need to be used in multiplayer mode, such as FlyObject.
+  ![PlaceModel](15.create-a-network-mod/regNetworkPrefab.png)
+
+  
+
+
+
