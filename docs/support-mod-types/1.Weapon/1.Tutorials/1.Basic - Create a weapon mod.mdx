@@ -1,10 +1,12 @@
-import ModTutorialFragmentPhaseBuild from '../_fragments/_fragment-phase-build.mdx';
-import ModTutorialFragmentPhaseTest from '../_fragments/_fragment-phase-test.mdx';
-import ModTutorialFragmentStepOpenUnity from '../_fragments/_fragment-step-open-unity.mdx';
-import ModTutorialFragmentStepCreateIcon from '../_fragments/_fragment-step-create-icon.mdx';
-import ModTutorialFragmentStepTemplateWizard from '../_fragments/_fragment-step-template-wizard.mdx';
+---
+title: Basic - Normal Weapon Mod
+---
 
-# Create a weapon mod
+import ModTutorialFragmentPhaseBuild from '/docs/_fragments/_fragment-phase-build.mdx';
+import ModTutorialFragmentPhaseTest from '/docs/_fragments/_fragment-phase-test.mdx';
+import ModTutorialFragmentStepOpenUnity from '/docs/_fragments/_fragment-step-open-unity.mdx';
+import ModTutorialFragmentStepCreateIcon from '/docs/_fragments/_fragment-step-create-icon.mdx';
+import ModTutorialFragmentStepTemplateWizard from '/docs/_fragments/_fragment-step-template-wizard.mdx';
 
 Here is a step by step tutorial for making a **weapon** mod.
 
@@ -21,7 +23,7 @@ Here is a step by step tutorial for making a **weapon** mod.
 * Open the newly created prefab in the `Weapon` folder.
 ![image](create-a-weapon-mod/toggle-example-weapon.png)
 * Drag your model of the sword into the prefab hierarchy under the <b>parent object</b>.
-  <br/>(Explanation: <b>Parent object is the top object of the prefab</b>. It will be called the same as the name of your prefab.
+  <br/>Explanation: <b>Parent object is the top object of the prefab</b>. It will be called the same as the name of your prefab.
   <br/>(Example: Prefab file is called<code>NewModFolderName.prefab</code>. parent object will be called <code>NewModFolderName</code>).
 * Rotate the model and resize the weapon until it feels ok in comparison to the **dummy weapon**.
 ![image](create-a-weapon-mod/set-axis.png)
@@ -42,11 +44,11 @@ Here is a step by step tutorial for making a **weapon** mod.
 In short, **RagdollHitInfoObj** defines how a collider deals damage and **CollisionEffect** defines what's the collision physics material is.
 
 * Change the values in `RagdollHitInfoObj` and `CollisionEffect` as (shown in screenshot) on the **Parent Object**.
-  (Possible options to enter here are can be found on this page: [HitInfo and CollisionEffect](../details/hitinfo-and-collisioneffect.md).)
+  (Possible options to enter here are can be found on this page: [HitInfo and CollisionEffect](/docs/details/hitinfo-and-collisioneffect).)
 ![image](create-a-weapon-mod/ragdoll-hit-info-collision-effect.png)
 * Then add these components(`RagdollHitInfoObj` and `CollisionEffect`) to the handle as well to distinguish hits between blade and handle.
 ![image](create-a-weapon-mod/ragdoll-hit-info-collision-effect-handle.png)
-(**Explanation**: To learn more about `RagdollHitInfoObj` and `CollisionEffect`, please read [HitInfo and CollisionEffect](../details/hitinfo-and-collisioneffect.md).)
+(**Explanation**: To learn more about `RagdollHitInfoObj` and `CollisionEffect`, please read [HitInfo and CollisionEffect](/docs/details/hitinfo-and-collisioneffect).)
 
 #### 9.Add AttachLine for grabbing
 
@@ -60,7 +62,7 @@ Since this is a two-handed weapon, so we add another one:
 * Set **DependAttachObj** to the other.
 * Set **Index Limit** to **Both**, so that this attach will limit to player's hand in two direction of your index finger.
 ![image](create-a-weapon-mod/attach-line-create.png)
-* At last, reference these `AttachLine`s to the **InteractWeapon** component from the **Parent Object**. And select `Allow Second Hand`.
+* At last, reference these `AttachLine`s to the **InteractWeapon** component from the **Parent Object**. And select `Allow Second Hand`.  
 ![image](create-a-weapon-mod/attach-line-connect.png)
 
 #### 10.Add MountPoint for backpack
