@@ -17,6 +17,20 @@ slug: /
 
 Done! You now have a successfully running mod. (if something goes wrong, please open your cheat menu then tell us about your error messages).
 
+## Tutorials in this Docs
+
+You can find tutorials for different types of mods in the Mod Types section of the sidebar:
+
+* [Weapons](/docs/support-mod-types/Weapon/Tutorials/Basic%20-%20Create%20a%20weapon%20mod) 
+* [Songs](/docs/support-mod-types/Song/Tutorials/create-a-song-mod) 
+* [Scenes](/docs/support-mod-types/Scene/Tutorials/create-a-scene-mod) 
+* [Roles](/docs/support-mod-types/Role/Tutorials/create-a-role-mod) 
+* [Skins](/docs/support-mod-types/Skin/Tutorials/create-a-skin-mod) 
+* [Avatars](/docs/support-mod-types/Avatar/Tutorials/create-an-avatar-mod) 
+
+Each type includes detailed instructions and important notes for creation.
+
+
 ## Tutorial videos
 
 If you don't like reading there is also a bunch of tutorial videos out there that are easy to follow:
