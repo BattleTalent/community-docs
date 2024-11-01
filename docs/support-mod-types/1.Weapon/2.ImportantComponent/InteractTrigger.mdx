@@ -1,0 +1,87 @@
+# InteractTrigger / InteractTriggerX
+
+InteractTrigger is a base class that defines various interaction behaviors for weapons. InteractTriggerX extends this base class by adding scripting capabilities.
+
+## Overview
+
+In the game, weapon interactions are implemented as a skill system. Each interaction type is treated as an independent skill, including but not limited to:
+
+- Special attack modes
+- Shooting mechanics
+
+## Basic Skill Parameters
+
+We provide several basic skill parameters that can be combined to create common interaction patterns. Each skill has the following key timing parameters:
+
+- `instantSkill`: Whether the skill activates immediately
+- `skillChargeEndTime`: Duration needed to fully charge the skill
+- `activateTime`: Duration of the skill effect
+
+## Implementation Details
+
+The actual implementation of these interactions is handled through LuaScript used by the InteractTriggerX component. Different parameter combinations will trigger different callback functions within the script:
+
+### Class Hierarchy
+- `InteractTrigger`: Base class providing core interaction functionality
+- `InteractTriggerX`: Extended class that adds scripting support through LuaScript
+
+> **Important Note**: Since InteractTrigger and InteractTriggerX have an inheritance relationship, do not add both components to the same object to prevent unexpected behavior in Lua scripts.
+
+The following table illustrates how different parameter combinations affect the mana cost system and which callback functions will be triggered:
+
+<table>
+<tr>
+    <th colspan="6">Parameters Selection</th>
+</tr>
+<tr>
+<td>instantSkill</td>
+<td></td>
+<td>√</td>
+<td>√</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>skillChargeEndTime</td>
+<td></td>
+<td></td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>activateTime</td>
+<td></td>
+<td></td>
+<td></td>
+<td>√</td>
+<td></td>
+</tr>
+<tr>
+    <th colspan="6">Combination Effect</th>
+</tr>
+<tr>
+<td>Example</td>
+<td>continuous update skills: telekinesis, sprint spear, slash katana</td>
+<td>one-shot skills: gun firing</td>
+<td>shoot and charge skills: storm pistol</td>
+<td>charge-to-state skills: thunder spear</td>
+<td>charge-and-release skills: fireball spell</td>
+</tr>
+<tr>
+<td>Actual Mana Calculation</td>
+<td>manaCostOnCharge</td>
+<td>manaCost</td>
+<td>manaCost manaCostOnCharge</td>
+<td>manaCostOnCharge</td>
+<td>manaCostOnCharge</td>
+</tr>   
+<tr>
+<td>Callbacks</td>  
+<td>OpenSkill UpdateSkill CloseSkill</td>
+<td>UpdateSkill</td>
+<td>UpdateSkill OnChargeBegin OnChargeReady OnChargeUpdate OnChargeRelease OnChargeCancel</td>
+<td>OnActivateBegin OnActivateEnd OnActivateCancel</td>
+<td>OnChargeBegin->OnChargeReady->OnChargeUpdate->OnChargeRelease</td>
+</tr>
+</table>
