@@ -4,12 +4,6 @@ title: Tips
 
 Some extra tips for creating BT mods.
 
-## Namespaces
-
-* namespace of CSharp code is `CS` in lua
-* namespace CrossLink is `CL` in lua, CL == CS.CrossLink
-* namespace UnityEngine is `UE` in lua, UE == CS.UnityEngine
-
 ## Addressable shortcuts
 
 Shortcuts to be used in the addressable list for adding files to the mod build.
@@ -27,16 +21,6 @@ Shortcuts to be used in the addressable list for adding files to the mod build.
 
 Any resource's addressable name in the path above, can be loaded by the system without path included. for example, if an effect's addressable name is Effect/explosion, it can be created by EffectMgr.Instance:PlayEffect("explosion")
 
-## Static functions
-
-Calling a static function should use `.` instead of `:` in lua.
-Example:
-* Normal function call: `object:TestFunction()`.
-* Static function call: `object.TestFunction()`.
-
-## Recommended IDE
-
-* Recommended IDE to use by Fonzie is [ZeroBrane Studio](https://studio.zerobrane.com/) as lua editor
 
 ## When is slicing triggered
 
