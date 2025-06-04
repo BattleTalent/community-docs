@@ -47,6 +47,64 @@ Here is a step to make a simple **role(NPC)** mod.
 
 ## Phase 2: Prepare to export your mod
 
+#### Configuration Setup
+
+1. ##### Create configuration file
+
+* Navigate to `Assets > Build > YourModName ` 
+
+* Create a `Config` folder
+
+* Right-click in the folder and select: `Create > ItemInfoConfig`
+
+* Rename the config file to match your character name
+
+  <img src="4.create-a-role-mod/create-itemInfoConfig.png" style="zoom:50%;" />
+
+* Click the `+` button in the `RoleModInfo` section to create character configuration
+
+  <img src="4.create-a-role-mod/add-role-mod-info.png" style="zoom:60%;" />
+
+##### 2. Configure character properties
+Fill in the following fields in your ItemInfoConfig:
+
+- **Basic Settings**:
+  - `roleName`: Your character prefab's exact name (prefix + name format)
+  - `Name`: Display name that appears in-game
+  - `Desc`: Character description shown in-game
+
+- **Role Replacement**:
+  - `ReplaceRole`: Existing characters this mod will replace
+    - Click `ReplaceAllCharacters` button to auto-populate
+    - Manually add/remove entries as needed
+  - `DefaultReplacement`: Default character being replaced
+
+- **Combat Setup**:
+  - `Weapon`: Default weapon
+  - `LeftWeapon`: Overrides left hand weapon (optional)
+  - `RightWeapon`: Overrides right hand weapon (optional)
+
+- **Attributes**:
+  - `Attr > HpMax`: Maximum health points
+  - `Attr > MpMax`: Maximum mana points
+  - `Attr > AtkMlp`: Damage multiplier
+  - `Attr > MassMlp`: Mass multiplier
+
+- **Armor Configuration**: [(Armor Tutorial )](/docs/support-mod-types/4.Role/Tutorials/5.create-an-armor-mod)
+  - `ArmorProfile`: Reference to your armor configuration
+  - `ArmorConfigs`: Default armor sets (requires ArmorProfile)
+  - `ArmorConfigsRandom`: Random armor variations (requires ArmorProfile)
+
+- **Special Flags**:
+  - `DisableMotionFeature`: Enable for boss characters (prevents knockback)
+
+- **Audio (Optional)**:
+  - `Sound`: Configure character-specific sound effects
+
+<img src="4.create-a-role-mod/replace-all-characters.png" style="zoom:60%;" />
+
+
+
 <ModTutorialFragmentStepCreateIcon modType="Role" />
 
 ## Phase 3: Build the mod
