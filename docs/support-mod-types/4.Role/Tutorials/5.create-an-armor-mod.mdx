@@ -29,7 +29,7 @@ Follow these steps to create custom armor for your characters.
 
 - Set the Layer to "Ragdoll"
 
-- Name the armor piece using prefix+naming convention (this name will be used in ArmorProfile)
+- Name the armor piece using `prefix+naming` convention (this name will be used in ArmorProfile)
 
 - Add appropriate Collider components to each armor piece
 
@@ -42,6 +42,7 @@ Follow these steps to create custom armor for your characters.
 ## Phase 3: Create broken armor prefab
 
 1. Create broken armor prefab:
+   
    - Drag broken armor into the scene
    
 2. Add components:
@@ -50,7 +51,7 @@ Follow these steps to create custom armor for your characters.
      ![](5.create-an-armor-mod/add-auto-destroy.png)
    
 - Add Colliders, Rigidbody, and CollisionEffect components
-   
+  
    - Set CollisionEffect MaterialName to "Metal" for metallic armor
    
    - Add SceneObj component
@@ -62,7 +63,7 @@ Follow these steps to create custom armor for your characters.
 3. Save broken prefab:
    - Create a `BrokenArmor` folder in your mod directory
    
-   - Save broken armor as a prefab here,  `rename the prefab exactly the same as the corresponding armor GameObject in your character prefab`
+   - Save broken armor as a prefab here,  renaming it to match the armor GameObject name in your character prefab (but `without the prefix`)
    
      ![](5.create-an-armor-mod/save-broken-armor-prefab.png)
 
