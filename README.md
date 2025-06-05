@@ -24,6 +24,19 @@ yarn start
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
+### Compile errors
+
+If you receiving the following error:
+```
+Error: error:0308010C:digital envelope routines::unsupported
+    at String.replace (<anonymous>)
+```
+
+Run the following command.
+```console
+npm_config_yes=true npx yarn-audit-fix
+```
+
 ## Build
 
 ```console
