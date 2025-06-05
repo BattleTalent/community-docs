@@ -6,8 +6,8 @@ This website is built using [Docusaurus 3](https://docusaurus.io/), a modern sta
 This project requires Node.js version 18.17 or later.
 To easily switch you could use `nvm`.
 ```console
-nvm install 18.17
-nvm use 18.17
+nvm install 22.13
+nvm use 22.13
 ```
 
 ## Installation
