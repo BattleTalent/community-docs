@@ -1,5 +1,5 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   trailingSlash: false,
   title: 'Battle Talent Docs',
   tagline: 'The documentation website for creating your own Battle Talent mods.',
@@ -10,7 +10,16 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'BattleTalent',
   projectName: 'community-docs',
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+  
+  plugins: [
+    [
+      '@cmfcmf/docusaurus-search-local',
+      {
+        // Add any search plugin options here if needed
+      }
+    ]
+  ],
+
   themeConfig: {
     prism: {
       additionalLanguages: ['lua'],
@@ -89,28 +98,30 @@ module.exports = {
         },
       ],
     },
-    gtag: {
-      trackingID: 'G-NCNBRXYW4S',
-    },
   },
+
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/BattleTalent/community-docs'
+          editUrl: 'https://github.com/BattleTalent/community-docs'
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        // Move gtag configuration here
+        gtag: {
+          trackingID: 'G-NCNBRXYW4S',
         },
       },
     ],
   ],
 };
+
+module.exports = config;

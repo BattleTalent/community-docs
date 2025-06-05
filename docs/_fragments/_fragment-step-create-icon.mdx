@@ -1,4 +1,5 @@
-import docusaurusConfig from "../../.docusaurus/docusaurus.config";
+import docusaurusConfig from "@site/docusaurus.config.js";
+
 export const Fragment = ({modType}) => {
     if(modType === "Song" || modType === "Scene") {
         return (
@@ -19,7 +20,7 @@ export const Fragment = ({modType}) => {
         <>
             <h3>Generating the icon</h3>
             <ul>
-                <li>In the <b>Unity Toolbar</b>: Go to <code>Tools -> Icon Generator</code>.</li>
+                <li>In the <b>Unity Toolbar</b>: Go to <code>Tools → Icon Generator</code>.</li>
                 <img src={`/${docusaurusConfig.projectName}/img/create-icon/icon-generator.png`} />
                 <li>Drag the <code>Prefab</code> of your mod (the weapon, avatar, scene) into the field: <code>Game Object To Render</code>.</li>
                 <li>Adjust the settings of the icon to your liking.</li>
