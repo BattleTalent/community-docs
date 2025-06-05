@@ -1,13 +1,13 @@
 # Website
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 ## Requirements:
-This project runs on an older version of node and is not compatible with versions after 16.
+This project requires Node.js version 18.17 or later.
 To easily switch you could use `nvm`.
 ```console
-nvm install 16
-nvm use 16
+nvm install 18.17
+nvm use 18.17
 ```
 
 ## Installation
