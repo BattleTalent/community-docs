@@ -38,7 +38,7 @@ pip install uv
 
 ## Configuration
 - Option A: Auto-Configure (Recommended for Claude/Cursor/VSC Copilot)
-    - In Unity, go to Window > Unity MCP.
+    - In Unity, go to `Window > Unity MCP`.
     - Click Auto Configure on the IDE you uses.
     - Look for a green status indicator 🟢 and "Connected". (This attempts to modify the MCP Client's config file - automatically).
 - You can see these steps in [unity-mcp](https://github.com/justinpbarnett/unity-mcp) Installation/step2.
