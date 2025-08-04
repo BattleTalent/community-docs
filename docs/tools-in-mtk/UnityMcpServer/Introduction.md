@@ -44,6 +44,7 @@ pip install uv
 - You can see these steps in [unity-mcp](https://github.com/justinpbarnett/unity-mcp) Installation/step2.
 
 ### Cursor Examples
+You should open the project on Root directory `.\BTModToolkit\ModProj` of BTModToolkit Unity project, to ensure cursor rules take effect.
 #### Successfully applied cursor rules
 ![cursor rules](Imgs/cursorRules.jpg)
 #### Successfully connected to UnityMcpServer
@@ -52,7 +53,8 @@ pip install uv
 
 ## FAQs
 - If you encounter errors or experience long delays after starting the MCP server, it's best to manually run the command to install the dependencies after install uv python package manager.
-    - Run this in the BTModToolkit root directory:
+    - Run the following command in the BTModToolkit root directory and close CMD after download completes:
         ```
         uv --directory .\UnityMCP\UnityMcpServer\src run server.py
         ```
+- If the Unity MCP Tool remains red or if other IDEs fail to establish a connection, try restarting the Unity MCP Bridge in the Unity Editor, followed by restarting the cursor or any affected IDEs.
