@@ -1,13 +1,13 @@
 # Website
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 ## Requirements:
-This project runs on an older version of node and is not compatible with versions after 16.
+This project requires Node.js version 18.17 or later.
 To easily switch you could use `nvm`.
 ```console
-nvm install 16
-nvm use 16
+nvm install 22.13
+nvm use 22.13
 ```
 
 ## Installation
@@ -23,6 +23,19 @@ yarn start
 ```
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+
+### Compile errors
+
+If you receiving the following error:
+```
+Error: error:0308010C:digital envelope routines::unsupported
+    at String.replace (<anonymous>)
+```
+
+Run the following command.
+```console
+npm_config_yes=true npx yarn-audit-fix
+```
 
 ## Build
 
