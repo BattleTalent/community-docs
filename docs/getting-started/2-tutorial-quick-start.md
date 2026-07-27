@@ -39,6 +39,10 @@ If you don't like reading there is also a bunch of tutorial videos out there tha
 * [Aura - Weapon with skill](https://youtu.be/FRej6r_C4Rg)
 * [Silver Echo Games - Prop tutorial](https://www.youtube.com/watch?v=sS1CKmxCxcI)
 * [UnbelievableFlavour - Faster modding a basic weapon](https://www.youtube.com/watch?v=C0zJoelDwhU)
+* [Tutorial: How to make NPCs Mods in Battle Talent-Ep.01  Basic Setup](https://www.youtube.com/watch?v=kDCV6_lHyQo)
+* [Tutorial: How to make NPCs Mods in Battle Talent -Ep.02 Dismemberment](https://www.youtube.com/watch?v=0XfgYfxQN8M)
+* [Tutorial: How to make NPCs Mods in Battle Talent -Ep.03 Grab Points](https://www.youtube.com/watch?v=OBJcxgqH43I)
+* [Tutorial: How to make NPCs Mods in Battle Talent -Ep.04 Custom Actions](https://www.youtube.com/watch?v=1PF0s5Mws0U)
 
 ## FAQ
 
