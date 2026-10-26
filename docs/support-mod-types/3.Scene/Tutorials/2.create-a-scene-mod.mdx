@@ -81,7 +81,7 @@ The preview window exposes these settings. Hover a label for more details
 
 1. Select `SceneScriptNode`. In its existing `LuaBehaviour` component, change the **Lua Script** identifier from the current prefix plus `SceneInitScript` to the same prefix plus `SceneInitCustomScript`. For example, with the `WMD_` prefix, change `WMD_SceneInitScript` to `WMD_SceneInitCustomScript`. Keep the existing object injections, including `pathFinderNode`, `characterPos`, `deadZone`, and `spawnPointMgr`; do not add a second initialization component.
    ![](create-a-scene-mod/setcustomsceneinit.png)
-2. Edit customvalue.txt` to match the values tested in the preview. 
+2. Edit `SceneInitCustomScript.txt` to match the values tested in the preview. 
    ![](create-a-scene-mod/customvalue.png)
 
 `CommonScene` scripts are shared. Editing this file affects other scenes that use it; use a separately named copy in your mod's `Script` folder if the settings should apply only to this mod, and point `LuaBehaviour` to that copy's identifier.
