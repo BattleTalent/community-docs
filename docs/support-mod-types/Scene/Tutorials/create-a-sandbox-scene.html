@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCNBRXYW4S"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-NCNBRXYW4S",{})</script><link rel="stylesheet" href="/community-docs/assets/css/styles.a5f66d77.css">
-<script src="/community-docs/assets/js/runtime~main.46f191dc.js" defer="defer"></script>
+<script src="/community-docs/assets/js/runtime~main.e6618b0d.js" defer="defer"></script>
 <script src="/community-docs/assets/js/main.90c95849.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard" data-theme="light">
@@ -91,7 +91,7 @@
 <ol>
 <li>Select <code>SceneScriptNode</code>. In its existing <code>LuaBehaviour</code> component, change the <strong>Lua Script</strong> identifier from the current prefix plus <code>SceneInitScript</code> to the same prefix plus <code>SceneInitCustomScript</code>. For example, with the <code>WMD_</code> prefix, change <code>WMD_SceneInitScript</code> to <code>WMD_SceneInitCustomScript</code>. Keep the existing object injections, including <code>pathFinderNode</code>, <code>characterPos</code>, <code>deadZone</code>, and <code>spawnPointMgr</code>; do not add a second initialization component.
 <img decoding="async" loading="lazy" src="/community-docs/assets/images/setcustomsceneinit-fe5bb939e4cbf7e0875f1e5a06f899fc.png" width="1127" height="448" class="img_ev3q"></li>
-<li>Edit customvalue.txt` to match the values tested in the preview.
+<li>Edit <code>SceneInitCustomScript.txt</code> to match the values tested in the preview.
 <img decoding="async" loading="lazy" src="/community-docs/assets/images/customvalue-cc3f1b0d82e9006c18029d433dbad399.png" width="1179" height="459" class="img_ev3q"></li>
 </ol>
 <p><code>CommonScene</code> scripts are shared. Editing this file affects other scenes that use it; use a separately named copy in your mod&#x27;s <code>Script</code> folder if the settings should apply only to this mod, and point <code>LuaBehaviour</code> to that copy&#x27;s identifier.</p>
