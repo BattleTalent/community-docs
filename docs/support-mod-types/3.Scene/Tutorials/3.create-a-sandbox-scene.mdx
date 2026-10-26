@@ -57,36 +57,31 @@ Save the scene.
 ##### Preview the navigation graph
 
 1. Open the scene in Unity and stay outside Play mode.
-2. Open `Tools > Battle Talent > PathFinder Preview`.
+
+2. Open `Tools > PathFinder Preview`.
+
+   ![](create-a-sandbox-scene/pathfinderpreview.png)
+
 3. Select `SceneScriptNode > PathFinder` in the Hierarchy, then click **Use Selected Object** in the preview window. Alternatively, drag its scene `BoxCollider` into **Scan Range**. Use the object in the open scene, not a prefab asset.
+
+   ![](create-a-sandbox-scene/setpathfinder.png)
+
 4. Enable **Gizmos** in the Scene view, then click **Generate Preview**. Inspect the displayed navigation surface, outlines, and scan bounds, especially around stairs, slopes, narrow passages, and small platforms.
-5. After changing geometry, the scan range, parameters, or `NavmeshCutSetup` obstacles, click **Regenerate Preview**. Geometry changes are not detected automatically, so rescan even if no out-of-date warning appears.
-6. Use **Hide Preview** / **Show Preview** to toggle visibility, or **Clear Preview** to remove the temporary result.
+
+5. After changing geometry, the scan range, parameters, click **Regenerate Preview**. Geometry changes are not detected automatically, so rescan even if no out-of-date warning appears.
 
 Only geometry on the `CharacterObstacle` layer is collected. If no walkable triangles appear, check the range, layers, collection switches, and overhead clearance. Meshes collected by `rasterizeMeshes` need **Read/Write Enabled** in their import settings; MeshCollider meshes also need to be readable when using `rasterizeColliders`.
 
 ##### Adjust navigation parameters
 
-The preview window exposes these settings. Hover a label for more details.
-
-| Parameter | Default | Purpose |
-|-----------|---------|---------|
-| `walkableClimb` | `0.5` m | Maximum height difference allowed between adjacent walkable surfaces. |
-| `minRegionSize` | `2` m^2 | Minimum navigation region area; lower it to retain smaller isolated platforms. |
-| `rasterizeTerrain` | `true` | Include Unity Terrain geometry. |
-| `rasterizeMeshes` | `true` | Include active meshes with enabled Renderers. |
-| `rasterizeColliders` | `true` | Include supported, enabled, non-trigger colliders. |
-| `cellSize` (under **Advanced**) | `0.25` m | Horizontal sampling size; smaller values capture finer details but increase scan time and memory use. |
-| `maxSlope` (under **Advanced**) | `30` degrees | Maximum surface inclination classified as walkable. |
-
-**Fixed Settings** shows read-only defaults such as character height and radius, plus the bounds derived from the `BoxCollider`. Increasing climb or slope limits changes navigation classification, not the character's physical movement abilities.
+The preview window exposes these settings. Hover a label for more details
 
 **Important: Preview settings are editor-only. To apply adjusted navigation parameters in game, replace `SceneInitScript` with `SceneInitCustomScript`; changing the preview window alone is not enough.**
 
-1. Locate `Assets/Build/CommonScene/Script/SceneInitCustomScript.txt`.
-2. Select `SceneScriptNode`. In its existing `LuaBehaviour` component, change the **Lua Script** identifier from the current prefix plus `SceneInitScript` to the same prefix plus `SceneInitCustomScript`. For example, with the `WMD_` prefix, change `WMD_SceneInitScript` to `WMD_SceneInitCustomScript`. Keep the existing object injections, including `pathFinderNode`, `characterPos`, `deadZone`, and `spawnPointMgr`; do not add a second initialization component.
-3. Edit `SceneInitCustomScript.txt` to match the values tested in the preview. Set `rasterizeTerrain`, `rasterizeMeshes`, and `rasterizeColliders` in the table at the top of the script. Set `graph.walkableClimb`, `graph.minRegionSize`, `graph.cellSize`, and `graph.maxSlope` inside `InitPathFinderByLua`.
-4. Keep the preview and script values in sync manually. Save the script and scene, ensure the custom script is included in the mod's Addressables, then rebuild and test NPC navigation in Battle Talent.
+1. Select `SceneScriptNode`. In its existing `LuaBehaviour` component, change the **Lua Script** identifier from the current prefix plus `SceneInitScript` to the same prefix plus `SceneInitCustomScript`. For example, with the `WMD_` prefix, change `WMD_SceneInitScript` to `WMD_SceneInitCustomScript`. Keep the existing object injections, including `pathFinderNode`, `characterPos`, `deadZone`, and `spawnPointMgr`; do not add a second initialization component.
+   ![](create-a-sandbox-scene/setcustomsceneinit.png)
+2. Edit customvalue.txt` to match the values tested in the preview. 
+   ![](create-a-sandbox-scene/customvalue.png)
 
 `CommonScene` scripts are shared. Editing this file affects other scenes that use it; use a separately named copy in your mod's `Script` folder if the settings should apply only to this mod, and point `LuaBehaviour` to that copy's identifier.
 
