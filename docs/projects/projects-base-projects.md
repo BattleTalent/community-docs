@@ -6,6 +6,8 @@ title: Base Projects
 
 Base projects **were** very simple straightforward completed mods of a specific types. They **were** great starting points for creating your own mods when the modproj was a little more complicated. The last version of ModProj is easy-to-use and straightforward. So we recommend using the [ModProj](https://github.com/BattleTalent/BTModToolkit) instead now.
 
+
+
 ## Downloads
 **These are projects based on old version of the toolkit. Don't use unless you know what you are doing**
 
@@ -64,3 +66,9 @@ In `Assets/Build/Entry.txt` edit `AddStoreItemTemplate("YOURPREFIX_YourModName_Y
 The product name should be changed manually so that the mod will have it's own name.
 1. Go to `Edit/Project Settings/Player/Product Name`.
 1. Change `YOURPREFIX_ModName` to your prefix + modname. (No _ at the end)
+
+
+
+### more examples
+
+Looking for more mod examples? See the [BTModToolkit examples branch](https://github.com/neooonC/BTModToolkit/tree/examples) for a collection of shared mod cases.

@@ -1,0 +1,205 @@
+---
+title: Create a Sandbox Scene Mod
+---
+import ModTutorialFragmentPhaseBuild from '/docs/_fragments/_fragment-phase-build.mdx';
+import ModTutorialFragmentPhaseTest from '/docs/_fragments/_fragment-phase-test.mdx';
+import ModTutorialFragmentStepOpenUnity from '/docs/_fragments/_fragment-step-open-unity.mdx';
+import ModTutorialFragmentStepCreateIcon from '/docs/_fragments/_fragment-step-create-icon.mdx';
+import ModTutorialFragmentStepTemplateWizard from '/docs/_fragments/_fragment-step-template-wizard.mdx';
+
+This tutorial walks you through creating a **Sandbox Scene** mod, from generating the Scene template to preparing lighting and building the mod.
+
+![](create-a-sandbox-scene/ingame.png)
+
+
+
+## Phase 1: Define your mod
+
+<ModTutorialFragmentStepOpenUnity />
+
+#### 5. Generate the folder structure with the Template Wizard
+
+<ModTutorialFragmentStepTemplateWizard modType="Scene" />
+
+#### 6. Build the scene
+
+Create a new scene and build its environment.
+
+For scene geometry that the player should collide with, add an appropriate collider and set its layer to `CharacterObstacle`.
+
+![](create-a-sandbox-scene/buildscenecontent.png)
+
+Use a `Rigidbody` with `Is Kinematic` enabled only on objects that need to participate in physics-based interactions. Static environment geometry normally does not need a Rigidbody.
+
+![](create-a-sandbox-scene/rigidbody.png)
+
+#### 7. Configure CharacterPos
+
+Set `CharacterPos` under `SceneScriptNode` to choose where the player character spawns.
+
+![](create-a-sandbox-scene/sceneScriptNode.png)
+
+#### 8. Configure DeadZone and RespawnTrigger
+
+Set the `Y` value of `DeadZone` under `SceneScriptNode` to define the lower limit of the playable area. When the character reaches this height, it respawns at the last activated [RespawnTrigger](/docs/details/deadzone-respawntrigger).
+
+Place [RespawnTrigger](/docs/details/deadzone-respawntrigger) prefabs at the respawn locations you want to support. Size each trigger's `BoxCollider` so the player activates it while passing through.
+
+
+#### 9. Configure PathFinder
+
+Resize the `BoxCollider` on `PathFinder` under `SceneScriptNode` so it encloses the walkable area of the scene. The scene initialization script uses these bounds to create the navigation graph.
+
+![](create-a-sandbox-scene/pathfinder.png)
+
+Save the scene.
+
+##### Preview the navigation graph
+
+1. Open the scene in Unity and stay outside Play mode.
+
+2. Open `Tools > PathFinder Preview`.
+
+   ![](create-a-sandbox-scene/pathfinderpreview.png)
+
+3. Select `SceneScriptNode > PathFinder` in the Hierarchy, then click **Use Selected Object** in the preview window. Alternatively, drag its scene `BoxCollider` into **Scan Range**. Use the object in the open scene, not a prefab asset.
+
+   ![](create-a-sandbox-scene/setpathfinder.png)
+
+4. Enable **Gizmos** in the Scene view, then click **Generate Preview**. Inspect the displayed navigation surface, outlines, and scan bounds, especially around stairs, slopes, narrow passages, and small platforms.
+
+5. After changing geometry, the scan range, parameters, click **Regenerate Preview**. Geometry changes are not detected automatically, so rescan even if no out-of-date warning appears.
+
+Only geometry on the `CharacterObstacle` layer is collected. If no walkable triangles appear, check the range, layers, collection switches, and overhead clearance. Meshes collected by `rasterizeMeshes` need **Read/Write Enabled** in their import settings; MeshCollider meshes also need to be readable when using `rasterizeColliders`.
+
+##### Adjust navigation parameters
+
+The preview window exposes these settings. Hover a label for more details
+
+**Important: Preview settings are editor-only. To apply adjusted navigation parameters in game, replace `SceneInitScript` with `SceneInitCustomScript`; changing the preview window alone is not enough.**
+
+1. Select `SceneScriptNode`. In its existing `LuaBehaviour` component, change the **Lua Script** identifier from the current prefix plus `SceneInitScript` to the same prefix plus `SceneInitCustomScript`. For example, with the `WMD_` prefix, change `WMD_SceneInitScript` to `WMD_SceneInitCustomScript`. Keep the existing object injections, including `pathFinderNode`, `characterPos`, `deadZone`, and `spawnPointMgr`; do not add a second initialization component.
+   ![](create-a-sandbox-scene/setcustomsceneinit.png)
+2. Edit customvalue.txt` to match the values tested in the preview. 
+   ![](create-a-sandbox-scene/customvalue.png)
+
+`CommonScene` scripts are shared. Editing this file affects other scenes that use it; use a separately named copy in your mod's `Script` folder if the settings should apply only to this mod, and point `LuaBehaviour` to that copy's identifier.
+
+The preview is not baked navigation data and is not included in the mod. The game creates its navigation graph during scene initialization; always verify the result in game.
+
+#### 10. Add SandBoxControl
+
+Drag `Toolkit/Prefabs/SceneObj/SandBoxControllua.prefab` into the scene.
+
+![](create-a-sandbox-scene/sandboxcontrollua.png)
+
+Select `SandBoxControlLua`. In its `LuaBehaviour` component, double-click an assigned reference to select the corresponding GameObject.
+
+Only the GameObjects assigned to the `Transform` fields in `LuaBehaviour` can have their positions and rotations changed through this setup. Moving or rotating other scene nodes will not update those configured locations.
+
+![](create-a-sandbox-scene/placesandboxluaitem.png)
+
+#### 11. Add lights
+
+Add lights that suit the scene. A directional light is a common starting point for outdoor scenes.
+
+![](create-a-sandbox-scene/createlight.png)
+
+#### 12. Bake lightmaps
+
+Select the static geometry that should receive baked lighting, such as buildings and ground, then enable the relevant `Static` options in the Inspector.
+
+![](create-a-sandbox-scene/setstatic.png)
+
+Select a light, such as the `Directional Light`, and choose `Mixed` or `Baked` in the Light component's `Mode` setting.
+
+`Baked` lighting is stored in the baked data for eligible static geometry. Dynamic characters need light probes or a real-time or mixed light source to receive suitable lighting. `Mixed` lighting can retain baked indirect lighting while also providing real-time lighting and shadows for dynamic objects, subject to the project's quality settings.
+
+To change multiple lights at once, open `Window > Rendering > Light Explorer`.
+
+![](create-a-sandbox-scene/lightexplorer.png)
+
+![](create-a-sandbox-scene/lightexploreropen.png)
+
+Open `Window > Rendering > Lighting`, then complete the following steps:
+
+1. Select the **Scene** tab.
+2. Drag the toolkit's `Assets/Toolkit/Light/Settings.lighting` asset into the **Lighting Settings** field.
+
+   ![](create-a-sandbox-scene/lightingsetting.png)
+
+3. This supplied asset is a starting point. Adjust its settings only when your scene needs different lighting quality or bake settings; see [Unity's Lighting window documentation](https://docs.unity3d.com/2020.3/Documentation/Manual/lighting-window.html#Scene) for details.
+4. In the **Baked Lightmaps** section, select **Generate Lighting**.
+
+![](create-a-sandbox-scene/Lightning.png)
+
+After baking finishes, Unity creates or updates `LightingData.asset` for the scene.
+
+![](create-a-sandbox-scene/generatelight.png)
+
+![](create-a-sandbox-scene/lightmapcamplate.png)
+
+##### Verify lightmaps
+
+1. In the Scene view control bar, open the **Draw Mode** dropdown. Under **Baked Global Illumination**, select **Baked Lightmap**. Scene geometry displays its baked lightmap as a checkered overlay, which confirms that the lightmap is applied correctly.
+
+   ![](create-a-sandbox-scene/bakedlightmap.png)
+
+2. Add a temporary Camera to the scene, then enter Play mode. Move and rotate the Camera to inspect the scene from different viewpoints, looking for:
+   - **Light leaking:** unwanted illumination in shadowed indoor areas next to bright outdoor light.
+   - **Visible seams:** hard edges where separate UV charts meet, especially on modular meshes.
+
+3. If light leaking appears, increase **Lightmap Resolution** in `Window > Rendering > Lighting`.
+
+**Note:** Delete the temporary Camera before saving or building the mod, unless it is intentionally part of the scene.
+
+
+
+#### 13. Bake occlusion culling
+
+This optional step can improve performance by preventing rendering of static objects that are fully hidden from the player's view.
+
+Mark static renderers for occlusion culling:
+
+- Large, solid objects such as walls, buildings, and terrain should use `Occluder Static`.
+- Static objects that can be hidden, such as decorations, small props, and transparent objects, should use `Occludee Static`.
+- Objects that both hide other geometry and can be hidden should use both flags.
+
+**Important:** Most static renderers should be marked `Occludee Static`; otherwise, occlusion culling will not remove them when they are hidden. Reserve `Occluder Static` for large, solid geometry that can form effective occlusion.
+
+Dynamic objects, such as characters and movable props, are not included in the baked occlusion data. Their Renderer `Dynamic Occlusion` setting allows them to be culled at runtime by baked static occluders.
+
+![](create-a-sandbox-scene/occluderStatic.png)
+
+Open the Occlusion Culling window at `Window > Rendering > Occlusion Culling`.
+
+![](create-a-sandbox-scene/occlusionCullingWindow.png)
+
+In the Occlusion Culling window, select **Bake**.
+
+![](create-a-sandbox-scene/occlusionCullingBake.png)
+
+##### Verify occlusion culling
+
+1. Select a Camera in the scene and make sure **Occlusion Culling** is enabled in its Inspector.
+2. Open `Window > Rendering > Occlusion Culling` and select the **Visualization** tab.
+3. Add a temporary Camera to the scene, move the Camera in the Scene view and confirm that objects hidden behind occluders disappear from view.
+4. In the Scene view Occlusion Culling pop-up menu, enable **Camera Volumes** (yellow lines) and **Visibility Lines** (green lines) to help inspect the baked visibility data.
+
+**Note:** Delete the temporary Camera before saving or building the mod, unless it is intentionally part of the scene.
+
+Save the scene again.
+
+## Phase 2: Prepare to export your mod
+
+Create configuration files and fill in [SceneModInfo](/docs/details/item-info-config).
+
+<ModTutorialFragmentStepCreateIcon modType="Scene" />
+
+## Phase 3: Build the mod
+
+<ModTutorialFragmentPhaseBuild />
+
+## Phase 4: Test & publish the mod
+
+<ModTutorialFragmentPhaseTest />
